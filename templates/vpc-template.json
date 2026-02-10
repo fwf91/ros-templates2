@@ -1,0 +1,44 @@
+{
+  "ROSTemplateFormatVersion": "2015-09-01",
+  "Description": "ROS模板：创建VPC和相关资源",
+  "Parameters": {
+    "Environment": {
+      "Type": "String",
+      "Default": "development",
+      "AllowedValues": ["development", "staging", "production"],
+      "Description": "环境类型"
+    },
+    "VpcName": {
+      "Type": "String",
+      "Default": "my-vpc",
+      "Description": "VPC名称"
+    },
+    "CidrBlock": {
+      "Type": "String",
+      "Default": "192.168.0.0/16",
+      "Description": "VPC CIDR块"
+    }
+  },
+  "Resources": {
+    "VPC": {
+      "Type": "ALIYUN::ECS::VPC",
+      "Properties": {
+        "CidrBlock": {
+          "Ref": "CidrBlock"
+        },
+        "VpcName": {
+          "Fn::Sub": "${VpcName}-${Environment}"
+        },
+        "Description": "VPC for ${Environment} environment"
+      }
+    }
+  },
+  "Outputs": {
+    "VpcId": {
+      "Value": {
+        "Ref": "VPC"
+      },
+      "Description": "创建的VPC ID"
+    }
+  }
+}
