@@ -455,6 +455,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:数据迁移:利用低成本链路完成业务数据上云
+    - acs:public_template:Solution:low-cost-link-to-business-data
   ALIYUN::ROS::Designer:
     018eb77c-1262-44cc-b40a-e1dc02b1f715:
       position:

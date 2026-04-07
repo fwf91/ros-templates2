@@ -356,6 +356,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:弹性计算:使用Count创建VPC类型ECS，并依次绑定EIP(已有VPC)
+    - acs:public_template:Example:existing-vpc-ecs-bind-eip-by-count
   ALIYUN::ROS::Composer:
     dc5cb784:
       Rect:

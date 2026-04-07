@@ -572,6 +572,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:solution:业务上云:单机网站上云架构云化-单机服务器部署
+    - acs:public_template:Solution:single-website-on-cloud-stand-alone-server
   ALIYUN::ROS::Composer:
     6310268f:
       Rect:

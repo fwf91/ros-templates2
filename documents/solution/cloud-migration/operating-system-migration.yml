@@ -628,6 +628,7 @@ Metadata:
           default: ECS
     TemplateTags:
       - 'acs:technical-solution:cloud-migration:CentOS到Alinux操作系统迁移-tech_solu_80'
+      - acs:public_template:Solution:operating-system-migration
   ALIYUN::ROS::Composer:
     82cf544a:
       Rect:

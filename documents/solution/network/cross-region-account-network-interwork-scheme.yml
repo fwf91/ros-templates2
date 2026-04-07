@@ -56,6 +56,7 @@ Metadata:
           en: Ecs Password Configuration
     TemplateTags:
     - acs:technical-solution:network:跨地域跨账号网络互通方案-tech_solu_05
+    - acs:public_template:Solution:cross-region-account-network-interwork-scheme
 Workspace:
   main.tf: |-
     data "alicloud_account" "current" {

@@ -240,6 +240,7 @@ Metadata:
             zh-cn: ECS实例配置
     TemplateTags:
       - acs:technical-solution:network:通过公网NAT网关实现云上统一公网出口-tech_solu_134
+      - acs:public_template:Solution:unified-internet-egress-with-nat-gateway
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

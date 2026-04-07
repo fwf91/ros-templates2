@@ -103,6 +103,7 @@ Metadata:
         default: Memcache
     TemplateTags:
     - acs:example:数据库:创建云数据库Memcache版实例
+    - acs:public_template:Example:memcache-instance
   ALIYUN::ROS::Composer:
     b63c4fbf:
       Rect:

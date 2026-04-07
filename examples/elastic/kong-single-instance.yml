@@ -302,6 +302,7 @@ Metadata:
           zh-cn: 数据库配置（必填）
     TemplateTags:
     - acs:example:网络:一键部署Kong网关应用实例
+    - acs:public_template:Example:kong-single-instance
   ALIYUN::ROS::Composer:
     ec821b03:
       Rect:

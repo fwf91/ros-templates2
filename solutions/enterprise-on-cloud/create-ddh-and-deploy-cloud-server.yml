@@ -303,6 +303,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:业务上云:VMware迁移DDH-创建DDH并部署云服务器
+    - acs:public_template:Solution:create-ddh-and-deploy-cloud-server
   ALIYUN::ROS::Composer:
     '23766930':
       Parent: e34cc526

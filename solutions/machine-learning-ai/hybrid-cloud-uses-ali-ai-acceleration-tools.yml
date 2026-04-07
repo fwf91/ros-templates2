@@ -1099,6 +1099,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:机器学习&人工智能:混合云使用飞天AI加速工具
+    - acs:public_template:Solution:hybrid-cloud-uses-ali-ai-acceleration-tools
   ALIYUN::ROS::Composer:
     3411eb45:
       Rect:

@@ -264,6 +264,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建绑定A记录域名的ECS
+    - acs:public_template:Example:ecs-a-record
   ALIYUN::ROS::Composer:
     '67269199':
       Res:

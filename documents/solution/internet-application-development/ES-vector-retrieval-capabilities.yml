@@ -104,6 +104,7 @@ Metadata:
           default: APP
     TemplateTags:
       - acs:technical-solution:ai:使用Elasticsearch的向量检索能力进行个性化推荐-tech_solu_153
+      - acs:public_template:Solution:ES-vector-retrieval-capabilities
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

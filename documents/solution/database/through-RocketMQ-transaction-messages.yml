@@ -410,6 +410,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ai:通过RocketMQ事务消息实现分布式事务-tech_solu_154
+      - acs:public_template:Solution:through-RocketMQ-transaction-messages
   ALIYUN::ROS::Composer:
     6d838b82:
       Rect:

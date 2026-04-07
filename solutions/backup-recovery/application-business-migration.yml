@@ -316,6 +316,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:备份&容灾:同地域跨可用区容灾方案2.0-应用业务迁移
+    - acs:public_template:Solution:application-business-migration
   ALIYUN::ROS::Composer:
     '18167003':
       Rect:

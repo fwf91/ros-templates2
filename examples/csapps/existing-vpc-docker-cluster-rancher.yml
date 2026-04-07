@@ -790,6 +790,7 @@ Metadata:
           zh-cn: 负载均衡配置
     TemplateTags:
     - acs:solution:容器:Rancher集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-docker-cluster-rancher
   ALIYUN::ROS::Composer:
     '23973475':
       Res:

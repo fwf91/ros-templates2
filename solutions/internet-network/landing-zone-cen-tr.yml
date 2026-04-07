@@ -61,6 +61,7 @@ Metadata:
           en: ECS InstanceType and Password Configuration
     TemplateTags:
     - acs:integrate:landing_zone:cen_tr
+    - acs:public_template:Solution:landing-zone-cen-tr
 Workspace:
   main.tf: |
     variable "user1_id" {

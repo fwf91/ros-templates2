@@ -1711,6 +1711,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:solution:安全&合规:RAM账号权限管理
+    - acs:public_template:Solution:ram-account-rights-management
   ALIYUN::ROS::Composer:
     8f1bb56b:
       Rect:

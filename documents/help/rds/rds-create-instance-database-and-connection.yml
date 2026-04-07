@@ -260,6 +260,7 @@ Metadata:
           zh-cn: RDS配置
     TemplateTags:
       - acs:document-help:rds:快速创建RDS MySQL实例并进行基本设置
+      - acs:public_template:Example:rds-create-instance-database-and-connection
   ALIYUN::ROS::Composer:
     0c23f750:
       Rect:

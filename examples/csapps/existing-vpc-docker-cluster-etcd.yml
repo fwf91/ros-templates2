@@ -660,6 +660,7 @@ Metadata:
           zh-cn: Etcd 配置
     TemplateTags:
     - acs:solution:容器:Etcd集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-docker-cluster-etcd
   ALIYUN::ROS::Designer:
     00310e6e-cbc4-433a-ac83-f9d58e6ee687:
       position:

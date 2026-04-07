@@ -281,6 +281,7 @@ Metadata:
           default: DTS
     TemplateTags:
       - acs:technical-solution:database:实时同步RDS与Redis构建缓存一致性-tech_solu_21
+      - acs:public_template:Solution:dts-cache-synchronization
   ALIYUN::ROS::Composer:
     69c2e8e9:
       Rect:

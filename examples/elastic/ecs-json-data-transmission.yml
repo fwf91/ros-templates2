@@ -400,6 +400,7 @@ Metadata:
           zh-cn: ECS 配置（必填）
     TemplateTags:
     - acs:example:弹性计算:在ECS之间实现复杂数据传递(Json)
+    - acs:public_template:Example:ecs-json-data-transmission
   ALIYUN::ROS::Composer:
     d2668a7d:
       Rect:

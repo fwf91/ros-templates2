@@ -1021,6 +1021,7 @@ Metadata:
           zh-cn: Kubernetes托管版集群配置（必填）
     TemplateTags:
     - acs:solution:容器&微服务:SpringCloud-云原生迁移
+    - acs:public_template:Solution:spring-cloud-cloud-native-migration
   ALIYUN::ROS::Composer:
     '33930236':
       Parent: 82b3b799

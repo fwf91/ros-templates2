@@ -1109,6 +1109,7 @@ Metadata:
         default: EMR
     TemplateTags:
     - acs:solution:数据分析:EMR弹性低成本离线大数据分析
+    - acs:public_template:Solution:low-cost-offline-big-data-analysis-emr
   ALIYUN::ROS::Designer:
     033fefdc-09c6-4fb9-8561-8d4317fe8241:
       position:

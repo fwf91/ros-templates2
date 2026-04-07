@@ -331,6 +331,7 @@ Metadata:
       - EcsInstanceId
     TemplateTags:
     - acs:document-help:ecs:部署Java Web环境
+    - acs:public_template:Example:java-web
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

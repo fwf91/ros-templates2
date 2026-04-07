@@ -233,6 +233,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署Docker环境
+      - acs:public_template:Example:docker
   ALIYUN::ROS::Composer:
     '88634487':
       Parent: b9b1b770

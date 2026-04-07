@@ -1232,6 +1232,7 @@ Metadata:
           zh-cn: MapReduce 配置（必填）
     TemplateTags:
     - acs:solution:数据分析:MapReduce集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-map-reduce
   ALIYUN::ROS::Composer:
     '59616652':
       Parent: 498b0b50

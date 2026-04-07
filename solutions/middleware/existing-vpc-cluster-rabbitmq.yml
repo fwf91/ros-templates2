@@ -738,6 +738,7 @@ Metadata:
           zh-cn: RabbitMQ 配置（必填）
     TemplateTags:
     - acs:solution:中间件:RabbitMQ集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-rabbitmq
   ALIYUN::ROS::Composer:
     2a7eb0bb:
       Rect:

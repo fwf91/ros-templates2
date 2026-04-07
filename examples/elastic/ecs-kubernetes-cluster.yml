@@ -752,6 +752,7 @@ Metadata:
             zh-cn: Worker实例信息（必填）
     TemplateTags:
     - acs:example:容器:ECS搭建Kubernetes集群(新建VPC)
+    - acs:public_template:Example:ecs-kubernetes-cluster
     Hidden:
     - ImageId
     - ResourceNamePrefix

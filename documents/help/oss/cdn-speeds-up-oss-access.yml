@@ -183,6 +183,7 @@ Metadata:
           - DomainName
     TemplateTags:
       - acs:document-help:oss:使用CDN加速OSS访问
+      - acs:public_template:Example:cdn-speeds-up-oss-access
   ALIYUN::ROS::Composer:
     a7cb6936:
       Rect:

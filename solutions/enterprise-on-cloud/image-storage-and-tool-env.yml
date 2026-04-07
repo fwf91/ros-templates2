@@ -455,6 +455,7 @@ Metadata:
         default: OSS
     TemplateTags:
     - acs:solution:业务上云:VMware迁移DDH-镜像存储及工具环境的搭建
+    - acs:public_template:Solution:image-storage-and-tool-env
   ALIYUN::ROS::Designer:
     0205d1d6-fbef-49e7-888a-1dfbee13a4d7:
       position:

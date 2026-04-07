@@ -362,3 +362,4 @@ Metadata:
         default: CEN
     TemplateTags:
     - acs:solution:网络组网:在线教育全球部署网络规划-组建全球地域网络
+    - acs:public_template:Solution:global-deployment-network-build-global-network

@@ -418,6 +418,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:example:网络:创建ECS并加入到一个SLB并创建多可用区RDS
+    - acs:public_template:Example:simple-high-available-infrastructure
   ALIYUN::ROS::Composer:
     '45020991':
       Res:

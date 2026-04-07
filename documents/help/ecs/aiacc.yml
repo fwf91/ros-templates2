@@ -221,6 +221,7 @@ Metadata:
           zh-cn: 登录信息
     TemplateTags:
     - acs:document-help:ecs:基于AIACC加速器快速实现AIGC绘画
+    - acs:public_template:Example:aiacc
   ALIYUN::ROS::Composer:
     dca9673d:
       Rect:

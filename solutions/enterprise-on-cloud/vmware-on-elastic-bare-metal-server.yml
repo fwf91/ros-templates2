@@ -1248,6 +1248,7 @@ Metadata:
           zh-cn: 'ECS: 测试连接实例'
     TemplateTags:
     - acs:solution:AnyStack on阿里云:VMware on弹性裸金属
+    - acs:public_template:Solution:vmware-on-elastic-bare-metal-server
   ALIYUN::ROS::Designer:
     0148eb06-afae-421a-9b1e-9cae7dd1aca7:
       source:

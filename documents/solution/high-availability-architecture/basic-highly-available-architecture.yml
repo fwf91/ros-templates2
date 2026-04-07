@@ -739,5 +739,6 @@ Metadata:
             en: Other Configuration
     TemplateTags:
       - acs:technical-solution:high-availability-architecture:云上高可用架构-基础版-tech_solu_133
+      - acs:public_template:Solution:basic-highly-available-architecture
     Hidden:
       - CommonName

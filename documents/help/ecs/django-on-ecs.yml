@@ -364,6 +364,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署Django环境
+      - acs:public_template:Example:django-on-ecs
   ALIYUN::ROS::Composer:
     3cee5262:
       Rect:

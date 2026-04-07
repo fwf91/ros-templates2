@@ -302,6 +302,7 @@ Metadata:
           zh-cn: PolarDB配置
     TemplateTags:
       - acs:technical-solution:db:RDS MySQL迁移至PolarDB MySQL版-tech_solu_25
+      - acs:public_template:Solution:migrate-rds-mysql-to-polardb-mysql
   ALIYUN::ROS::Composer:
     '56678813':
       Parent: 04afd376

@@ -51,6 +51,7 @@ Metadata:
         default: SLB
     TemplateTags:
     - acs:example:网络:指定SourceLoadBalancerId将源负载均衡挂载的实例挂载到一个新的负载均衡上
+    - acs:public_template:Example:slb-clone
   ALIYUN::ROS::Composer:
     2e77a1d5:
       Rect:

@@ -916,6 +916,7 @@ Metadata:
         zh-cn: Redis配置
     TemplateTags:
     - acs:solution:云市场:通用产品上云部署架构（高可用）
+    - acs:public_template:Solution:deploy-high-availability-architecture-to-the-cloud
   ALIYUN::ROS::Composer:
     '28619642':
       Rect:

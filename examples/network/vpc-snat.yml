@@ -388,6 +388,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建SNAT网关和EIP的ECS做为SNAT网关
+    - acs:public_template:Example:vpc-snat
   ALIYUN::ROS::Composer:
     133cbd1c:
       Rect:

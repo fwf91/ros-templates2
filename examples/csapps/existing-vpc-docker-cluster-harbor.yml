@@ -697,6 +697,7 @@ Metadata:
           zh-cn: SLB 配置
     TemplateTags:
     - acs:solution:容器:Harbor集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-docker-cluster-harbor
   ALIYUN::ROS::Composer:
     ccdbae5f:
       Rect:

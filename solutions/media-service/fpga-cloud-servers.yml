@@ -302,6 +302,7 @@ Metadata:
         default: OSS
     TemplateTags:
     - acs:solution:媒体服务:FPGA云服务器加速图片和视频转码
+    - acs:public_template:Solution:fpga-cloud-servers
   ALIYUN::ROS::Composer:
     a1542f32:
       Rect:

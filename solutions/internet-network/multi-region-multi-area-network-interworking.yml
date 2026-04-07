@@ -636,3 +636,4 @@ Metadata:
         default: CEN
     TemplateTags:
     - acs:solution:网络组网:组建多可用区多地域的混合云-多可用区多地域混合云搭建服务
+    - acs:public_template:Solution:multi-region-multi-area-network-interworking

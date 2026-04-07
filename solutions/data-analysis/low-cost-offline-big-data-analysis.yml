@@ -1525,6 +1525,7 @@ Metadata:
         default: Hadoop
     TemplateTags:
     - acs:solution:数据分析:低成本基于抢占式ECS实例进行离线大数据分析实践
+    - acs:public_template:Solution:low-cost-offline-big-data-analysis
   ALIYUN::ROS::Designer:
     0eb797e9-1275-43f8-967c-4db426365894:
       position:

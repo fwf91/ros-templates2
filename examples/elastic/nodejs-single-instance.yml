@@ -313,6 +313,7 @@ Metadata:
         default: Nodejs
     TemplateTags:
     - acs:example:网站:部署Node.js开发测试环境
+    - acs:public_template:Example:nodejs-single-instance
   ALIYUN::ROS::Composer:
     08e8abd2:
       Rect:

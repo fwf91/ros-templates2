@@ -791,6 +791,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:备份&容灾:同地域跨可用区容灾-搭建电商网站
+    - acs:public_template:Solution:cross-the-available-zone-disaster
   ALIYUN::ROS::Composer:
     016fcae1:
       Rect:

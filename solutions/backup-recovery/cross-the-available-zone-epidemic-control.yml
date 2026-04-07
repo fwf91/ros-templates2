@@ -846,6 +846,7 @@ Metadata:
         default: OTS
     TemplateTags:
     - acs:solution:备份&容灾:同地域跨可用区容灾-云上稳定性保障-疫情护航项目基础设施搭建
+    - acs:public_template:Solution:cross-the-available-zone-epidemic-control
   ALIYUN::ROS::Composer:
     '26104003':
       Parent: 160e4bb1

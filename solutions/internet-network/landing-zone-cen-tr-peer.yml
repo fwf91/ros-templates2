@@ -69,6 +69,7 @@ Metadata:
           en: Ecs InstanceType and Password Configuration
     TemplateTags:
     - acs:integrate:landing_zone:cen_tr_peer
+    - acs:public_template:Solution:landing-zone-cen-tr-peer
 Workspace:
   main.tf: |
     data "alicloud_account" "current" {

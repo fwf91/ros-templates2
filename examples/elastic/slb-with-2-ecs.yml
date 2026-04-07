@@ -299,6 +299,7 @@ Metadata:
           zh-cn: 安全组
     TemplateTags:
     - acs:example:网络:创建两个ECS和SLB并将ECS创建添加到SLB后端服务器
+    - acs:public_template:Example:slb-with-2-ecs
   ALIYUN::ROS::Composer:
     fd210f1b:
       Rect:

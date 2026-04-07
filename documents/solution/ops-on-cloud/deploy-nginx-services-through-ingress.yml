@@ -163,6 +163,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ops-on-cloud:部署Nginx并通过Ingress暴露和监控服务-tech_solu_16
+      - acs:public_template:Solution:deploy-nginx-services-through-ingress
   ALIYUN::ROS::Composer:
     f0e44c4f:
       Rect:

@@ -320,6 +320,7 @@ Metadata:
           en: Kubernetes Basic Configuration
     TemplateTags:
     - acs:example:ISV软件部署:创建Kubernetes专有版集群(已VPC)
+    - acs:public_template:Example:existing-vpc-ack
   ALIYUN::ROS::Composer:
     0d7b0abf:
       Rect:

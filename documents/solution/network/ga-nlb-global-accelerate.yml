@@ -313,6 +313,7 @@ Metadata:
           zh-cn: 加速域名配置
     TemplateTags:
     - 'acs:technical-solution:network:互联网应用全球加速-tech_solu_43'
+    - acs:public_template:Solution:ga-nlb-global-accelerate
   ALIYUN::ROS::Composer:
     '70103159':
       Res:

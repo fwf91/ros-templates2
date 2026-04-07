@@ -414,6 +414,7 @@ Metadata:
           zh-cn: RDS数据库配置
     TemplateTags:
     - acs:example:ISV软件部署:创建两个ECS和SLB并将ECS添加到SLB后端服务器，并创建一台RDS
+    - acs:public_template:Example:existing-vpc-slb-ecs-rds-isv
   ALIYUN::ROS::Composer:
     '70616237':
       Res:

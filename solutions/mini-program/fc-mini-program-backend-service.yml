@@ -1062,6 +1062,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:小程序:函数计算搭建小程序Web应用后端服务
+    - acs:public_template:Solution:fc-mini-program-backend-service
   ALIYUN::ROS::Designer:
     00afa2e0-ec89-4ffe-8d3d-d36eb4231da4:
       position:

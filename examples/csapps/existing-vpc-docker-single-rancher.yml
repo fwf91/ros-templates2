@@ -246,6 +246,7 @@ Metadata:
           zh-cn: Rancher 配置
     TemplateTags:
     - acs:example:容器:Rancher单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-docker-single-rancher
   ALIYUN::ROS::Composer:
     '21366791':
       Parent: bf46a8e7

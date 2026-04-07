@@ -380,6 +380,7 @@ Metadata:
         default: SLS
     TemplateTags:
     - acs:solution:无服务计算:基于函数计算搭建网站文件处理
+    - acs:public_template:Solution:fc-web-file-backend-service
   ALIYUN::ROS::Composer:
     4adcd37e:
       Rect:

@@ -62,6 +62,7 @@ Metadata:
           zh-cn: 账号权限
     TemplateTags:
     - acs:example:安全:创建StackGroup管理员账号权限
+    - acs:public_template:Example:stack-group-aliyun-ros-stack-group-administration-role
   ALIYUN::ROS::Composer:
     63af490d:
       Rect:

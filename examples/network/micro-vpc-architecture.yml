@@ -175,6 +175,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:网络:创建小微业务VPC网络架构
+    - acs:public_template:Example:micro-vpc-architecture
   ALIYUN::ROS::Composer:
     1b0cf1c7:
       Rect:

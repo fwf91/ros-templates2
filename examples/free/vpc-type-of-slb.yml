@@ -154,6 +154,7 @@ Metadata:
           zh-cn: 负载均衡
     TemplateTags:
     - acs:example:网络:创建VPC类型的SLB
+    - acs:public_template:Example:vpc-type-of-slb
   ALIYUN::ROS::Composer:
     6af3a8f6:
       Rect:

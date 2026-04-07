@@ -466,6 +466,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:安全&合规:电商网站业务安全
+    - acs:public_template:Solution:business-security-for-e-commerce-sites
   ALIYUN::ROS::Composer:
     a9adba74:
       Rect:

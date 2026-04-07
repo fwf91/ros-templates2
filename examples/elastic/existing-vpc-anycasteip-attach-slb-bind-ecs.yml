@@ -390,6 +390,7 @@ Metadata:
           zh-cn: 负载均衡、弹性公网
     TemplateTags:
     - acs:example:弹性计算:创建AnycastEIP绑定新建的SLB挂载新建ECS(已有VPC)
+    - acs:public_template:Example:existing-vpc-anycasteip-attach-slb-bind-ecs
   ALIYUN::ROS::Composer:
     92c93cfe:
       Rect:

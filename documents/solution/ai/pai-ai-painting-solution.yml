@@ -207,6 +207,7 @@ Metadata:
           - InstanceType
     TemplateTags:
     - acs:technical-solution:ai:PAI部署多形态的Stable Diffusion WebUI服务-tech_solu_91
+    - acs:public_template:Solution:pai-ai-painting-solution
   ALIYUN::ROS::Composer:
     9a378ef8:
       Rect:

@@ -933,6 +933,7 @@ Metadata:
         default: REDIS
     TemplateTags:
     - acs:solution:备份&容灾:同地域跨可用区容灾方案2.0-单可用区应用搭建
+    - acs:public_template:Solution:single-available-zone-building-application
   ALIYUN::ROS::Composer:
     '43253184':
       Res:

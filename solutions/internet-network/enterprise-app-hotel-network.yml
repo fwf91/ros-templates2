@@ -662,6 +662,7 @@ Metadata:
         default: SAG
     TemplateTags:
     - acs:solution:网络组网:企业应用（酒店PMS）混合云组网
+    - acs:public_template:Solution:enterprise-app-hotel-network
   ALIYUN::ROS::Composer:
     16b17b6f:
       Rect:

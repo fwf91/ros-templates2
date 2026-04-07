@@ -83,6 +83,7 @@ Metadata:
         default: Policy
     TemplateTags:
     - acs:example:安全:RAM策略管理
+    - acs:public_template:Example:managed-policy
   ALIYUN::ROS::Composer:
     '32815186':
       Res:

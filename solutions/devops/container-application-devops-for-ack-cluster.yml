@@ -453,6 +453,7 @@ Metadata:
         default: CR
     TemplateTags:
     - acs:solution:开发运维:容器应用DevOpsforACK集群
+    - acs:public_template:Solution:container-application-devops-for-ack-cluster
   ALIYUN::ROS::Composer:
     2a87eb56:
       Rect:

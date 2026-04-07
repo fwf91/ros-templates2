@@ -254,6 +254,7 @@ Metadata:
           - Password
     TemplateTags:
       - acs:document-help:oss:服务端签名后直传
+      - acs:public_template:Example:upload-to-oss-with-server-signature
   ALIYUN::ROS::Composer:
     '526297e2':
       Rect:

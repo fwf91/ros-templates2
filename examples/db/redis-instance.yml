@@ -130,6 +130,7 @@ Metadata:
         default: REDIS
     TemplateTags:
     - acs:example:数据库:创建Redis实例
+    - acs:public_template:Example:redis-instance
   ALIYUN::ROS::Composer:
     bbcbfc10:
       Rect:

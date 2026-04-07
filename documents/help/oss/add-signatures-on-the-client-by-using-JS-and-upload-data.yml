@@ -223,6 +223,7 @@ Metadata:
           - Password
     TemplateTags:
       - acs:document-help:oss:客户端签名直传
+      - acs:public_template:Example:add-signatures-on-the-client-by-using-JS-and-upload-data
   ALIYUN::ROS::Composer:
     7f2624a6:
       Rect:

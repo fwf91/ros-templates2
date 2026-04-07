@@ -188,6 +188,7 @@ Metadata:
           default: ECS
     TemplateTags:
       - acs:technical-solution:security-and-compliance:云防火墙企业多账号统一管理-tech_solu_79
+      - acs:public_template:Solution:cloud-firewall-in-multiple-accounts
   ALIYUN::ROS::Composer:
     d8c7498a:
       Rect:

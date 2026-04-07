@@ -422,6 +422,7 @@ Metadata:
         default: VPC
     TemplateTags:
     - acs:example:网络:创建一台多网卡绑定多弹性公网地址的云服务器(已有VPC)
+    - acs:public_template:Example:ecs-bind-mult-eni-and-eip
   ALIYUN::ROS::Composer:
     6de2a864:
       Rect:

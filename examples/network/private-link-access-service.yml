@@ -352,3 +352,4 @@ Metadata:
           zh-cn: ECS实例参数
     TemplateTags:
     - acs:example:网络:创建同账号VPC间的私网访问服务
+    - acs:public_template:Example:private-link-access-service

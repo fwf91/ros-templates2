@@ -82,6 +82,7 @@ Metadata:
           en: Ecs InstanceType and Password Configuration
     TemplateTags:
     - acs:integrate:landing_zone:privatelink_private_network_interconnection
+    - acs:public_template:Solution:landing-zone-cen-privatelink
 Workspace:
   main.tf: |-
     data "alicloud_account" "current" {

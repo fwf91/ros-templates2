@@ -246,6 +246,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:业务上云:服务器迁移-使用自定义镜像创建服务器
+    - acs:public_template:Solution:move-server-using-custom-mirror
   ALIYUN::ROS::Composer:
     6fff0b48:
       Rect:

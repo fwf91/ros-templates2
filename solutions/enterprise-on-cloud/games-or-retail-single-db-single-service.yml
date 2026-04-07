@@ -1297,6 +1297,7 @@ Metadata:
         default: OSS
     TemplateTags:
     - acs:solution:业务上云:游戏、零售等行业低成本单库单服上云
+    - acs:public_template:Solution:games-or-retail-single-db-single-service
   ALIYUN::ROS::Composer:
     fef69d0f:
       Rect:

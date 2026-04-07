@@ -288,6 +288,7 @@ Metadata:
           - DomainName
     TemplateTags:
       - acs:technical-solution:internet-application-development:快速搭建企业门户网站-tech_solu_102
+      - acs:public_template:Solution:rapidly-enterprise-portal
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

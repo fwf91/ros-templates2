@@ -611,6 +611,7 @@ Metadata:
         default: SLB
     TemplateTags:
     - acs:solution:业务上云:单机网站架构云化
+    - acs:public_template:Solution:single-website-on-cloud-stand-one-click
   ALIYUN::ROS::Composer:
     9a0bddf0:
       Rect:

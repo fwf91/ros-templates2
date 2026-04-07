@@ -618,6 +618,7 @@ Metadata:
           - ZoneId
     TemplateTags:
       - acs:technical-solution:ecs:yitian-Spark集群
+      - acs:public_template:Solution:spark-cluster-on-yitian
     Hidden:
       - CommonName
       - AutomaticTesting

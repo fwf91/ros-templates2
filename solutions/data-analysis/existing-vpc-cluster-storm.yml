@@ -1375,6 +1375,7 @@ Metadata:
           zh-cn: Storm 配置（必填）
     TemplateTags:
     - acs:solution:数据分析:Storm集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-storm
   ALIYUN::ROS::Composer:
     '40089572':
       Res:

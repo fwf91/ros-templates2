@@ -344,6 +344,7 @@ Metadata:
           zh-cn: 负载均衡配置
     TemplateTags:
     - acs:example:ISV软件部署:创建两个ECS和SLB并将ECS添加到SLB后端服务器
+    - acs:public_template:Example:existing-vpc-slb-ecs-isv
   ALIYUN::ROS::Composer:
     d333b7db:
       Rect:

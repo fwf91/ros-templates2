@@ -724,6 +724,7 @@ Metadata:
         default: REDIS
     TemplateTags:
     - acs:solution:云市场:通用产品上云部署架构（小型）
+    - acs:public_template:Solution:deploy-small-architecture-to-the-cloud
   ALIYUN::ROS::Composer:
     f98f3e92:
       Rect:

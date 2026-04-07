@@ -452,6 +452,7 @@ Metadata:
       - LoginPassword
     TemplateTags:
     - acs:document-help:ack:使用ACK部署魔方游戏
+    - acs:public_template:Example:ack-cube-game
   ALIYUN::ROS::Composer:
     '49367306':
       Rect:

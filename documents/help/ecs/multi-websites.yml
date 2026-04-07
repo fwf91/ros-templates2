@@ -394,6 +394,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:使用LNMP环境部署多个站点
+      - acs:public_template:Example:multi-websites
   ALIYUN::ROS::Composer:
     47ae271d:
       Rect:
