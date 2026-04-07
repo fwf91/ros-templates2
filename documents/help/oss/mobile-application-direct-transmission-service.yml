@@ -253,6 +253,7 @@ Metadata:
             en: Instance
     TemplateTags:
       - acs:document-help:oss:快速搭建移动应用直传服务
+      - acs:public_template:Example:mobile-application-direct-transmission-service
   ALIYUN::ROS::Composer:
     f5a78c30:
       Rect:

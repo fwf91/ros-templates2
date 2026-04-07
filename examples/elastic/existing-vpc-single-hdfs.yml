@@ -383,6 +383,7 @@ Metadata:
           zh-cn: HDFS 配置（必填）
     TemplateTags:
     - acs:example:弹性计算:HDFS单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-single-hdfs
   ALIYUN::ROS::Composer:
     '74e89618':
       Rect:

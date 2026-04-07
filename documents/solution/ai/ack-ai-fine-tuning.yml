@@ -217,6 +217,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ack:一键训练大模型及部署GPU共享推理服务-tech_solu_82
+      - acs:public_template:Solution:ack-ai-fine-tuning
   ALIYUN::ROS::Composer:
     a4565d06:
       Rect:

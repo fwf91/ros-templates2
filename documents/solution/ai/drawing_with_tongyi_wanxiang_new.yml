@@ -319,6 +319,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ai:通义万相的文本绘图与人像美化之旅-tech_solu_128
+      - acs:public_template:Solution:drawing_with_tongyi_wanxiang_new
   ALIYUN::ROS::Composer:
     '23220280':
       Parent: e8d23603

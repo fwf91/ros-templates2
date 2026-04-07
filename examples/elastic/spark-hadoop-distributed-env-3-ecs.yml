@@ -1082,6 +1082,7 @@ Metadata:
         default: Spark
     TemplateTags:
     - acs:example:大数据:基于3个ECS实例和NAT网关并部署Spark和Hadoop分布式环境
+    - acs:public_template:Example:spark-hadoop-distributed-env-3-ecs
   ALIYUN::ROS::Composer:
     7ab82dc8:
       Rect:

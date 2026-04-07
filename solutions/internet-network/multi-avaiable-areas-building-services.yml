@@ -446,6 +446,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:网络组网:组建多可用区多地域的混合云-多可用区单地域搭建服务
+    - acs:public_template:Solution:multi-avaiable-areas-building-services
   ALIYUN::ROS::Composer:
     '73912242':
       Res:

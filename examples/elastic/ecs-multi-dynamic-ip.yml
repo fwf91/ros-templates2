@@ -285,6 +285,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:网络:创建绑定了多个私网地址的ECS
+    - acs:public_template:Example:ecs-multi-dynamic-ip
   ALIYUN::ROS::Composer:
     05ba5d05:
       Rect:

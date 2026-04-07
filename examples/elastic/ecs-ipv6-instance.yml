@@ -402,6 +402,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建绑定IPV4/IPV6双栈的云服务器
+    - acs:public_template:Example:ecs-ipv6-instance
   ALIYUN::ROS::Composer:
     '27482191':
       Parent: 1b8dd6bd

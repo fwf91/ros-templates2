@@ -1831,6 +1831,7 @@ Metadata:
           zh-cn: DB 配置（必填）
     TemplateTags:
     - acs:solution:数据分析:Hive集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-hive
   ALIYUN::ROS::Composer:
     '45678368':
       Res:

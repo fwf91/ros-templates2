@@ -432,6 +432,7 @@ Metadata:
         default: OSS
     TemplateTags:
     - acs:solution:备份&容灾:自建ElasticSearch快照备份OSS
+    - acs:public_template:Solution:self-built-elastic-search-snapshot-saved-to-oss
   ALIYUN::ROS::Composer:
     afe03d40:
       Rect:

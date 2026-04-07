@@ -486,6 +486,7 @@ Metadata:
         default: Hadoop
     TemplateTags:
     - acs:example:大数据:部署Hadoop伪分布式开发环境
+    - acs:public_template:Example:hadoop-pseudo-distributed-env
   ALIYUN::ROS::Composer:
     1e72866d:
       Rect:

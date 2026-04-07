@@ -784,3 +784,4 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:业务上云:单机网站上云架构云化-云化部署架构
+    - acs:public_template:Solution:single-website-on-cloud-cloud-architecture

@@ -835,6 +835,7 @@ Metadata:
           zh-cn: Kafka 配置（必填）
     TemplateTags:
     - acs:solution:中间件:Kafka集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-kafka
   ALIYUN::ROS::Composer:
     853b1265:
       Rect:

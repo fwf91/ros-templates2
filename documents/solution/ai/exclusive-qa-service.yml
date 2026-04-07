@@ -248,6 +248,7 @@ Metadata:
             zh-cn: ECS实例配置
     TemplateTags:
       - acs:technical-solution:ai:向量检索与通义千问搭建专属问答服务-tech_solu_109
+      - acs:public_template:Solution:exclusive-qa-service
   ALIYUN::ROS::Composer:
     052f5b74:
       Rect:

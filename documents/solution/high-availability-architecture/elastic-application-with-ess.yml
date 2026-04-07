@@ -380,6 +380,7 @@ Metadata:
           - ScalingTime2
     TemplateTags:
       - acs:technical-solution:high-availability-architecture:通过ALB+ESS提升应用的可用性-tech_solu_117
+      - acs:public_template:Solution:elastic-application-with-ess
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

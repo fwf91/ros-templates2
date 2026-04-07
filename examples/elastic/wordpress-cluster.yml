@@ -641,6 +641,7 @@ Metadata:
           zh-cn: 数据库
     TemplateTags:
     - acs:example:网络:创建WordPress集群并配置VPC的SNAT功能访问Internet
+    - acs:public_template:Example:wordpress-cluster
   ALIYUN::ROS::Composer:
     9d09d5ae:
       Rect:

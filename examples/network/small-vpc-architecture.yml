@@ -385,6 +385,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建小型业务VPC网络架构
+    - acs:public_template:Example:small-vpc-architecture
   ALIYUN::ROS::Composer:
     e71aa862:
       Rect:

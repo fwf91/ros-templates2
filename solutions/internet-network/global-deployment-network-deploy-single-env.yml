@@ -792,3 +792,4 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:网络组网:在线教育全球部署网络规划-搭建单个区域资源环境
+    - acs:public_template:Solution:global-deployment-network-deploy-single-env

@@ -478,6 +478,7 @@ Metadata:
           zh-cn: 迁移信息
     TemplateTags:
     - acs:solution:业务上云:服务器迁移-搭建带有迁云工具的服务器
+    - acs:public_template:Solution:move-server-with-migration-tool
   ALIYUN::ROS::Composer:
     50a40d2f:
       Rect:

@@ -291,6 +291,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建ECS并配置NatGateway使VPC网络中的ECS可访问外网和提供服务
+    - acs:public_template:Example:vpc-nat-gateway
   ALIYUN::ROS::Composer:
     2fdd9fcf:
       Rect:

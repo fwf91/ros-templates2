@@ -371,6 +371,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建ECS加入多个SLB并在/etc/hosts中绑定IP和机器名
+    - acs:public_template:Example:one-ecs-attach-multiple-slb
   ALIYUN::ROS::Composer:
     17d4647a:
       Rect:

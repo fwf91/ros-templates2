@@ -404,6 +404,7 @@ Metadata:
           zh-cn: 数据库
     TemplateTags:
     - acs:example:网站:创建一个ECSInstance和本地MySQL部署RubyOnRails
+    - acs:public_template:Example:ruby-on-rails-single-instance
   ALIYUN::ROS::Composer:
     f569aecd:
       Rect:

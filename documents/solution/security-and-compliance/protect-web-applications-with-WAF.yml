@@ -156,6 +156,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:security-and-compliance:高效防护 Web 应用-tech_solu_106
+      - acs:public_template:Solution:protect-web-applications-with-WAF
   ALIYUN::ROS::Composer:
     '67932707':
       Res:

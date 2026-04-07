@@ -144,6 +144,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:弹性计算:指定ImageId创建一个简单配置的ECS
+    - acs:public_template:Example:simple-ecs-instance
   ALIYUN::ROS::Composer:
     cad26c27:
       Rect:

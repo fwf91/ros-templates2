@@ -432,6 +432,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:Windows应用服务:创建一个ExchangeServer2013的windows实例
+    - acs:public_template:Example:simple-windows-instance-with-exchange
   ALIYUN::ROS::Composer:
     '83702614':
       Res:

@@ -599,6 +599,7 @@ Metadata:
           default: RDS
     TemplateTags:
       - acs:example:网站:创建一个WordPress可弹性伸缩的集群
+      - acs:public_template:Example:wordpress-cluster-phpmyadmin
   ALIYUN::ROS::Composer:
     d2eb0afa:
       Rect:

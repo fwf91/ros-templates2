@@ -90,6 +90,7 @@ Metadata:
         default: Mongodb
     TemplateTags:
     - acs:example:数据库:创建云数据库MongoDB版实例
+    - acs:public_template:Example:mongodb-instance
   ALIYUN::ROS::Composer:
     b0bcef5c:
       Rect:

@@ -248,6 +248,7 @@ Metadata:
       - Ipv6CidrBlockNumber
     TemplateTags:
       - acs:document-help:ecs:在ECS实例上搭建WordPress博客平台
+      - acs:public_template:Example:wordpress-on-ecs
   ALIYUN::ROS::Composer:
     '52393355':
       Res:

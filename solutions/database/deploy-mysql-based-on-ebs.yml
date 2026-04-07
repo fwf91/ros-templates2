@@ -443,6 +443,7 @@ Metadata:
           en: DataBase Configuration
     TemplateTags:
       - 'acs:solution:基于EBS部署高性能的MySQL服务'
+      - acs:public_template:Solution:deploy-mysql-based-on-ebs
   ALIYUN::ROS::Composer:
     '59309829':
       Res:

@@ -571,6 +571,7 @@ Metadata:
           - InstancePassword
     TemplateTags:
       - acs:technical-solution:micro:通过HPA实现容器应用的水平弹性伸缩-tech_solu_125
+      - acs:public_template:Solution:elastic-scaling-container-through-hpa
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

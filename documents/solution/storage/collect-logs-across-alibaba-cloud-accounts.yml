@@ -307,6 +307,7 @@ Metadata:
             zh-cn: B账号信息
     TemplateTags:
     - acs:technical-solution:Storage:跨阿里云账号采集日志-tech_solu_58
+    - acs:public_template:Solution:collect-logs-across-alibaba-cloud-accounts
   ALIYUN::ROS::Composer:
     2d713278:
       Rect:

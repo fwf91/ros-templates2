@@ -288,6 +288,7 @@ Metadata:
           zh-cn: Harbor 配置
     TemplateTags:
     - acs:example:容器:Harbor单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-docker-single-harbor
   ALIYUN::ROS::Composer:
     8d3edd41:
       Rect:

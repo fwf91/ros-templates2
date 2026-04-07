@@ -789,6 +789,7 @@ Metadata:
         default: Ops Configuration
     TemplateTags:
     - acs:example:网络场景:隔离VPC使用共享服务
+    - acs:public_template:Solution:cen-open-isolated-networks
   ALIYUN::ROS::Composer:
     '19562680':
       Res:

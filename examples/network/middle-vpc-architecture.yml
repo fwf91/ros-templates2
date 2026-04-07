@@ -522,6 +522,7 @@ Metadata:
           zh-cn: 负载均衡
     TemplateTags:
     - acs:example:网络:创建中型业务VPC网络架构
+    - acs:public_template:Example:middle-vpc-architecture
   ALIYUN::ROS::Composer:
     4ddd39c0:
       Rect:

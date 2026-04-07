@@ -492,6 +492,7 @@ Metadata:
           zh-cn: 可用区配置
     TemplateTags:
     - acs:technical-solution:ecs:云上网站经典架构
+    - acs:public_template:Solution:classic-architecture-of-cloud-website
   ALIYUN::ROS::Composer:
     c9764fb2:
       Rect:

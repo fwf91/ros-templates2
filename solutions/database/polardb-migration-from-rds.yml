@@ -557,6 +557,7 @@ Metadata:
         default: POLARDB
     TemplateTags:
     - acs:solution:数据库:MySQL迁移PolarDB
+    - acs:public_template:Solution:polardb-migration-from-rds
   ALIYUN::ROS::Composer:
     3f0df94f:
       Rect:

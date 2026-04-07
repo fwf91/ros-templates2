@@ -288,6 +288,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ai:AnalyticDB与百炼搭建智能问答系统-tech_solu_150
+      - acs:public_template:Solution:AnalyticDB-and-Bailian-system
   ALIYUN::ROS::Composer:
     d94d7a23:
       Rect:

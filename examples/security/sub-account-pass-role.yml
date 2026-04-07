@@ -71,6 +71,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:example:安全:子账户PassRole权限
+    - acs:public_template:Example:sub-account-pass-role
   ALIYUN::ROS::Composer:
     1c3a880d:
       Rect:

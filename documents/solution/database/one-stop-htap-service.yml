@@ -122,6 +122,7 @@ Metadata:
           zh-cn: ECS服务器配置
     TemplateTags:
       - acs:technical-solution:database:RDS+ClickHouse构建一站式HTAP-tech_solu_19
+      - acs:public_template:Solution:one-stop-htap-service
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

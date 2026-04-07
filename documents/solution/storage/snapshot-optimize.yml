@@ -303,6 +303,7 @@ Metadata:
           en: Basic Configuration
     TemplateTags:
       - 'acs:technical-solution:ebs:EBS部署高性能的MySQL服务-tech_solu_96'
+      - acs:public_template:Solution:snapshot-optimize
   ALIYUN::ROS::Composer:
     2d243f5f:
       Rect:

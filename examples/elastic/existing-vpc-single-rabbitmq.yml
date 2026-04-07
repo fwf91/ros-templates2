@@ -281,6 +281,7 @@ Metadata:
           zh-cn: RabbitMQ 配置（必填）
     TemplateTags:
     - acs:example:弹性计算:RabbitMQ单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-single-rabbitmq
   ALIYUN::ROS::Composer:
     e1b26e01:
       Rect:

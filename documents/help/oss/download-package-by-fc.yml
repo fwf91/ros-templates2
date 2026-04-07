@@ -87,6 +87,7 @@ Metadata:
   ALIYUN::ROS::Interface:
     TemplateTags:
     - acs:document-help:oss:使用函数计算打包下载OSS文件
+    - acs:public_template:Example:download-package-by-fc
   ALIYUN::ROS::Composer:
     b2b890ba:
       Rect:

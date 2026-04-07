@@ -372,6 +372,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署宝塔服务
+      - acs:public_template:Example:baota-on-ecs
   ALIYUN::ROS::Composer:
     86eb3bf8:
       Rect:

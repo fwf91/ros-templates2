@@ -870,6 +870,7 @@ Metadata:
         default: EMR-Hadoop
     TemplateTags:
     - acs:solution:数据分析:SLS多云日志采集、处理及分析
+    - acs:public_template:Solution:sls-multi-cloud-log-processing-analysis
   ALIYUN::ROS::Designer:
     0c0bdeb7-72f4-4e95-9f48-a46bd0e857cf:
       position:

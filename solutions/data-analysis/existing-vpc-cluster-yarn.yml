@@ -1215,6 +1215,7 @@ Metadata:
           zh-cn: YARN 配置（必填）
     TemplateTags:
     - acs:solution:数据分析:YARN集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-yarn
   ALIYUN::ROS::Composer:
     '44949145':
       Rect:

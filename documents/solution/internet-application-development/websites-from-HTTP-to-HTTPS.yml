@@ -497,6 +497,7 @@ Metadata:
           - SSLCert
     TemplateTags:
       - acs:technical-solution:internet-application-development:从 HTTP 到 HTTPS 让网站更安全-tech_solu_113
+      - acs:public_template:Solution:websites-from-HTTP-to-HTTPS
     Hidden:
       - CommonName
       - SolutionName

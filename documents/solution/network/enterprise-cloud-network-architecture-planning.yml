@@ -646,6 +646,7 @@ Metadata:
           zh-cn: 可用区配置
     TemplateTags:
     - acs:technical-solution:network:企业云上网络架构规划-tech_solu_39
+    - acs:public_template:Solution:enterprise-cloud-network-architecture-planning
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

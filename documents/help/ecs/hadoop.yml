@@ -378,6 +378,7 @@ Metadata:
       - EcsInstanceId
     TemplateTags:
     - acs:document-help:ecs:部署Hadoop环境
+    - acs:public_template:Example:hadoop
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

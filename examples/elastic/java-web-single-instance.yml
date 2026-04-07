@@ -224,6 +224,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网站:部署JavaWeb开发测试环境
+    - acs:public_template:Example:java-web-single-instance
   ALIYUN::ROS::Composer:
     e47d0b31:
       Rect:

@@ -658,6 +658,7 @@ Metadata:
           zh-cn: EMQ 配置
     TemplateTags:
     - acs:solution:弹性计算:EMQ集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-emq
   ALIYUN::ROS::Composer:
     e39d798a:
       Rect:

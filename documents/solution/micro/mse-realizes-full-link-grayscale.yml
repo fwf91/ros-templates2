@@ -219,6 +219,7 @@ Metadata:
         zh-cn: MSE配置
     TemplateTags:
       - acs:technical-solution:micro:MSE实现全链路灰度
+      - acs:public_template:Solution:mse-realizes-full-link-grayscale
   ALIYUN::ROS::Composer:
     383e7c5f:
       Rect:

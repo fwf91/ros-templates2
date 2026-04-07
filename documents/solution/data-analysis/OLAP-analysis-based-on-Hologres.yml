@@ -80,6 +80,7 @@ Metadata:
         - ZoneId
     TemplateTags:
     - acs:technical-solution:data-analysis:基于Hologres轻量高性能OLAP分析-tech_solu_146
+    - acs:public_template:Solution:OLAP-analysis-based-on-Hologres
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

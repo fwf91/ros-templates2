@@ -115,6 +115,7 @@ Metadata:
           - PayType
     TemplateTags:
       - acs:technical-solution:cloud-migration:云消息队列RabbitMQ版Serverless系列优势和实践-tech_solu_122
+      - acs:public_template:Solution:serverless-rabbitmq
   ALIYUN::ROS::Composer:
     5a4188e4:
       Rect:

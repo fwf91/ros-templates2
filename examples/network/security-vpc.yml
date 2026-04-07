@@ -1026,6 +1026,7 @@ Metadata:
         default: Backend Business Configuration
     TemplateTags:
     - acs:example:网络场景:安全VPC场景
+    - acs:public_template:Solution:security-vpc
   ALIYUN::ROS::Composer:
     '27501029':
       Res:

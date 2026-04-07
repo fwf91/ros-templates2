@@ -580,3 +580,4 @@ Metadata:
         default: Kubernetes
     TemplateTags:
     - acs:solution:容器&微服务:SpringCloud应用托管到ACK服务
+    - acs:public_template:Solution:spring-cloud-hostingack-service

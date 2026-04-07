@@ -675,6 +675,7 @@ Metadata:
           zh-cn: Zookeeper 配置（必填）
     TemplateTags:
     - acs:solution:中间件:Zookeeper集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-zookeeper
   ALIYUN::ROS::Composer:
     2d3e65f4:
       Rect:

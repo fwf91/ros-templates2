@@ -370,6 +370,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:solution:备份&容灾:数据库异地备份及查询-部署云上VPC网络的RDS环境
+    - acs:public_template:Solution:deploy-the-rds-environment
   ALIYUN::ROS::Composer:
     a317806b:
       Rect:

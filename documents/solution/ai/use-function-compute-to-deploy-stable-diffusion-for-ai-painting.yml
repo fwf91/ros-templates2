@@ -169,6 +169,7 @@ Metadata:
       - CustomImageURL
     TemplateTags:
     - acs:technical-solution:ai:基于函数计算部署Stable Diffusion进行AI绘画
+    - acs:public_template:Solution:use-function-compute-to-deploy-stable-diffusion-for-ai-painting
   ALIYUN::ROS::Composer:
     78c20d95:
       Rect:

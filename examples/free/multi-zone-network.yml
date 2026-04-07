@@ -137,6 +137,7 @@ Metadata:
         default: VPC
     TemplateTags:
     - acs:example:网络:组建双可用区网络
+    - acs:public_template:Example:multi-zone-network
   ALIYUN::ROS::Composer:
     704d6208:
       Rect:

@@ -332,6 +332,9 @@ Resources:
 #                  - PublicIps
 Metadata:
   ALIYUN::ROS::Interface:
+    TemplateTags:
+      - acs:public_template:Example:custom-image-ecs
+      - acs:example:ISV软件部署:创建单ECS实例并部署Nginx
 ## 参数组的顺序会确定用户创建服务实例页面的参数排列顺序
 ## The order of the parameter groups determines the order in which the parameters are arranged on the user creation service instance page
 ## 如果绝大部分实例规格都适用，比如x86架构，可以按注释中将可用区放在前面选择
@@ -415,8 +418,6 @@ Metadata:
         default:
           en: Instance
           zh-cn: ECS实例详细配置
-    TemplateTags:
-    - acs:example:ISV软件部署:创建单ECS实例并部署Nginx
   ALIYUN::ROS::Composer:
     '39783266':
       Res:

@@ -1218,6 +1218,7 @@ Metadata:
           zh-cn: HDFS 配置（必填）
     TemplateTags:
     - acs:solution:数据分析:HDFS集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-hdfs
   ALIYUN::ROS::Composer:
     '72466853':
       Res:

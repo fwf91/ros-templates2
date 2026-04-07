@@ -187,6 +187,7 @@ Metadata:
         default: RDS
     TemplateTags:
     - acs:example:数据库:创建RDS实例
+    - acs:public_template:Example:rds-instance
   ALIYUN::ROS::Composer:
     '95199080':
       Res:

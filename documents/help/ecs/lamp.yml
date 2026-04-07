@@ -262,6 +262,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署LAMP环境
+      - acs:public_template:Example:lamp
   ALIYUN::ROS::Composer:
     810b6cff:
       Rect:

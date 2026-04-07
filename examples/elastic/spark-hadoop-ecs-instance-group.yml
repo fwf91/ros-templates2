@@ -914,6 +914,7 @@ Metadata:
         default: Spark
     TemplateTags:
     - acs:example:大数据:创建基于ECSGroup部署Spark和Hadoop分布式环境
+    - acs:public_template:Example:spark-hadoop-ecs-instance-group
   ALIYUN::ROS::Composer:
     '23410428':
       Res:

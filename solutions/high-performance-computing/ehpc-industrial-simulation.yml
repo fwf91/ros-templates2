@@ -360,6 +360,7 @@ Metadata:
           zh-cn: 对象存储
     TemplateTags:
     - acs:solution:高性能计算:EHPC工业仿真
+    - acs:public_template:Solution:ehpc-industrial-simulation
   ALIYUN::ROS::Composer:
     efd4f660:
       Rect:

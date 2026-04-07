@@ -278,6 +278,7 @@ Metadata:
             en: Kafka Configuration
     TemplateTags:
       - acs:example:弹性计算:创建商业版Kafka实例
+      - acs:public_template:Example:aliyun-kafka-instance
   ALIYUN::ROS::Composer:
     387a302f:
       Rect:

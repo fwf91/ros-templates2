@@ -31,6 +31,7 @@ Metadata:
           default: SLB
     TemplateTags:
       - acs:technical-solution:network:电商行业业务及数据库上云
+      - acs:public_template:Solution:e-commerce-business-and-db-on-the-cloud
   ALIYUN::ROS::Composer:
     4acd901c:
       Parent: 3cf39869

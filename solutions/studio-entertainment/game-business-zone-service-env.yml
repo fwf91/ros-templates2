@@ -903,3 +903,4 @@ Metadata:
         default: DNS
     TemplateTags:
     - acs:solution:影视娱乐:游戏业务分区合服
+    - acs:public_template:Solution:game-business-zone-service-env

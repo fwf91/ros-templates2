@@ -244,6 +244,7 @@ Metadata:
           zh-cn: Etcd 配置
     TemplateTags:
     - acs:example:容器:Etcd单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-docker-single-etcd
   ALIYUN::ROS::Composer:
     36e161b4:
       Rect:

@@ -906,6 +906,7 @@ Metadata:
         default: ESS
     TemplateTags:
     - acs:solution:云市场:通用产品上云部署架构（高可用、弹性）
+    - acs:public_template:Solution:elastic-ha-architecture-to-the-cloud
   ALIYUN::ROS::Composer:
     '89112487':
       Res:

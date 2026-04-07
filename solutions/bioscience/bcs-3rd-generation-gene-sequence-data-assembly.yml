@@ -608,6 +608,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:solution:生命科学:BCS三代基因测序数据组装
+    - acs:public_template:Solution:bcs-3rd-generation-gene-sequence-data-assembly
   ALIYUN::ROS::Composer:
     03c51007:
       Rect:

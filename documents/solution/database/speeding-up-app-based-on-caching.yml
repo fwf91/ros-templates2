@@ -434,6 +434,7 @@ Metadata:
             en: Redis Configuration
     TemplateTags:
       - acs:technical-solution:database:基于缓存实现应用提速-tech_solu_147
+      - acs:public_template:Solution:speeding-up-app-based-on-caching
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

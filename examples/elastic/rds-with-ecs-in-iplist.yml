@@ -346,6 +346,7 @@ Metadata:
           zh-cn: 数据库
     TemplateTags:
     - acs:example:弹性计算:创建ECS和RDS并将ECS加入RDS白名单
+    - acs:public_template:Example:rds-with-ecs-in-iplist
   ALIYUN::ROS::Composer:
     50c21891:
       Rect:

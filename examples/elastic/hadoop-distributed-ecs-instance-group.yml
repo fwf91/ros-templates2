@@ -783,6 +783,7 @@ Metadata:
         default: Hadoop
     TemplateTags:
     - acs:example:大数据:创建基于ECSGroup部署Hadoop分布式环境
+    - acs:public_template:Example:hadoop-distributed-ecs-instance-group
   ALIYUN::ROS::Designer:
     015fe252-8418-40a7-ab81-50756bb6b92a:
       position:

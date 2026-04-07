@@ -506,6 +506,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:internet-application-development:应用日志数据归档-tech_solu_08
+      - acs:public_template:Solution:Nginx-access-log-data-archive
   ALIYUN::ROS::Composer:
     b0322c67:
       Rect:

@@ -491,6 +491,7 @@ Metadata:
         zh-cn: 负载均衡配置
     TemplateTags:
     - acs:example:ISV软件部署:新建一组Kubernetes托管版集群，并创建一台跳板机使用kubectl部署应用
+    - acs:public_template:Example:new-vpc-ack-and-jump-server
   ALIYUN::ROS::Composer:
     '11521222':
       Res:

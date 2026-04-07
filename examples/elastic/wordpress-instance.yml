@@ -388,6 +388,7 @@ Metadata:
           default: RDS
     TemplateTags:
       - acs:example:网站:基于ECS和RDS创建WordPress环境
+      - acs:public_template:Example:wordpress-instance
   ALIYUN::ROS::Composer:
     691bae4e:
       Rect:

@@ -473,6 +473,7 @@ Metadata:
         default: SAG
     TemplateTags:
     - acs:solution:计算巢虚拟互联网云下服务上云(SAG版本)
+    - acs:public_template:Solution:compute-nest-on-premises-solution-sag
   ALIYUN::ROS::Composer:
     ddea6e05:
       Rect:

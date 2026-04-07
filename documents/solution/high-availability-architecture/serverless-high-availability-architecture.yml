@@ -310,6 +310,7 @@ Metadata:
           - ZoneId2
     TemplateTags:
       - acs:technical-solution:high-availability-architecture:Serverless高可用架构-tech_solu_129
+      - acs:public_template:Solution:serverless-high-availability-architecture
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

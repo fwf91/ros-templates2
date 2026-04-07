@@ -276,6 +276,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建VPC类型的ECS并添加一条自定义路由
+    - acs:public_template:Example:vpc-vswitch-route-sg-ecs
   ALIYUN::ROS::Composer:
     '52412145':
       Parent: 7438fd6c

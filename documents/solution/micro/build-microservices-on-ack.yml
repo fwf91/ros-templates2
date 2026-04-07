@@ -432,6 +432,7 @@ Metadata:
           - InstancePassword
     TemplateTags:
       - acs:technical-solution:micro:如何快速使用ACK搭建微服务-tech_solu_124
+      - acs:public_template:Solution:build-microservices-on-ack
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

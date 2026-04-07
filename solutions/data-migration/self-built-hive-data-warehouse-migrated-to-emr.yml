@@ -701,6 +701,7 @@ Metadata:
         default: EMR
     TemplateTags:
     - acs:solution:数据迁移:自建Hive数据仓库跨版本迁移到阿里云EMR
+    - acs:public_template:Solution:self-built-hive-data-warehouse-migrated-to-emr
   ALIYUN::ROS::Composer:
     3589c8c9:
       Rect:

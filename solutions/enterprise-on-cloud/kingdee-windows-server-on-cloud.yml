@@ -210,6 +210,7 @@ Metadata:
           zh-cn: 金蝶主机配置
     TemplateTags:
     - acs:solution:企业软件上云:金蝶云星空应用部署上云(新建专有网络)-单机服务器部署
+    - acs:public_template:Solution:kingdee-windows-server-on-cloud
   ALIYUN::ROS::Composer:
     821ede33:
       Rect:

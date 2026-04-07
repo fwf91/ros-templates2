@@ -42,6 +42,7 @@ Metadata:
           en: PolarDB Configuration
     TemplateTags:
       - acs:technical-solution:network:两地三中心异地多活网络-tech_solu_42
+      - acs:public_template:Solution:two-region-three-center-high-availability
     ResourcesForParameterConstraints:
       polardb1:
         Type: ALIYUN::POLARDB::DBCluster

@@ -157,6 +157,7 @@ Metadata:
           - PAIEASInstanceType
     TemplateTags:
       - acs:technical-solution:AI:通义千问和LangChain搭建对话模型
+      - acs:public_template:Solution:build-a-dialogue-model-based-on-Qwen-and-LangChain
   ALIYUN::ROS::Composer:
     2d11b8c0:
       Rect:

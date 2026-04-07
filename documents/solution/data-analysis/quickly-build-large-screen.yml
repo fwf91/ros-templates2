@@ -135,6 +135,7 @@ Metadata:
         default: RDS
     TemplateTags:
       - acs:technical-solution:data-analysis:快速搭建企业经营大屏
+      - acs:public_template:Solution:quickly-build-large-screen
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

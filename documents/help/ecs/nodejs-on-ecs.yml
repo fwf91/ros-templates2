@@ -292,6 +292,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署Node.js环境
+      - acs:public_template:Example:nodejs-on-ecs
   ALIYUN::ROS::Composer:
     b54c4187:
       Rect:

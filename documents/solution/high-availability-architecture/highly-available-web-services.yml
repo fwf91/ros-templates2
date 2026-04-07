@@ -595,6 +595,7 @@ Metadata:
             en: Instance Configure
     TemplateTags:
       - 'acs:technical-solution:high-availability-architecture:高可用及共享存储Web服务-tech_solu_12'
+      - acs:public_template:Solution:highly-available-web-services
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

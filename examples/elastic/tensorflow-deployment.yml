@@ -281,6 +281,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:人工智能:部署TensorFlow开发环境
+    - acs:public_template:Example:tensorflow-deployment
   ALIYUN::ROS::Composer:
     '40402546':
       Res:

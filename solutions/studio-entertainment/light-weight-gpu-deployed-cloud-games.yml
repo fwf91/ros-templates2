@@ -403,6 +403,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:影视娱乐:轻量级GPU部署云游戏
+    - acs:public_template:Solution:light-weight-gpu-deployed-cloud-games
   ALIYUN::ROS::Composer:
     d37e8404:
       Rect:
