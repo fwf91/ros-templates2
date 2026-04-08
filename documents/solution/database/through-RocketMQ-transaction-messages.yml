@@ -25,13 +25,13 @@ Parameters:
     NoEcho: true
     Type: String
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password, 8-30 characters in length, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (!@#$%^&*()_+-=[]{}|;:,.<>/?~`)"
       zh-cn: 服务器登录密码，长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     Label:
       en: ECS Instance Password
       zh-cn: ECS实例密码
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "8-30 characters in length, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (!@#$%^&*()_+-=[]{}|;:,.<>/?~`)"
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
   CommonName:
@@ -68,13 +68,13 @@ Parameters:
     NoEcho: true
     Type: String
     Description:
-      en: 'The password is 8 to 30 characters in length and must contain at least three types: uppercase letters, lowercase letters, digits, and special symbols. The name contains 8 to 32 characters. Special characters include! @ # $% ^ & * () _ + - ='
+      en: 'The password is 8 to 30 characters in length and must contain at least three types: uppercase letters, lowercase letters, digits, and special symbols. The account name is 8 to 32 characters in length and can contain lowercase letters, digits, and underscores (_). It must start with a letter and end with a letter or digit.'
       zh-cn: '数据库账号密码，长度8-30，必须包含三种及以上类型：大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括! @ # $ % ^ & * () _ + - ='
     Label:
       en: MySQL Instance Password
       zh-cn: MySQL数据库密码
     ConstraintDescription:
-      en: 'Length 8-30, must contain three(Capital letters, lowercase letters, numbers, @ # $% ^ & * () _ + - = Special symbol in)'
+      en: '8-30 characters in length, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (@#$%^&*()_+-=[]{}|;:,.<>/?~`)'
       zh-cn: '长度8-30，必须包含三项（大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括! @ # $ % ^ & * () _ + - =）'
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
   AppDemoAccountName:
@@ -94,10 +94,10 @@ Parameters:
       en: App demo password
       zh-cn: 登录演示账户的密码
     Description:
-      en: 'The password is 8 to 30 characters in length and must contain at least three types: uppercase letters, lowercase letters, digits, and special symbols. The name contains 8 to 32 characters. Special characters include! @ # $% ^ & * () _ + - ='
+      en: 'The password is 8 to 30 characters in length and must contain at least three types: uppercase letters, lowercase letters, digits, and special symbols. The account name is 8 to 32 characters in length and can contain lowercase letters, digits, and underscores (_). It must start with a letter and end with a letter or digit.'
       zh-cn: '账号密码，长度8-30，必须包含三种及以上类型：大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括! @ # $ % ^ & * () _ + - ='
     ConstraintDescription:
-      en: 'Length 8-30, must contain three(Capital letters, lowercase letters, numbers, @ # $% ^ & * () _ + - = Special symbol in)'
+      en: '8-30 characters in length, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (@#$%^&*()_+-=[]{}|;:,.<>/?~`)'
       zh-cn: '长度8-30，必须包含三项（大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括! @ # $ % ^ & * () _ + - =）'
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
 Resources:
@@ -348,10 +348,10 @@ Outputs:
   Console.Url:
     Label:
       zh-cn: Web 访问地址
-      en: The Addresses of Web
+      en: Web Addresses
     Description:
       zh-cn: Web 访问地址。
-      en: The Addresses of Web.
+      en: Web Addresses.
     Value:
       Fn::Sub:
         - http://${ServerAddress}/login
@@ -366,7 +366,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: ECS登录地址。
-      en: Ecs login address.
+      en: ECS Login Address
     Value:
       Fn::Sub:
         - https://ecs-workbench.aliyun.com/?from=EcsConsole&instanceType=ecs&regionId=${Region}&instanceId=${InstanceId}

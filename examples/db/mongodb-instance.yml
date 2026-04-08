@@ -7,10 +7,10 @@ Parameters:
   DBInstanceClass:
     Type: String
     Label:
-      en: The Instance type
+      en: Instance type
       zh-cn: 实例规格
     Description:
-      en: The DDS Instance type
+      en: DDS instance type
       zh-cn: 实例规格
     Default: dds.mongo.mid
     AllowedValues:
@@ -26,10 +26,10 @@ Parameters:
       en: DB Instance Storage
       zh-cn: 存储空间
     Description:
-      en: The storage space
+      en: Storage space
       zh-cn: 实例存储空间
     ConstraintDescription:
-      en: The storage space. Incrementing in every 5G.
+      en: Storage space. Incrementing in every 5G.
       zh-cn: 存储空间。每 5G 增加一次。
     Default: 10
     MinValue: 5

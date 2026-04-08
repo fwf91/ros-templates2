@@ -22,9 +22,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -48,12 +46,7 @@ Parameters:
       en: FlexGW VPN Image
       zh-cn: FlexGW VPN镜像
     Description:
-      en: 'Server Instance Image ID<br>cloud market mirror name: FlexGW IPsec VPN
-        on CentOS<br>Hangzhou: m-bp10z4rsouipm8yfurxh<br>Qingdao: m-m5eg9k9vsopnrj7ejwo9<br>Beijing:
-        m-2ze7k40e4ke66ouil52d<br>Shanghai: m-uf67h1a8x3ykhrtrtjrh<br>Shenzhen: m-wz97moazgfw3xy6xjb2x<br>note:
-        If the above image does not provide a mirror of the geographical region, please
-        use the supported FlexGW VPN free image; see detail: <b><a href=''https://marketplace.alibabacloud.com/products?keywords=FlexGW''
-        target=''_blank''><font color=''blue''>FlexGW Image</font></a></b>'
+      en: "Server Instance Image ID<br>Cloud Market Mirror Name: FlexGW IPsec VPN on CentOS<br>Hangzhou: m-bp10z4rsouipm8yfurxh<br>Qingdao: m-m5eg9k9vsopnrj7ejwo9<br>Beijing: m-2ze7k40e4ke66ouil52d<br>Shanghai: m-uf67h1a8x3ykhrtrtjrh<br>Shenzhen: m-wz97moazgfw3xy6xjb2x<br>Note: If the above image does not provide a mirror for the geographical region, please use the supported FlexGW VPN free image; see details: <b><a href='https://marketplace.alibabacloud.com/products?keywords=FlexGW' target='_blank'><font color='blue'>FlexGW Image</font></a></b>"
       zh-cn: 服务器镜像<br>云市场镜像名称：FlexGW IPsec VPN服务器企业版<br>杭州：m-bp10z4rsouipm8yfurxh<br>青岛：m-m5eg9k9vsopnrj7ejwo9<br>北京：m-2ze7k40e4ke66ouil52d<br>上海：m-uf67h1a8x3ykhrtrtjrh<br>深圳：m-wz97moazgfw3xy6xjb2x<br>注：以上镜像如未提供该地域的镜像，请使用支持的FlexGW
         VPN系统镜像；详见：<b><a href='https://market.aliyun.com/products/56812015/cmjj006981.html'
         target='_blank'><font color='blue'>FlexGW VPN系统镜像</font></a></b>
@@ -75,13 +68,7 @@ Parameters:
       en: Application Service Image
       zh-cn: 应用服务镜像
     Description:
-      en: 'Server Instance Image ID. <br>Hangzhou Magento Mirror: m-bp1d9e2n6iw68exr0z9h<br>Shenzhen
-        Magento Mirror: m-wz9g8nzni5lkutmmj5jrjr<br>Beijing Magento Mirror: m-2zefvtmu
-        9vljd06ll1u<br>Qingdao Magento Mirror: m-m5e92ot9nf1rm9c8neob<br>Shanghai
-        Magento Image: m-uf67vlqunx 6ldjsaaxo2<br>note: If the above image does not
-        provide a mirror of the geographical region, please use the supported magento
-        free image; see detail: <b><a href=''https://marketplace.alibabacloud.com/products?keywords=magento''
-        target=''_blank''><font color=''blue''>Magento Image</font></a></b>'
+      en: "Server Instance Image ID.<br>Hangzhou Magento Mirror: m-bp1d9e2n6iw68exr0z9h<br>Shenzhen Magento Mirror: m-wz9g8nzni5lkutmmj5jrjr<br>Beijing Magento Mirror: m-2zefvtmu9vljd06ll1u<br>Qingdao Magento Mirror: m-m5e92ot9nf1rm9c8neob<br>Shanghai Magento Image: m-uf67vlqunx6ldjsaaxo2<br>Note: If the above image does not provide a mirror for the geographical region, please use the supported Magento free image; see details: <b><a href='https://marketplace.alibabacloud.com/products?keywords=magento' target='_blank'><font color='blue'>Magento Image</font></a></b>"
       zh-cn: 服务器镜像<br>云市场镜像名称： Magento电子商务系统（Centos 7.2 64位）<br>版本：v1.0<br>杭州Magento镜像：m-bp1d9e2n6iw68exr0z9h<br>深圳Magento镜像：m-wz9g8nzni5lkutmmj5jr<br>北京Magento镜像：m-2zefvttmu9vljd06ll1u<br>青岛Magento镜像：m-m5e92ot9nf1rm9c8neob<br>上海Magento镜像：m-uf67vlqunx6ldjsaaxo2<br>注：以上镜像如未提供该地域的镜像，请使用支持的magento免费镜像；详见：<b><a
         href='https://market.aliyun.com/products/?keywords=Magento' target='_blank'><font
         color='blue'>Magento镜像</font></a></b>
@@ -91,11 +78,7 @@ Parameters:
       en: Specifications
       zh-cn: 规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;recommended to use：ecs.t5-lc1m2.large</b></font><br>general specifications：<font
-        color=''red''><b>ecs.g5.large</b></font><br>note: a few zones do not support
-        general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;recommended to use: ecs.t5-lc1m2.large</b></font><br>general specifications: <font color='red'><b>ecs.g5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格，推荐使用：ecs.t5-lc1m2.large；<br>通用规格：<font color='red'><b>ecs.g5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>

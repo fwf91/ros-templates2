@@ -110,7 +110,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1

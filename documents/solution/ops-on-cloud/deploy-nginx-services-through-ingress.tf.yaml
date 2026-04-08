@@ -36,7 +36,7 @@ Parameters:
   zone_id:
     Type: String
     Label:
-      en: VSwitch Available Zone
+      en: VSwitch Availability Zone
       zh-cn: 可用区
     AssociationProperty: ALIYUN::VPC::Zone::ZoneId
     Description:

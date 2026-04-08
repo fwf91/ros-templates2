@@ -90,7 +90,7 @@ Parameters:
       Format: 'YYYY-MM-DDThh:mmZ'
     Description:
       zh-cn: 建议选择扩容时间之后的 5-10 分钟观察缩容效果。
-      en: It is recommended to observe the shrinkage effect 5-10 minutes after the expansion time.
+      en: It is recommended to observe the shrinkage effect 5-10 minutes after the scaling time.
 Resources:
   Vpc:
     Type: 'ALIYUN::ECS::VPC'
@@ -364,7 +364,7 @@ Outputs:
   WebUrl:
     Description:
       zh-cn: Web 访问地址。
-      en: The Addresses of Web.
+      en: Web Addresses
     Value:
       'Fn::Sub': 'http://${Alb.DNSName}'
 Metadata:

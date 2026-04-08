@@ -10,7 +10,7 @@ Parameters:
   ZoneId:
     Type: String
     Label:
-      en: Available Zone ID
+      en: Availability Zone ID
       zh-cn: 可用区ID
     Description:
       en: Availability Zone ID,<br><b>note： <font color='blue'>It is used to create
@@ -20,7 +20,7 @@ Parameters:
   SecondaryZoneId:
     Type: String
     Label:
-      en: Secondary Available Zone ID
+      en: Secondary Availability Zone ID
       zh-cn: 备可用区ID
     Description:
       en: Availability Zone ID,<br><b>note： <font color='blue'>It is used to create
@@ -42,7 +42,7 @@ Parameters:
   WorkerInstanceType:
     Type: String
     Label:
-      en: Worker Nodes Type
+      en: Worker Node Type
       zh-cn: Worker节点规格
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -57,7 +57,7 @@ Parameters:
   WorkerSystemDiskSize:
     Type: Number
     Label:
-      en: Worker System Disk Size(GB)
+      en: Worker System Disk Size (GB)
       zh-cn: Worker节点系统盘大小(GB)
     Default: 40
     MinValue: 40
@@ -203,7 +203,7 @@ Metadata:
       - ZoneId
       - SecondaryZoneId
       Label:
-        en: Available Zone
+        en: Availability Zone
         zh-cn: 可用区
     - Parameters:
       - WorkerInstanceType

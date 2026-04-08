@@ -16,7 +16,7 @@ Parameters:
           min: 1
     Description:
       zh-cn: Bucket 名称在 OSS 范围内必须全局唯一。长度为3~63个字符。必须以小写英文字母或数字开头和结尾，可包含小写英文字母、数字和短划线（-）。
-      en: Bucket names must be globally unique within the scope of OSS. The length is 3~63 characters. Must start and end with a lowercase English letter or number, and can contain lowercase English letters, numbers, and dashes (-).
+      en: Bucket names must be globally unique within the scope of OSS. The length must be 3 to 63 characters. They must start and end with a lowercase English letter or number, and can contain lowercase English letters, numbers, and dashes (-).
     Label:
       zh-cn: 新建存储空间名称
       en: NewBucketName
@@ -45,13 +45,13 @@ Parameters:
     NoEcho: true
     Type: String
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password: length 8–30 characters, must contain at least three of: uppercase letters, lowercase letters, numbers, and special symbols (including ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 服务器登录密码，长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     Label:
       en: ECS Instance Password
       zh-cn: ECS实例密码
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Length 8–30 characters, must contain at least three of: uppercase letters, lowercase letters, numbers, and special symbols (including ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
 Resources:
@@ -192,7 +192,7 @@ Outputs:
       en: Bucket
     Description:
       zh-cn: 文件上传到的bucket控制台页面。可访问该链接上传测试文件。
-      en: Bucket console page, which you can upload test files.
+      en: "Bucket console page: you can upload test files."
     Value: 
       Fn::Sub:
         - https://oss.console.aliyun.com/bucket/oss-${Region}/${BucketName}
@@ -206,7 +206,7 @@ Outputs:
       en: EcsIP
     Description:
       zh-cn: ECS公网地址，可使用此地址+文件访问路径访问bucket资源。
-      en: Public address of ECS, which you can access bucket resources via file access path.
+      en: "Public IP address of ECS: access bucket resources via file access path."
     Value:
       Fn::Sub:
         - http://${IP}

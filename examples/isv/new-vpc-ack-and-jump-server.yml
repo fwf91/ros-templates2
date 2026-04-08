@@ -72,9 +72,7 @@ Parameters:
     Description:
       zh-cn: VPC的ip地址段范围，<br>您可以使用以下的ip地址段或其子网:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
-      en: 'The ip address range of the VPC in the CidrBlock form; <br>You can use
-        the following ip address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>You can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
     AssociationProperty: ALIYUN::VPC::VPC::CidrBlock
     Default: 192.168.0.0/16
   VSwitchCidrBlock:
@@ -95,12 +93,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols,
-        including:! @ # $ % ^ & * ( ) _ + - ='
+      en: "Length 8-32 characters, can contain size letters, Numbers and special symbols, including: ! @ # $ % ^ & * ( ) _ + - ="
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols,
-        including:! @ # $ % ^ & * ( ) _ + - ='
+      en: "8-32 characters, can contain size letters, Numbers and special symbols, including: ! @ # $ % ^ & * ( ) _ + - ="
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     AssociationProperty: ALIYUN::ECS::Instance::Password
     MinLength: 8
@@ -143,10 +139,7 @@ Parameters:
     Description:
       zh-cn: 请填写有效的私有网段，即以下网段及其子网：10.0.0.0/8，172.16-31.0.0/12-16，192.168.0.0/16<br>不能与
         VPC 及 VPC 内已有 Kubernetes 集群使用的网段重复。<font color='blue'><b>创建成功后不能修改</b></font>
-      en: 'Please fill in a valid private segment, i.e. the following segments and
-        their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16<br> which cannot
-        duplicate the network segments already used by clusters in VPC and VPC Kunetberes.
-        <font color=''blue''><b>Cannot be modified after successful creation</b></font>'
+      en: "Please fill in a valid private segment, i.e., the following segments and their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16<br> which cannot duplicate the network segments already used by clusters in VPC and VPC Kubernetes. <font color='blue'><b>Cannot be modified after successful creation</b></font>"
     AssociationProperty: ALIYUN::CS::ManagedKubernetesCluster::PodCidr
     Default: 10.0.0.0/16
   ServiceCidr:
@@ -157,9 +150,7 @@ Parameters:
     Description:
       zh-cn: 可选范围：10.0.0.0/16-24，172.16-31.0.0/16-24，192.168.0.0/16-24<br>不能与 VPC
         及 VPC 内已有 Kubernetes 集群使用的网段重复。<font color='blue'><b>创建成功后不能修改</b></font>
-      en: 'Optional range: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24<br>
-        cannot duplicate segments already used by existing Kubernetes clusters in
-        VPC and VPC.<font color=''blue''><b>Cannot be modified after successful creation</b></font>'
+      en: "Optional range: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24<br> cannot duplicate segments already used by existing Kubernetes clusters in VPC. <font color='blue'><b>Cannot be modified after successful creation</b></font>"
     AssociationProperty: ALIYUN::CS::ManagedKubernetesCluster::ServiceCidr
     Default: 172.16.0.0/16
   EcsInstanceType:

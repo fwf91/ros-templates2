@@ -143,7 +143,7 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password, 8-30 characters long, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 服务器登录密码，长度 8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
   system_disk_category:
@@ -182,7 +182,7 @@ Metadata:
           - pay_period
         Label:
           default:
-            en: pay_type Configuration
+            en: Pay Type Configuration
             zh-cn: 付费类型配置
       - Parameters:
           - zone_id

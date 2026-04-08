@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 一键部署VPC环境下的SNAT网关，包括ECS实例绑定EIP，自定义配置资源，如带宽、实例规格等。
-  en: One-click deployment of SNAT gateway in VPC environment, including binding ECS ​​instances to EIPs and custom configuration of resources, such as bandwidth, instance specifications, etc.
+  en: One-click deployment of SNAT gateway in VPC environment, including binding ECS instances to EIPs and custom configuration of resources such as bandwidth and instance specifications.
 Parameters:
   VpcCidrBlock:
     Type: String
@@ -9,9 +9,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的IP地址范围；<br>您可以使用以下IP地址范围及其子网：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 192.168.0.0/16
@@ -21,7 +19,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机子网网段
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created VSwitch, which must belong to the VPC CIDR Block.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 192.168.10.0/24
   EIPBandwidth:
@@ -86,11 +84,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -119,8 +113,7 @@ Parameters:
       en: Tag Value
       zh-cn: 标签值
     Description:
-      en: 'ECS label value, 0 to 128 characters long, cannot begin with aliyun and
-        acs: cannot contain http://or https://?'
+      en: "ECS tag value, 0 to 128 characters long, cannot start with 'aliyun' or 'acs:', and cannot contain 'http://' or 'https://'."
       zh-cn: ECS 标签值, 长度为0~128个字符，不能以aliyun和acs:开头，不能包含http://或https://
     Default: DefaultTag
   SecurityGroupName:
@@ -139,7 +132,7 @@ Parameters:
       en: EIP Charge Type
       zh-cn: 弹性公网地址的收费类型
     Description:
-      en: The charge type of EIP, PayByBandwidth；PayByTraffic.
+      en: The charge type of EIP, PayByBandwidth;PayByTraffic.
       zh-cn: 弹性公网地址的收费类型，PayByBandwidth：按带宽付费，PayByTraffic：按流量付费
     Default: PayByTraffic
     AllowedValues:

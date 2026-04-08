@@ -52,7 +52,7 @@ Parameters:
     Required: true
     Label:
       zh-cn: 核心资源账号ID
-      en: Core account id
+      en: Core account ID
     AssociationProperty: ALIYUN::ResourceManager::Account
     AssociationPropertyMetadata:
       Visible:

@@ -1,6 +1,6 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
-  en: AIGC text generation 3D model.
+  en: AIGC Text Generation 3D Model
   zh-cn: AIGC文本生成3D模型。
 Mappings:
   Images:
@@ -62,7 +62,7 @@ Parameters:
   UserName:
     Type: String
     Label:
-      en: User Name
+      en: Username
       zh-cn: 软件登录名
     Default: admin
   Password:
@@ -174,7 +174,7 @@ Resources:
 Outputs:
   Endpoint:
     Description:
-      en: The Addresses of WebUI.
+      en: WebUI Addresses
       zh-cn: WebUI地址。
     Value:
       Fn::Sub:
@@ -187,7 +187,7 @@ Outputs:
             - PublicIps
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS Login Address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:

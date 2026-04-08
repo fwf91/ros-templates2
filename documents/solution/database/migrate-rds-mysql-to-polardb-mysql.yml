@@ -35,9 +35,7 @@ Parameters:
       en: ECS Instance Password
       zh-cn: ECS实例密码
     Description:
-      en: 'The password must be 8 to 32 characters in length and must contain at least
-        three of the following types: uppercase letters, lowercase letter, digits,
-        and special characters. Special characters include <span style="background:#E7E9EB;"><b>!@#$%^&*()_+-=</b></span>'
+      en: "The password must be 8 to 32 characters in length and must contain at least three of the following types: uppercase letters, lowercase letter, digits, and special characters. Special characters include <span style=\"background:#E7E9EB;\"><b>!@#$%^&*()_+-=</b></span>"
       zh-cn: 必须包含三种及以上类型：大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括<span style="background:#E7E9EB;"><b>!@#$%^&*()_+-=</b></span>
     AssociationProperty: ALIYUN::ECS::Instance::Password
     NoEcho: true
@@ -74,9 +72,7 @@ Parameters:
       en: RDS Account Password
       zh-cn: RDS账号密码
     Description:
-      en: 'The password must be 8 to 32 characters in length and must contain at least
-        three of the following types: uppercase letters, lowercase letter, digits,
-        and special characters. Special characters include <span style="background:#E7E9EB;"><b>!@#$%^&*()_+-=</b></span>'
+      en: "The password must be 8 to 32 characters in length and must contain at least three of the following types: uppercase letters, lowercase letter, digits, and special characters. Special characters include <span style=\"background:#E7E9EB;\"><b>!@#$%^&*()_+-=</b></span>"
       zh-cn: 必须包含三种及以上类型：大写字母、小写字母、数字、特殊符号。长度为8～32位。特殊字符包括<span style="background:#E7E9EB;"><b>!@#$%^&*()_+-=</b></span>
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
     NoEcho: true
@@ -268,7 +264,7 @@ Outputs:
   RdsInnerConnectionString:
     Description:
       zh-cn: 内网连接地址。
-      en: Rds Inner Connection address.
+      en: RDS Inner Connection Address
     Value:
       Fn::GetAtt:
         - RdsInstance

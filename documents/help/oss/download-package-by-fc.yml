@@ -75,7 +75,7 @@ Outputs:
   Url:
     Description:
       zh-cn: 对外公网域名，用于curl命令。
-      en: Internet URL, used for the curl command.
+      en: "Internet URL: used for the curl command."
     Value:
       Fn::Jq:
       - First

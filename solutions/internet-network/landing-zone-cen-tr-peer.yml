@@ -66,7 +66,7 @@ Metadata:
       Label:
         default:
           zh-cn: Ecs实例类型及密码配置（当选择不创建ECS实例时，无需配置）
-          en: Ecs InstanceType and Password Configuration
+          en: ECS Instance Type and Password Configuration
     TemplateTags:
     - acs:integrate:landing_zone:cen_tr_peer
     - acs:public_template:Solution:landing-zone-cen-tr-peer
@@ -366,7 +366,7 @@ Workspace:
             "Label": {
               "default": {
                 "zh-cn": "Ecs实例类型及密码配置（当选择不创建ECS实例时，无需配置）",
-                "en": "Ecs InstanceType and Password Configuration"
+                "en": "ECS Instance Type and Password Configuration"
               }
             }
           }

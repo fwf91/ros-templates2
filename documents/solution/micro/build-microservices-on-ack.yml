@@ -411,13 +411,13 @@ Outputs:
   UrlServiceA:
     Description:
       zh-cn: A服务访问地址。
-      en: The addresses of A service.
+      en: Address of Service A
     Value:
       'Fn::Sub': http://${IngressInfo}/a
   UrlServiceB:
     Description:
       zh-cn: B服务访问地址。
-      en: The addresses of B service.
+      en: The addresses of the B service.
     Value:
       'Fn::Sub': http://${IngressInfo}/b
 Metadata:

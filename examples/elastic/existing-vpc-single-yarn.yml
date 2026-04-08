@@ -11,7 +11,7 @@ Parameters:
       en: Existing VPC ID
       zh-cn: 现有VPC的实例ID
     Description:
-      en: Please search the ID starts with (vpc-xxx)from console-Virtual Private Cloud
+      en: Please search for the ID starting with (vpc-xxx) from Console - Virtual Private Cloud
       zh-cn: 控制台-VPC-专有网络下查询
     AssociationProperty: ALIYUN::ECS::VPC::VPCId
   VSwitchZoneId:
@@ -110,7 +110,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -121,11 +121,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -140,7 +136,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘空间
     Description:
-      en: 'The size of the instance system disk, in GiB. Value range: 40 to 500'
+      en: 'The size of the instance system disk in GiB. Value range: 40 to 500'
       zh-cn: 实例系统盘大小，单位为GiB，取值范围：40~500
     Default: 40
     MinValue: 40

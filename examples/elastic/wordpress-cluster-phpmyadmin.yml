@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 部署WordPress和phpMyAdmin应用，含VPC、ECS、RDS、SLB资源，实现自动安装配置与公网访问。
-  en: Deploy WordPress and phpMyAdmin applications, including VPC, ECS, RDS, and SLB resources, to achieve automatic installation, configuration and public network access.
+  en: Deploy WordPress and phpMyAdmin applications, including VPC, ECS, RDS, and SLB resources, to enable automatic installation, configuration, and public network access.
 Parameters:
   ZoneId:
     Type: String
@@ -9,7 +9,7 @@ Parameters:
       en: Zone ID
       zh-cn: 可用区ID
     Description:
-      en: Make sure that the available regions support the creation of RDS, SLB, and ECS resource specifications;<br><a href='https://www.alibabacloud.com/help/doc-detail/123712.html' target='_blank'><b><font color='blue'>View region and zone info</font></b></a>.
+      en: Ensure that the available regions support the creation of RDS, SLB, and ECS resource specifications;<br><a href='https://www.alibabacloud.com/help/doc-detail/123712.html' target='_blank'><b><font color='blue'>View region and zone information</font></b></a>.
       zh-cn: 确保可用区域支持RDS、SLB和ECS资源规格的创建；<br><a href='https://help.aliyun.com/document_detail/123712.html' target='_blank'><b><font color='blue'>查看可用区信息</font></b></a>.
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
   JumpboxInstanceType:
@@ -18,7 +18,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例类型
     Description:
-      en: Please confirm the inventory of this specification under the available area; <br>See detail：<a href='https://www.alibabacloud.com/help/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance specification family</font></a></b>
+      en: "Please confirm the inventory of this specification under the available area; <br>See detail: <a href='https://www.alibabacloud.com/help/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance specification family</font></a></b>"
       zh-cn: 请在可用区域下确认此规格的库存；详见： <a href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font color='blue'>实例规格族</font></a></b>
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -29,7 +29,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: Image ID，See detail：<b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>
+      en: "Image ID,See detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>"
       zh-cn: 镜像ID，详见： <b><a href='https://help.aliyun.com/document_detail/112977.html' target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
     AssociationPropertyMetadata:
@@ -72,7 +72,7 @@ Parameters:
       en: Specifications
       zh-cn: 规格
     Description:
-      en: Instance specifications,</br>see detail：</b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance Support Type</b></font></a>
+      en: "Instance specifications,</br>see detail: </b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance Support Type</b></font></a>"
       zh-cn: 实例规格，</br>详见：</b><a href='https://help.aliyun.com/document_detail/85939.html' target='_blank'><b><font color='blue'>性能保障型</b></font></a>
     Default: slb.s1.small
   Category:
@@ -124,7 +124,7 @@ Parameters:
       en: 'Incrementing in every 5G, unit: GB'
       zh-cn: 每5GB进行递增，单位:GB
     ConstraintDescription:
-      en: '[5, 2000] Incrementing in every 5G, unit: GB'
+      en: '[5, 2000] Incrementing in every 5 GB, unit: GB'
       zh-cn: '[5, 2000] 每 5G 递增，单位：GB'
     Default: 20
     MinValue: 5
@@ -138,7 +138,7 @@ Parameters:
       en: Consists of lowercase letters, Numbers and special characters (-_).
       zh-cn: 由小写字母、数字和特殊字符(-_)组成。
     ConstraintDescription:
-      en: Consists of lowercase letters, Numbers and special characters (-_), beginning with letters, ending with letters or Numbers, up to 64 characters,
+      en: Consists of lowercase letters, numbers, and special characters (-_), beginning with a letter, ending with a letter or number, up to 64 characters.
       zh-cn: 由小写字母、数字和特殊字符(-_)组成，以字母开头，以字母或数字结尾，最多64个字符，
     Default: dbname
     AllowedPattern: ^[a-z]+[a-z0-9\-\_]*[a-z0-9]+$
@@ -150,7 +150,7 @@ Parameters:
       en: User Name
       zh-cn: 用户名称
     Description:
-      en: A maximum of 16 characters, consisting of lowercase letters, Numbers, underscores, letters beginning, letters or Numbers ending.
+      en: A maximum of 16 characters, consisting of lowercase letters, numbers, underscores, starting with a letter, and ending with a letter or number.
       zh-cn: 最多16个字符，包括小写字母、数字、下划线、字母开头、字母或数字结尾。
     Default: dbname
     MinLength: 1
@@ -161,7 +161,7 @@ Parameters:
       en: User Password
       zh-cn: 用户密码
     Description:
-      en: Large/lowercase letters, Numbers and special characters take up three kinds, 8-32 bits.
+      en: "Must include three types: uppercase/lowercase letters, numbers, and special characters; length 8–32 characters."
       zh-cn: 大/小写字母、数字和特殊字符占3种，8-32位。
     ConstraintDescription:
       en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers, special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'

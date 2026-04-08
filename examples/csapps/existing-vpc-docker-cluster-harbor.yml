@@ -29,7 +29,7 @@ Parameters:
       en: Existing VPC Instance ID
       zh-cn: 现有VPC的实例ID
     Description:
-      en: Please search the ID starts with (vpc-xxx)from console-Virtual Private Cloud
+      en: Please search for the ID starting with (vpc-xxx) in the console > Virtual Private Cloud.
       zh-cn: 现有虚拟专有网络的实例ID,控制台-VPC-专有网络下查询
     AssociationProperty: ALIYUN::ECS::VPC::VPCId
   VSwitch:
@@ -74,7 +74,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: It is recommended that the memory be at least 2GB RAM.
+      en: It is recommended that the memory be at least 2 GB of RAM.
       zh-cn: 内存推荐至少2GB RAM。
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -103,7 +103,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘空间
     Description:
-      en: 'System disk size, range of values: 40-500, units: GB.'
+      en: 'System disk size, range: 40–500 GB.'
       zh-cn: 系统盘大小, 取值范围：[40, 500], 单位：GB。
     Default: 40
   Password:
@@ -189,7 +189,7 @@ Parameters:
         characters, hyphen and underline
       zh-cn: Harbor数据库密码，由8~32位大小写字母、数字、下划线、连字符组成。
     ConstraintDescription:
-      en: Consist of 8 to 32 characters of alphanumeric characters, hyphen and underline
+      en: Consists of 8 to 32 characters, including alphanumeric characters, hyphens, and underscores.
       zh-cn: 由 8 到 32 个字母数字字符、连字符和下划线组成
     MinLength: 8
     MaxLength: 32
@@ -200,7 +200,7 @@ Parameters:
       en: Specifications
       zh-cn: 规格
     Description:
-      en: <font color='blue'><b>Before selecting a model, please confirm whether the model is in stock in the current availability zone. To save testing costs, it is recommended to use a model with 2G memory, for example:tair.rdb.2g</b></font>, see detail:<a href='https://help.aliyun.com/zh/redis/product-overview/enhanced-performance' target='_blank'><b><font color='red'>Specification inquiry</font></b></a>.
+      en: "<font color='blue'><b>Before selecting a model, please confirm whether the model is in stock in the current availability zone. To save testing costs, it is recommended to use a model with 2G memory, for example: tair.rdb.2g</b></font>. See detail: <a href='https://help.aliyun.com/zh/redis/product-overview/enhanced-performance' target='_blank'><b><font color='red'>Specification inquiry</font></b></a>"
       zh-cn: <font color='blue'><b>选择机型前请先确认当前可用区下该机型是否有库存，为节省测试成本，推荐使用2GB的规格，例如：tair.rdb.2g</b></font>，<a href='https://help.aliyun.com/zh/redis/product-overview/enhanced-performance' target='_blank'><b><font color='red'>规格查询</font></b></a>。
     AssociationProperty: ALIYUN::REDIS::Instance::InstanceClass
     AssociationPropertyMetadata:
@@ -216,10 +216,7 @@ Parameters:
       en: Eviction Policy
       zh-cn: 数据逐出策略
     Description:
-      en: 'Cache data eviction strategy: volatile-lru(Most recently used expired data),
-        volatile-ttl(Being expiring data), volatile-random(Any expired data), allkeys-lru（Least
-        recently used data), allkeys-random(Arbitrarily select data)、no-enviction(Do
-        not delete any data)'
+      en: "Cache data eviction strategy: volatile-lru(Most recently used expired data), volatile-ttl(Being expiring data), volatile-random(Any expired data), allkeys-lru(Least recently used data), allkeys-random(Arbitrarily select data)、no-enviction(Do not delete any data)"
       zh-cn: 缓存数据逐出策略：volatile lru（最近使用的过期数据）、volatile ttl（正在过期数据）、volatile random（任何过期数据）、allkeys
         lru（最近使用的最少数据）、allkeys random（任意选择数据）、no enviction（不要删除任何数据）
     Default: noeviction
@@ -236,12 +233,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols,
-        including:! @ # $ % ^ & * ( ) _ + - ='
+      en: "Length 8-32 characters, can contain lowercase letters, numbers, and special symbols, including: ! @ # $ % ^ & * ( ) _ + - ="
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols,
-        including:! @ # $ % ^ & * ( ) _ + - ='
+      en: "8-32 characters, can contain lowercase letters, numbers, and special symbols, including: ! @ # $ % ^ & * ( ) _ + - ="
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     MinLength: '8'
     MaxLength: '32'

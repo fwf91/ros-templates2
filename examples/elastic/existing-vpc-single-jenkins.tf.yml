@@ -107,7 +107,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -209,7 +209,7 @@ Workspace:
           "zh-cn": "现有VPC的实例ID"
         },
         "Description": {
-          "en": "Please search the ID starting with (vpc-xxx)from console-Virtual Private Cloud",
+          "en": "Please search for an ID starting with (vpc-xxx) in the console > Virtual Private Cloud",
           "zh-cn": "控制台-VPC-专有网络下查询"
         },
         "AssociationProperty": "ALIYUN::ECS::VPC::VPCId"
@@ -243,7 +243,7 @@ Workspace:
           "zh-cn": "网络交换机ID"
         },
         "Description": {
-          "en": "Please search the business VSwitch ID starting with(vsw-xxx)from console-Virtual Private Cloud-VSwitches",
+          "en": "Please search for a business VSwitch ID starting with (vsw-xxx) in the console > Virtual Private Cloud > VSwitches",
           "zh-cn": "现有业务网络交换机的实例ID,控制台-VPC-专有网络-交换机下查询"
         },
         "AssociationProperty": "ALIYUN::ECS::VSwitch::VSwitchId",
@@ -264,7 +264,7 @@ Workspace:
           "zh-cn": "业务安全组ID"
         },
         "Description": {
-          "en": "Please search the business security group ID starting with(sg-xxx)from console-ECS-Network & Security",
+          "en": "Please search for the business security group ID starting with (sg-xxx) in the console - ECS - Network & Security",
           "zh-cn": "现有业务安全组的实例ID,控制台-ECS-网络与安全-安全组下查询"
         },
         "AssociationProperty": "ALIYUN::ECS::SecurityGroup::SecurityGroupId",
@@ -284,7 +284,7 @@ Workspace:
           "zh-cn": "实例规格"
         },
         "Description": {
-          "en": "<font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font>]<br><font color='blue'><b>2.List of optional models</font>]<br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPSS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]",
+          "en": "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone under the model is in stock; some models need to be reported in advance</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth 1Gbps In-grid sending and receiving packages 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth 1.5Gbps In-grid sending and receiving packages 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth 2.5Gbps In-grid sending and receiving packages 80 Million PPS</font>]",
           "zh-cn": "<font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance::InstanceType",
@@ -305,7 +305,7 @@ Workspace:
           "zh-cn": "镜像ID"
         },
         "Description": {
-          "en": "Image ID，See detail：<b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>",
+          "en": "Image ID,See detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>",
           "zh-cn": "镜像ID, 详见：<b><a href='https://help.aliyun.com/document_detail/112977.html' target='_blank'><font color='blue'>查找镜像</font></a></b>"
         },
         "AssociationProperty": "ALIYUN::ECS::Image::ImageId",
@@ -331,11 +331,11 @@ Workspace:
           "zh-cn": "实例密码"
         },
         "Description": {
-          "en": "Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)",
+          "en": "Server login password. Length 8–30 characters, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (!@#$%^&*()_+-=[]{}|\;:,.<>?/~`)",
           "zh-cn": "服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）"
         },
         "ConstraintDescription": {
-          "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+          "en": "Length 8–30 characters, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (!@#$%^&*()_+-=[]{}|\;:,.<>?/~`)",
           "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance::Password"
@@ -353,7 +353,7 @@ Workspace:
           "zh-cn": "公网IP带宽值"
         },
         "Description": {
-          "en": "Public network IP bandwidth，unit: Mbps",
+          "en": "Public network IP bandwidth,unit: Mbps",
           "zh-cn": "公网IP带宽值，单位：Mbps"
         },
         "MinValue": 1,

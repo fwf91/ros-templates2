@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 创建ECS实例，配置弹性IP，挂载2个数据盘，设置网络环境与安全组规则。
-  en: Create an ECS instance, configure elastic IP, mount 2 data disks, and set network environment and security group rules.
+  en: Create an ECS instance, configure an elastic IP, mount two data disks, and set the network environment and security group rules.
 Parameters:
   ZoneId:
     Type: String
@@ -52,7 +52,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机网段
     Description:
-      en: Network segments of new switches, subnets of virtual proprietary networks
+      en: Network segments of new switches, subnets of virtual private networks.
       zh-cn: 新建交换机的网段，所属虚拟专有网络的子网
     Default: 192.168.0.0/24
   SecurityGroupName:
@@ -126,9 +126,7 @@ Parameters:
       en: First Data Disk Size
       zh-cn: 数据盘1的磁盘名称
     Description:
-      en: 'The size of the first volume, unit in GB.Value range: cloud: [5,2000],
-        cloud_efficiency: [20,32768], cloud_ssd: [20,32768], ephemeral_ssd: [5,800].The
-        value should be equal to or greater than the specific snapshot.'
+      en: "The size of the first volume, in GB. Value range: cloud: [5, 2000], cloud_efficiency: [20, 32768], cloud_ssd: [20, 32768], ephemeral_ssd: [5, 800]. The value should be equal to or greater than the specific snapshot."
       zh-cn: 第一个数据盘的大小，单位为GB。值范围：cloud:[5,2000]、cloud_efficiency:[20,32768]、cloud_ssd:[20,32768]、ephemeral_ssd:[5,800]。该值应等于或大于特定快照。
     Default: 40
   FirstDataDiskCategory:
@@ -162,12 +160,10 @@ Parameters:
   SecondDataDiskSize:
     Type: Number
     Label:
-      en: Second Data Disk Size
+      en: "The size of the second volume, in GB. Value range: cloud: [5, 2000], cloud_efficiency: [20, 32768], cloud_ssd: [20, 32768], ephemeral_ssd: [5, 800]. The value should be equal to or greater than the specific snapshot."
       zh-cn: 数据盘2的磁盘大小
     Description:
-      en: 'The size of the Second volume, unit in GB.Value range: cloud: [5,2000],
-        cloud_efficiency: [20,32768], cloud_ssd: [20,32768], ephemeral_ssd: [5,800].The
-        value should be equal to or greater than the specific snapshot.'
+      en: "The size of the second volume, in GB. Value range: cloud: [5, 2000], cloud_efficiency: [20, 32768], cloud_ssd: [20, 32768], ephemeral_ssd: [5, 800]. The value should be equal to or greater than the specific snapshot."
       zh-cn: 第二个数据盘的大小，单位为GB。值范围：cloud:[5,2000]、cloud_efficiency:[20,32768]、cloud_ssd:[20,32768]、ephemeral_ssd:[5,800]。该值应等于或大于特定快照。
     Default: 40
   SystemDiskDiskName:
@@ -186,9 +182,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘大小
     Description:
-      en: 'Disk size of the system disk, unit in GB.Value range: cloud: [5,2000],
-        cloud_efficiency: [20,32768], cloud_ssd: [20,32768], ephemeral_ssd: [5,800].The
-        value should be equal to or greater than the specific snapshot.'
+      en: "Disk size of the system disk, in GB. Value range: cloud: [5, 2000], cloud_efficiency: [20, 32768], cloud_ssd: [20, 32768], ephemeral_ssd: [5, 800]. The value should be equal to or greater than the specific snapshot."
       zh-cn: 系统盘的大小，单位为GB。值范围：cloud:[5,2000]、cloud_efficiency:[20,32768]、cloud_ssd:[20,32768]、ephemeral_ssd:[5,800]。该值应等于或大于特定快照。
     Default: 40
   SystemDiskCategory:
@@ -211,8 +205,7 @@ Parameters:
         in).
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "8-30 characters long, must contain uppercase letters, lowercase letters, numbers, and three special symbols; special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[a-zA-Z0-9-\(\)\`\~\!@\#\$%\^&\*-+=\|\{\}\[\]\:\;\‘\,\.\?\/]*'
     MinLength: 8

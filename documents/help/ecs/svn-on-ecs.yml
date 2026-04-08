@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 部署SVN环境。
-  en: Deploy the SVN environment.
+  en: Deploy the SVN environment
 Parameters:
   InstanceSource:
     Type: String
@@ -19,7 +19,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -108,7 +108,7 @@ Parameters:
       zh-cn: ECS实例ID
     Description:
       zh-cn: 创建ECS实例时，ECS实例ID。<br><b>注： <font color='blue'>该一键部署脚本仅支持Alibaba Cloud Linux 3，请勿选择其他操作系统的实例。</font></b>
-      en: ECS instance ID,<br><b>note： <font color='blue'>This one click deployment script only supports Alibaba Cloud Linux 3, please do not select instances of other operating systems</font></b>
+      en: "ECS instance ID,<br><b>note: <font color='blue'>This one click deployment script only supports Alibaba Cloud Linux 3, please do not select instances of other operating systems</font></b>"
     AssociationProperty: ALIYUN::ECS::Instance::InstanceId
     AssociationPropertyMetadata:
       Status: Running
@@ -223,7 +223,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:

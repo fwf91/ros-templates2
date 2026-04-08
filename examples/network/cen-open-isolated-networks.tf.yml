@@ -27,7 +27,7 @@ Parameters:
   EcsPeriodUnit:
     Type: String
     Label:
-      en: ECS Purchase cycle of prepaid resources
+      en: ECS Purchase cycle for prepaid resources
       zh-cn: 云服务器预付费资源的购买周期
     AssociationPropertyMetadata:
       Visible:
@@ -43,10 +43,10 @@ Parameters:
   EcsPeriod:
     Type: Number
     Label:
-      en: ECS Purchase duration of prepaid resources
+      en: ECS Purchase duration for prepaid resources
       zh-cn: 云服务器预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is week, the value range is: [1,2,3,4]; when the purchase cycle of prepaid resource is month, the value is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60]<br>'
+      en: 'When the purchase cycle for prepaid resources is week, the value range is [1,2,3,4]; when it is month, the values are [1,2,3,4,5,6,7,8,9,12,24,36,48,60].'
       zh-cn: 云服务器预付费资源的购买时长，当预付费资源的购买周期为Week时，取值范围：[1，2，3，4]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9，12，24，36，48，60]<br>
     AssociationPropertyMetadata:
       Visible:
@@ -77,10 +77,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: The 8-30 long login password of instance, consists of the uppercase, lowercase letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
+      en: The 8- to 30-character login password for the instance must contain uppercase letters, lowercase letters, numbers, and special characters such as `()~!@#$%^&*_-+=|{}[]:;'<>,.?/.
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8–30 characters; must include three of the following: uppercase letters, lowercase letters, numbers, and special symbols (e.g., `()~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'
@@ -98,7 +98,7 @@ Parameters:
       en: Stage VSwitch1 CIDR Block
       zh-cn: 交换机1子网段(所属Stage专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 192.168.0.0/24
   VSwitch2CidrBlock:
@@ -107,16 +107,16 @@ Parameters:
       en: Stage VSwitch2 CIDR Block
       zh-cn: 交换机2子网段(所属Stage专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 192.168.1.0/24
   StageVpcInstanceType:
     Type: String
     Label:
-      en: Stage Vpc Instance Type
+      en: Stage VPC Instance Type
       zh-cn: 预发环境的ECS实例规格
     Description:
-      en: <font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]
+      en: "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]"
       zh-cn: <font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -146,7 +146,7 @@ Parameters:
       en: Prod VSwitch 3 CIDR Block
       zh-cn: 交换机3子网段(所属Prod专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 172.16.0.0/24
   VSwitch4CidrBlock:
@@ -155,16 +155,16 @@ Parameters:
       en: Prod VSwitch 4 CIDR Block
       zh-cn: 交换机4子网段(所属Prod专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 172.16.1.0/24
   ProdVpcInstanceType:
     Type: String
     Label:
-      en: Prod Vpc Instance Type
+      en: Prod VPC Instance Type
       zh-cn: 生产环境的ECS实例规格
     Description:
-      en: <font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]
+      en: "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]"
       zh-cn: <font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -194,7 +194,7 @@ Parameters:
       en: Ops VSwitch 5 CIDR Block
       zh-cn: 交换机5子网段(所属Ops专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 10.0.0.0/24
   VSwitch6CidrBlock:
@@ -203,16 +203,16 @@ Parameters:
       en: Ops VSwitch 6 CIDR Block
       zh-cn: 交换机6子网段(所属Ops专有网络)
     Description:
-      en: Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.
+      en: Must be a subnet segment within the VPC and not occupied by other v-switches.
       zh-cn: 必须是所属专有网络的子网段，并且没有被其他交换机占用。
     Default: 10.0.1.0/24
   OpsVpcInstanceType:
     Type: String
     Label:
-      en: Ops Vpc Instance Type
+      en: Ops VPC Instance Type
       zh-cn: 运维环境的ECS实例规格
     Description:
-      en: <font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]
+      en: "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]"
       zh-cn: <font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -637,7 +637,7 @@ Workspace:
         description = <<EOT
         {
           "Label": {
-            "en": "ECS Purchase cycle of prepaid resources",
+            "en": "ECS Purchase cycle for prepaid resources",
             "zh-cn": "云服务器预付费资源的购买周期"
           },
           "AssociationPropertyMetadata": {
@@ -666,11 +666,11 @@ Workspace:
         description = <<EOT
         {
           "Label": {
-            "en": "ECS Purchase duration of prepaid resources",
+            "en": "ECS Purchase duration for prepaid resources",
             "zh-cn": "云服务器预付费资源的购买时长"
           },
           "Description": {
-            "en": "When the purchase cycle of prepaid resource is week, the value range is: [1,2,3,4]; when the purchase cycle of prepaid resource is month, the value is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60]<br>",
+            "en": "When the purchase cycle for prepaid resources is week, the value range is [1,2,3,4]; when it is month, the values are [1,2,3,4,5,6,7,8,9,12,24,36,48,60].",
             "zh-cn": "云服务器预付费资源的购买时长，当预付费资源的购买周期为Week时，取值范围：[1，2，3，4]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9，12，24，36，48，60]<br>"
           },
           "AssociationPropertyMetadata": {
@@ -715,11 +715,11 @@ Workspace:
             "zh-cn": "实例密码"
           },
           "Description": {
-            "en": "The 8-30 long login password of instance, consists of the uppercase, lowercase letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/",
+            "en": "The 8- to 30-character login password for the instance must contain uppercase letters, lowercase letters, numbers, and special characters such as `()~!@#$%^&*_-+=|{}[]:;'<>,.?/.",
             "zh-cn": "长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
           },
           "ConstraintDescription": {
-            "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+            "en": "Length 8–30 characters; must include three of the following: uppercase letters, lowercase letters, numbers, and special symbols (e.g., `()~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
             "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
           },
           "AllowedPattern": "[0-9A-Za-z\\_\\-&:;'<>,=%`~!@#\\(\\)\\$\\^\\*\\+\\|\\{\\}\\[\\]\\.\\?\\/]+$",
@@ -752,7 +752,7 @@ Workspace:
             "zh-cn": "交换机1子网段(所属Stage专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -769,7 +769,7 @@ Workspace:
             "zh-cn": "交换机2子网段(所属Stage专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -781,11 +781,11 @@ Workspace:
         description = <<EOT
         {
           "Label": {
-            "en": "Stage Vpc Instance Type",
+            "en": "Stage VPC Instance Type",
             "zh-cn": "预发环境的ECS实例规格"
           },
           "Description": {
-            "en": "<font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]",
+            "en": "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]",
             "zh-cn": "<font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]"
           },
           "AssociationProperty": "ALIYUN::ECS::Instance::InstanceType",
@@ -841,7 +841,7 @@ Workspace:
             "zh-cn": "交换机3子网段(所属Prod专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -858,7 +858,7 @@ Workspace:
             "zh-cn": "交换机4子网段(所属Prod专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -870,11 +870,11 @@ Workspace:
         description = <<EOT
         {
           "Label": {
-            "en": "Prod Vpc Instance Type",
+            "en": "Prod VPC Instance Type",
             "zh-cn": "生产环境的ECS实例规格"
           },
           "Description": {
-            "en": "<font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]",
+            "en": "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]",
             "zh-cn": "<font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]"
           },
           "AssociationProperty": "ALIYUN::ECS::Instance::InstanceType",
@@ -930,7 +930,7 @@ Workspace:
             "zh-cn": "交换机5子网段(所属Ops专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -947,7 +947,7 @@ Workspace:
             "zh-cn": "交换机6子网段(所属Ops专有网络)"
           },
           "Description": {
-            "en": "Must be a sub-network segment of the proprietary network and is not occupied by other v-switches.",
+            "en": "Must be a subnet segment within the VPC and not occupied by other v-switches.",
             "zh-cn": "必须是所属专有网络的子网段，并且没有被其他交换机占用。"
           }
         }
@@ -959,11 +959,11 @@ Workspace:
         description = <<EOT
         {
           "Label": {
-            "en": "Ops Vpc Instance Type",
+            "en": "Ops VPC Instance Type",
             "zh-cn": "运维环境的ECS实例规格"
           },
           "Description": {
-            "en": "<font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]",
+            "en": "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone for the model is in stock. Some models require advance notification.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth: 1Gbps, In-grid sending and receiving packages: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth: 1.5Gbps, In-grid sending and receiving packages: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth: 2.5Gbps, In-grid sending and receiving packages: 80 Million PPS</font>]",
             "zh-cn": "<font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]"
           },
           "AssociationProperty": "ALIYUN::ECS::Instance::InstanceType",

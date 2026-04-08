@@ -24,7 +24,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
     Default: CreateNew
     AllowedValues:
     - CreateNew
@@ -326,7 +326,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -338,7 +338,7 @@ Outputs:
           - Ref: EcsInstance
   Console@Url:
     Description:
-      en: YARN Web Address.
+      en: YARN Web Address
       zh-cn: YARN 访问地址。
     Value:
       Fn::Sub:
@@ -353,7 +353,7 @@ Outputs:
             - Instances
   Hadoop NameNode Web Page:
     Description:
-      en: Hadoop NameNode Web Address.
+      en: Hadoop NameNode Web Address
       zh-cn: Hadoop NameNode 访问页面。
     Value:
       Fn::Sub:

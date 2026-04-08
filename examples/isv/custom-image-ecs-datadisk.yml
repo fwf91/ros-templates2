@@ -95,9 +95,7 @@ Parameters:
     Description:
       zh-cn: VPC的ip地址段范围，<br>您可以使用以下的ip地址段或其子网:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
-      en: 'The ip address range of the VPC in the CidrBlock form; <br>You can use
-        the following ip address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>You can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
     AssociationProperty: ALIYUN::VPC::VPC::CidrBlock
     AssociationPropertyMetadata:
       Visible:
@@ -203,7 +201,7 @@ Parameters:
       en: Data disk space
     Description:
       zh-cn: ECS实例数据盘大小，单位为GiB。取值范围：20~32768
-      en: 'ECS Instance disk size, range of values: 20-32768, units: GB'
+      en: 'ECS Instance disk size, range: 20-32768 GB'
     Default: 200
     MinValue: 20
     MaxValue: 32768
@@ -211,16 +209,16 @@ Parameters:
     Type: Boolean
     Label:
       zh-cn: 开启公网IP
-      en: allocate public ip
+      en: Allocate public IP
     Default: true
   InternetMaxBandwidthOut:
     Type: Number
     Label:
       zh-cn: 流量公网带宽
-      en: Internet Max Bandwidth Out
+      en: Internet Max Bandwidth Out (Mbps)
     Description:
       zh-cn: 取值范围0-100, 0为不开公网ip
-      en: no public ip if zero
+      en: No public IP if value is zero
     AssociationPropertyMetadata:
       Visible:
         Condition:

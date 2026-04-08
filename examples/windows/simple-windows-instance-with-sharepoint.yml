@@ -10,9 +10,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -47,10 +45,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像
     Description:
-      en: 'Image ID, About SharePoint Foundation2013 system requirements, see detail:
-        <a href=''https://learn.microsoft.com/en-us/sharepoint/install/hardware-software-requirements-2013''
-        target=''_blank''><b><font color=''blue''>SharePoint Foundation2013 system
-        requirements</b></font></a>'
+      en: "Image ID. For SharePoint Foundation 2013 system requirements, see details: <a href='https://learn.microsoft.com/en-us/sharepoint/install/hardware-software-requirements-2013' target='_blank'><b><font color='blue'>SharePoint Foundation 2013 system requirements</b></font></a>"
       zh-cn: 镜像ID，关于SharePoint Foundation2013系统要求，详见： <a href='https://learn.microsoft.com/zh-cn/sharepoint/install/hardware-software-requirements-2013'
         target='_blank'><b><font color='blue'>SharePoint Foundation2013系统要求</b></font></a>
     Default: win2008r2_sp1_x64_ent_zh-cn_40G_alibase_20200116.vhd
@@ -60,9 +55,7 @@ Parameters:
       en: SharePoint Image Download Path
       zh-cn: SharePoint镜像下载路径
     Description:
-      en: 'SharePoint Foundation2013 image download path, see detail: <a href=''https://docs.microsoft.com/en-us/OfficeUpdates/sharepoint-updates''
-        target=''_blank''><b><font color=''blue''>SharePoint Foundation2013 image
-        download path</b></font></a>'
+      en: "SharePoint Foundation 2013 image download path. See details: <a href='https://docs.microsoft.com/en-us/OfficeUpdates/sharepoint-updates' target='_blank'><b><font color='blue'>SharePoint Foundation 2013 image download path</b></font></a>"
       zh-cn: SharePoint Foundation2013镜像下载路径，详见： <a href='https://docs.microsoft.com/zh-cn/OfficeUpdates/sharepoint-updates'
         target='_blank'><b><font color='blue'>SharePoint Foundation2013镜像下载路径</b></font></a>
     Default: https://download.microsoft.com/download/0/B/3/0B358219-C503-4890-A46F-14FD6C7686CF/sharepoint.exe
@@ -72,10 +65,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>

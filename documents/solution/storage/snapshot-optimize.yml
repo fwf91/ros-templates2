@@ -50,7 +50,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: Ecs登录地址。
-      en: Ecs login address.
+      en: ECS Login Address
     Value:
       'Fn::Sub':
         - >-
@@ -62,7 +62,7 @@ Outputs:
   EcsCloneLoginAddress:
     Description:
       zh-cn: Ecs(克隆)登录地址。
-      en: Ecs clone login address.
+      en: ECS Clone Login Address
     Value:
       'Fn::Sub':
         - >-

@@ -61,7 +61,7 @@ Parameters:
   DomainName:
     Type: String
     Label:
-      en: Website domain name
+      en: Website Domain Name
       zh-cn: 网站域名
     AssociationProperty: 'ALIYUN::DomainName'
     Description:
@@ -416,7 +416,7 @@ Outputs:
   WebUrl:
     Description:
       zh-cn: Web 访问地址(Ip)。
-      en: The Addresses of Web(Ip).
+      en: Web Address (IP)
     Value:
       'Fn::Sub':
         - 'http://${ServerAddress}'
@@ -430,7 +430,7 @@ Outputs:
     Condition: DnsRecord
     Description:
       zh-cn: Web 访问地址(域名)。
-      en: The Addresses of Web(Domain).
+      en: Web Address (Domain)
     Value:
       Fn::Sub:
         - 'http://${DomainName}'

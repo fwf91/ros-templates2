@@ -550,13 +550,13 @@ Outputs:
   TeaUrl:
     Description:
       zh-cn: tea服务访问地址。
-      en: The addresses of tea service.
+      en: The address of the tea service.
     Value:
       'Fn::Sub': http://${IngressInfo}/tea
   CoffeeUrl:
     Description:
       zh-cn: coffee服务访问地址。
-      en: The addresses of coffee service.
+      en: The address of the coffee service.
     Value:
       'Fn::Sub': http://${IngressInfo}/coffee
 Metadata:

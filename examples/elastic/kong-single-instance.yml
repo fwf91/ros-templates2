@@ -22,7 +22,7 @@ Parameters:
       en: Kong Download Url
       zh-cn: Kong下载地址
     Description:
-      en: kong-.rpm download path.
+      en: Kong .rpm download path.
       zh-cn: kong-*.rpm下载路径
     Default: https://download.konghq.com/gateway-1.x-centos-7/Packages/k/kong-1.0.3.el7.noarch.rpm
   InstanceType:
@@ -289,7 +289,7 @@ Metadata:
       - InstancePassword
       Label:
         default:
-          en: Kong host Configuration
+          en: Kong Host Configuration
           zh-cn: Kong 主机配置（必填）
     - Parameters:
       - PostgreSQLDownloadUrl

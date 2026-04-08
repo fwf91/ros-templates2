@@ -46,13 +46,13 @@ Parameters:
     NoEcho: true
     Type: String
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (\\`~!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     Label:
       en: ECS Instance Password
       zh-cn: ECS实例密码
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (\\`~!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
   InstanceType:
@@ -70,10 +70,10 @@ Parameters:
     Type: String
     Description:
       zh-cn: 可用区ID。<br><b>注： <font color='blue'>选择可用区前请确认该可用区是否支持创建ECS资源的规格</font></b>
-      en: Availability Zone ID,<br><b>note： <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating ECS resources</font></b>
+      en: "Availability Zone ID,<br><b>note: <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating ECS resources</font></b>"
     Label:
       zh-cn: 可用区ID
-      en: Available Zone ID
+      en: Availability Zone ID
   ElasticsearchPassword:
     NoEcho: true
     Type: String
@@ -81,7 +81,7 @@ Parameters:
       en: Elasticsearch Instance Password
       zh-cn: Elasticsearch实例密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, !@#$%^&*()_+-= Special symbol in)
+      en: "Server login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (!@#$%^&*()_+-=)"
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 !@#$%^&*()_+-= 中的特殊符号）
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
 Metadata:

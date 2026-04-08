@@ -20,7 +20,7 @@ Parameters:
       en: VSwitch 1 Available Zone
       zh-cn: 交换机1可用区
     Description:
-      en: Availability Zone ID,<br><b>note： <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating REDIS、SLB ans ECS resources</font></b>
+      en: "Availability Zone ID,<br><b>note: <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating REDIS、SLB ans ECS resources</font></b>"
       zh-cn: 选择可用区ID。<br><b>注： <font color='blue'>选择可用区前请确认该可用区是否支持创建REDIS、SLB及ECS资源的规格</font></b>
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
   VSwitchCidrBlock1:
@@ -38,7 +38,7 @@ Parameters:
       en: VSwitch 2 Available Zone
       zh-cn: 交换机2可用区
     Description:
-      en: Availability Zone ID, Please select a different availability zone, <br><b>note： <font color='blue'>Due to the low Availability Zone of PolarDB, <br>Before selecting, please confirm that the Availability Zone supports the specification of creating POLARDB and ECS resources.</font></b>
+      en: "Availability Zone ID, Please select a different availability zone, <br><b>note: <font color='blue'>Due to the low Availability Zone of PolarDB, <br>Before selecting, please confirm that the Availability Zone supports the specification of creating POLARDB and ECS resources.</font></b>"
       zh-cn: 选择可用区ID，请选择不同的可用区，<br><b>注：<font color='blue'>由于PolarDB可用区较少， <br>选择可用区前请确认该可用区是否支持创建POLARDB及ECS资源的规格</font></b>
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
   VSwitchCidrBlock2:
@@ -112,10 +112,10 @@ Parameters:
       en: Instance Password
       zh-cn: 登录密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Server login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (such as ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=| {}[]:;' <>,.? / Special symbol in).
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (such as ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AssociationProperty: ALIYUN::ECS::Instance::Password
   LoadbalancerPayType:
@@ -136,7 +136,7 @@ Parameters:
       en: Specifications
       zh-cn: 规格
     Description:
-      en: Instance specifications, see detail：</b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance support type</b></font></a>
+      en: "Instance specifications, see detail: </b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance support type</b></font></a>"
       zh-cn: 实例规格，详见：</b><a href='https://help.aliyun.com/document_detail/85939.html' target='_blank'><b><font color='blue'>性能保障型</b></font></a>
     Default: slb.s2.medium
     AllowedValues:
@@ -185,10 +185,10 @@ Parameters:
       en: Database Password
       zh-cn: 数据库密码
     Description:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (including: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (including: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     MinLength: '8'
     MaxLength: '30'
@@ -220,7 +220,7 @@ Parameters:
   DBClusterTypeAndVersion:
     Type: String
     Label:
-      en: Type And Version
+      en: Type and Version
       zh-cn: 类型与版本号
     Description:
       en: Database type and version number.
@@ -237,7 +237,7 @@ Parameters:
       en: Node Specifications
       zh-cn: 规格
     Description:
-      en: See detail：<b><a href='https://www.alibabacloud.com/help/doc-detail/68498.html' target='_blank'><font color='blue'>Specifications and pricing</font></a></b>
+      en: "See detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/68498.html' target='_blank'><font color='blue'>Specifications and pricing</font></a></b>"
       zh-cn: 详见：<b><a href='https://help.aliyun.com/document_detail/68498.html' target='_blank'><font color='blue'>规格与定价</font></a></b>
     Default: polar.mysql.x4.medium
   DBName:
@@ -246,7 +246,7 @@ Parameters:
       en: Database Name
       zh-cn: 数据库名称
     Description:
-      en: The database name created by the instance, consisting of lowercase letters, numbers, underscores, and middle lines, beginning with letters, ending with letters or numbers, up to 64 characters.
+      en: The database name created by the instance, consisting of lowercase letters, numbers, underscores, and hyphens, starting with a letter, ending with a letter or number, up to 64 characters.
       zh-cn: 实例创建的数据库名称，由小写字母、数字、下划线、中划线组成，以字母开头，字母或数字结尾，最多64个字符。
     Default: polardb_test
   PolarAccountName:
@@ -255,7 +255,7 @@ Parameters:
       en: Database Account
       zh-cn: 数据库账号
     Description:
-      en: Maximum 16 characters,Consists of a lowercase letter, a number, an underscore, a letter beginning, a letter or a number ending.<br><b>note： <font color='blue'>Keywords cannot be used, e.g.:admin/root</font></b>
+      en: "Maximum 16 characters,Consists of a lowercase letter, a number, an underscore, a letter beginning, a letter or a number ending.<br><b>note: <font color='blue'>Keywords cannot be used, e.g.:admin/root</font></b>"
       zh-cn: 最长16个字符, 由小写字母，数字、下划线组成、字母开头，字母或数字结尾。<br><b>注： <font color='blue'>关键字不能用，如：admin/root</font></b>
     Default: polardb_admin
   DBAccountPassword:
@@ -264,10 +264,10 @@ Parameters:
       en: Account password
       zh-cn: 数据库账号密码
     Description:
-      en: Length 8-32 characters, can contain size letters, Numbers and special symbols (including:!@#$%^&*-+=_).
+      en: "Length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     ConstraintDescription:
-      en: Length 8-32, can contain size letters, Numbers and special symbols (including:!@#$%^&*-+=_).
+      en: "Length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 长度8-32,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: '8'
     MaxLength: '32'
@@ -275,7 +275,7 @@ Parameters:
   ScalingGroupMinSize:
     Type: Number
     Label:
-      en: Minimum Number of ECS
+      en: Minimum Number of ECS Instances
       zh-cn: ECS实例数量最小值
     Description:
       en: ' range of values: [1, 100]'
@@ -313,7 +313,7 @@ Parameters:
       en: Scale Rule Adjustment Mode
       zh-cn: 伸缩规则调整方式
     Description:
-      en: <font color='blue'><b>Optional values:</b></font><br>[QuantityChangeInCapacity：<font color='green'>Increases or decreases a specified number of ECS instances(-500~500)</font>]<br>[PercentChangeInCapacity：<font color='green'>Increases or decreases ECS instances by a specified percentage(-100~10000)</font>]<br>[TotalCapacity：<font color='green'>Adjusts the number of ECS instances of the current scaling group to the specified number(0~1000)</font>]<br><font color='blue'></a>
+      en: "<font color='blue'><b>Optional values:</b></font><br>[QuantityChangeInCapacity: <font color='green'>Increases or decreases a specified number of ECS instances(-500~500)</font>]<br>[PercentChangeInCapacity: <font color='green'>Increases or decreases ECS instances by a specified percentage(-100~10000)</font>]<br>[TotalCapacity: <font color='green'>Adjusts the number of ECS instances of the current scaling group to the specified number(0~1000)</font>]<br><font color='blue'></a>"
       zh-cn: '<font color=''blue''><b>可选值: </b></font><br>[QuantityChangeInCapacity：<font color=''green''>增加或减少指定数量的ECS实例(-500~500)</font>]<br>[PercentChangeInCapacity：<font color=''green''>增加或减少指定比例的ECS实例(-100~10000)</font>]<br>[TotalCapacity：<font color=''green''>将当前伸缩组的ECS实例数量调整到指定数量(0~1000)</font>]<br><font color=''blue''></a>'
     Default: TotalCapacity
     AllowedValues:
@@ -323,10 +323,10 @@ Parameters:
   ScalingRuleAdjustmentValue:
     Type: Number
     Label:
-      en: Scaling Rules Adjust Values
+      en: Scaling Rule Adjustment Values
       zh-cn: 伸缩规则调整值
     Description:
-      en: The number of ECS instances in the scaling group should not exceed 500 in any case.
+      en: The number of ECS instances in the scaling group must not exceed 500 under any circumstances.
       zh-cn: 伸缩组内的ECS实例数量，任何情况下，单次调整的ECS实例台数都不能超过500。
     Default: 2
 Metadata:
@@ -707,7 +707,7 @@ Workspace:
           "zh-cn": "交换机1可用区"
         },
         "Description": {
-          "en": "Availability Zone ID,<br><b>note： <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating REDIS、SLB ans ECS resources</font></b>",
+          "en": "Availability Zone ID,<br><b>note: <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating REDIS、SLB ans ECS resources</font></b>",
           "zh-cn": "选择可用区ID。<br><b>注： <font color='blue'>选择可用区前请确认该可用区是否支持创建REDIS、SLB及ECS资源的规格</font></b>"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance:ZoneId"
@@ -741,7 +741,7 @@ Workspace:
           "zh-cn": "交换机2可用区"
         },
         "Description": {
-          "en": "Availability Zone ID, Please select a different availability zone, <br><b>note： <font color='blue'>Due to the low Availability Zone of PolarDB, <br>Before selecting, please confirm that the Availability Zone supports the specification of creating POLARDB and ECS resources.</font></b>",
+          "en": "Availability Zone ID, Please select a different availability zone, <br><b>note: <font color='blue'>Due to the low Availability Zone of PolarDB, <br>Before selecting, please confirm that the Availability Zone supports the specification of creating POLARDB and ECS resources.</font></b>",
           "zh-cn": "选择可用区ID，请选择不同的可用区，<br><b>注：<font color='blue'>由于PolarDB可用区较少， <br>选择可用区前请确认该可用区是否支持创建POLARDB及ECS资源的规格</font></b>"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance:ZoneId"
@@ -776,7 +776,7 @@ Workspace:
           "zh-cn": "付费类型"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values: </b></font><br>[Postpaid：<font color='green'>pay-as-you-go</font>]<br>[Prepaid：<font color='green'>prepayment，monthly or annual</font>]",
+          "en": "<font color='blue'><b>Optional values: </b></font><br>[Postpaid: <font color='green'>pay-as-you-go</font>]<br>[Prepaid: <font color='green'>prepayment,monthly or annual</font>]",
           "zh-cn": "<font color='blue'><b>付费类型；可选值: </b></font><br>[Postpaid：<font color='green'>按量付费</font>]<br>[Prepaid：<font color='green'>预付费，包月</font>]<br>注：预付费，包月实例"
         },
         "AllowedValues": [
@@ -812,7 +812,7 @@ Workspace:
           "zh-cn": "实例规格"
         },
         "Description": {
-          "en": "Fill in the specifications that can be used under the VSwitch 1 availability zone;</b></font><br>general specifications：<font color='red'><b>ecs.g5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>",
+          "en": "Fill in the specifications that can be used under the VSwitch 1 availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.g5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>",
           "zh-cn": "填写VSwitch1可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.g5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font color='blue'>实例规格族</font></a></b>"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance::InstanceType"
@@ -872,11 +872,11 @@ Workspace:
           "zh-cn": "登录密码"
         },
         "Description": {
-          "en": "Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+          "en": "Server login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (such as ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "ConstraintDescription": {
-          "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=| {}[]:;' <>,.? / Special symbol in).",
+          "en": "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (such as ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance::Password"
@@ -894,7 +894,7 @@ Workspace:
           "zh-cn": "付费类型"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values: </b></font><br>[PayOnDemand：<font color='green'>pay-as-you-go</font>]<br>[PrePay：<font color='green'>prepayment，monthly or annual</font>]",
+          "en": "<font color='blue'><b>Optional values: </b></font><br>[PayOnDemand: <font color='green'>pay-as-you-go</font>]<br>[PrePay: <font color='green'>prepayment,monthly or annual</font>]",
           "zh-cn": "<font color='blue'><b>付费类型；可选值: </b></font><br>[PayOnDemand：<font color='green'>按量付费</font>]<br>[PrePay：<font color='green'>预付费，包月</font>]"
         },
         "AllowedValues": [
@@ -915,7 +915,7 @@ Workspace:
           "zh-cn": "规格"
         },
         "Description": {
-          "en": "Instance specifications, see detail：</b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance support type</b></font></a>",
+          "en": "Instance specifications, see detail: </b><a href='https://www.alibabacloud.com/help/doc-detail/85939.html' target='_blank'><b><font color='blue'>Performance support type</b></font></a>",
           "zh-cn": "实例规格，详见：</b><a href='https://help.aliyun.com/document_detail/85939.html' target='_blank'><b><font color='blue'>性能保障型</b></font></a>"
         },
         "AllowedValues": [
@@ -940,7 +940,7 @@ Workspace:
           "zh-cn": "付费类型"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values: </b></font><br>[PostPaid：<font color='green'>pay-as-you-go</font>]",
+          "en": "<font color='blue'><b>Optional values: </b></font><br>[PostPaid: <font color='green'>pay-as-you-go</font>]",
           "zh-cn": "<font color='blue'><b>付费类型；可选值: </b></font><br>[PostPaid：<font color='green'>按量付费</font>]"
         },
         "AllowedValues": [
@@ -999,11 +999,11 @@ Workspace:
           "zh-cn": "数据库密码"
         },
         "Description": {
-          "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+          "en": "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (including: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "ConstraintDescription": {
-          "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+          "en": "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (including: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "MinLength": "8",
@@ -1043,7 +1043,7 @@ Workspace:
           "zh-cn": "自动续费"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values: </b></font><br>[AutoRenewal：<font color='green'>automatic renewal</font>]<br>[NotRenewal：<font color='green'>No longer a renewal</font>]<br><b>note： <font color='blue'>If the automatic renewal, the default renewal 1 month</font>",
+          "en": "<font color='blue'><b>Optional values: </b></font><br>[AutoRenewal: <font color='green'>automatic renewal</font>]<br>[NotRenewal: <font color='green'>No longer a renewal</font>]<br><b>note: <font color='blue'>If the automatic renewal, the default renewal 1 month</font>",
           "zh-cn": "<font color='blue'><b>可选值: </b></font><br>[AutoRenewal：<font color='green'>自动续费</font>]<br>[NotRenewal：<font color='green'>不再续费</font>]<br>注： 如自动续费，默认续费1个月份。"
         },
         "AllowedValues": [
@@ -1060,7 +1060,7 @@ Workspace:
       description = <<EOT
       {
         "Label": {
-          "en": "Type And Version",
+          "en": "Type and Version",
           "zh-cn": "类型与版本号"
         },
         "Description": {
@@ -1087,7 +1087,7 @@ Workspace:
           "zh-cn": "规格"
         },
         "Description": {
-          "en": "See detail：<b><a href='https://www.alibabacloud.com/help/doc-detail/68498.html' target='_blank'><font color='blue'>Specifications and pricing</font></a></b>",
+          "en": "See detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/68498.html' target='_blank'><font color='blue'>Specifications and pricing</font></a></b>",
           "zh-cn": "详见：<b><a href='https://help.aliyun.com/document_detail/68498.html' target='_blank'><font color='blue'>规格与定价</font></a></b>"
         }
       }
@@ -1104,7 +1104,7 @@ Workspace:
           "zh-cn": "数据库名称"
         },
         "Description": {
-          "en": "The database name created by the instance, consisting of lowercase letters, numbers, underscores, and middle lines, beginning with letters, ending with letters or numbers, up to 64 characters.",
+          "en": "The database name created by the instance, consisting of lowercase letters, numbers, underscores, and hyphens, starting with a letter, ending with a letter or number, up to 64 characters.",
           "zh-cn": "实例创建的数据库名称，由小写字母、数字、下划线、中划线组成，以字母开头，字母或数字结尾，最多64个字符。"
         }
       }
@@ -1121,7 +1121,7 @@ Workspace:
           "zh-cn": "数据库账号"
         },
         "Description": {
-          "en": "Maximum 16 characters,Consists of a lowercase letter, a number, an underscore, a letter beginning, a letter or a number ending.<br><b>note： <font color='blue'>Keywords cannot be used, e.g.:admin/root</font></b>",
+          "en": "Maximum 16 characters,Consists of a lowercase letter, a number, an underscore, a letter beginning, a letter or a number ending.<br><b>note: <font color='blue'>Keywords cannot be used, e.g.:admin/root</font></b>",
           "zh-cn": "最长16个字符, 由小写字母，数字、下划线组成、字母开头，字母或数字结尾。<br><b>注： <font color='blue'>关键字不能用，如：admin/root</font></b>"
         }
       }
@@ -1138,11 +1138,11 @@ Workspace:
           "zh-cn": "数据库账号密码"
         },
         "Description": {
-          "en": "Length 8-32 characters, can contain size letters, Numbers and special symbols (including:!@#$%^&*-+=_).",
+          "en": "Length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_).",
           "zh-cn": "长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。"
         },
         "ConstraintDescription": {
-          "en": "Length 8-32, can contain size letters, Numbers and special symbols (including:!@#$%^&*-+=_).",
+          "en": "Length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_).",
           "zh-cn": "长度8-32,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。"
         },
         "MinLength": "8",
@@ -1157,7 +1157,7 @@ Workspace:
       description = <<EOT
       {
         "Label": {
-          "en": "Minimum Number of ECS",
+          "en": "Minimum Number of ECS Instances",
           "zh-cn": "ECS实例数量最小值"
         },
         "Description": {
@@ -1199,7 +1199,7 @@ Workspace:
           "zh-cn": "移出ECS实例的策略"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values: </b></font><br>[OldestInstance：<font color='green'>Take the earliest ECS instance to join the flex group</font>]<br>[NewestInstance：<font color='green'>Take the latest ECS instance that has joined the flex group</font>]<br>[OldestScalingConfiguration：<font color='green'>Take the instance that was created by the earliest scaling configuration</font>]<br><font color='blue'></a>",
+          "en": "<font color='blue'><b>Optional values: </b></font><br>[OldestInstance: <font color='green'>Take the earliest ECS instance to join the flex group</font>]<br>[NewestInstance: <font color='green'>Take the latest ECS instance that has joined the flex group</font>]<br>[OldestScalingConfiguration: <font color='green'>Take the instance that was created by the earliest scaling configuration</font>]<br><font color='blue'></a>",
           "zh-cn": "<font color='blue'><b>可选值: </b></font><br>[OldestInstance：<font color='green'>取最早加入伸缩组的 ECS 实例</font>]<br>[NewestInstance：<font color='green'>取最新加入伸缩组的 ECS 实例</font>]<br>[OldestScalingConfiguration：<font color='green'>取最早伸缩配置创建的实例</font>]<br><font color='blue'></a>"
         }
       }
@@ -1216,7 +1216,7 @@ Workspace:
           "zh-cn": "伸缩规则调整方式"
         },
         "Description": {
-          "en": "<font color='blue'><b>Optional values:</b></font><br>[QuantityChangeInCapacity：<font color='green'>Increases or decreases a specified number of ECS instances(-500~500)</font>]<br>[PercentChangeInCapacity：<font color='green'>Increases or decreases ECS instances by a specified percentage(-100~10000)</font>]<br>[TotalCapacity：<font color='green'>Adjusts the number of ECS instances of the current scaling group to the specified number(0~1000)</font>]<br><font color='blue'></a>",
+          "en": "<font color='blue'><b>Optional values:</b></font><br>[QuantityChangeInCapacity: <font color='green'>Increases or decreases a specified number of ECS instances(-500~500)</font>]<br>[PercentChangeInCapacity: <font color='green'>Increases or decreases ECS instances by a specified percentage(-100~10000)</font>]<br>[TotalCapacity: <font color='green'>Adjusts the number of ECS instances of the current scaling group to the specified number(0~1000)</font>]<br><font color='blue'></a>",
           "zh-cn": "<font color='blue'><b>可选值: </b></font><br>[QuantityChangeInCapacity：<font color='green'>增加或减少指定数量的ECS实例(-500~500)</font>]<br>[PercentChangeInCapacity：<font color='green'>增加或减少指定比例的ECS实例(-100~10000)</font>]<br>[TotalCapacity：<font color='green'>将当前伸缩组的ECS实例数量调整到指定数量(0~1000)</font>]<br><font color='blue'></a>"
         },
         "AllowedValues": [
@@ -1234,11 +1234,11 @@ Workspace:
       description = <<EOT
       {
         "Label": {
-          "en": "Scaling Rules Adjust Values",
+          "en": "Scaling Rule Adjustment Values",
           "zh-cn": "伸缩规则调整值"
         },
         "Description": {
-          "en": "The number of ECS instances in the scaling group should not exceed 500 in any case.",
+          "en": "The number of ECS instances in the scaling group must not exceed 500 under any circumstances.",
           "zh-cn": "伸缩组内的ECS实例数量，任何情况下，单次调整的ECS实例台数都不能超过500。"
         }
       }

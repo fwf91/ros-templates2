@@ -70,7 +70,7 @@ Parameters:
         服务器登录密码，长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
         中的特殊符号）
     Label:
-      en: Instance Password
+      en: Instance password
       zh-cn: 实例密码
     ConstraintDescription:
       en: >-
@@ -117,7 +117,7 @@ Parameters:
         数据库账号密码，长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
         中的特殊符号）
     Label:
-      en: RDS Instance Password
+      en: RDS Instance password
       zh-cn: RDS数据库密码
     ConstraintDescription:
       en: >-

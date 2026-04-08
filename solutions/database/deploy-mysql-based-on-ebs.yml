@@ -57,7 +57,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: Ecs登陆地址。
-      en: Ecs login address.
+      en: ECS login address.
     Value:
       'Fn::Sub':
         - >-

@@ -6,11 +6,10 @@ Parameters:
   VpcCidrBlock:
     Type: String
     Label:
-      en: VPC Cidrblock
+      en: VPC CIDR block
       zh-cn: VPC网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR block form. You can use the
-        following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12  192.168.0.0/16'
+      en: "The IP address range of the VPC in the CIDR block form. You can use the following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
       zh-cn: 专有网络的网段，可选值：10.0.0.0/8，172.16.0.0/12，192.168.0.0/16。
     Default: 192.168.0.0/16
     AllowedValues:
@@ -70,7 +69,7 @@ Parameters:
       en: Nat Gateway Bandwidth
       zh-cn: Nat网关带宽
     Description:
-      en: 'Nat gateway Bandwidth,Allowed value: 5~500.'
+      en: 'NAT gateway bandwidth. Allowed value: 5–500.'
       zh-cn: Nat网关带宽，允许值:5~500。
     Default: 5
     MinValue: 5
@@ -101,8 +100,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. see detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     Default: centos_7
@@ -123,7 +121,7 @@ Parameters:
       en: Backend Server Amount
       zh-cn: 后端服务器数量
     Description:
-      en: 'Number of backend Server,Allowed value: 1~100.'
+      en: 'Number of backend servers. Allowed value: 1–100.'
       zh-cn: 后端服务器数量，允许值:1~100。
     Default: 1
     MinValue: 1
@@ -134,7 +132,7 @@ Parameters:
       en: Other Server Amount
       zh-cn: 其他服务器数量
     Description:
-      en: 'Number of other server to create ecs instance,Allowed value: 1~100.'
+      en: 'Number of other servers to create ECS instances. Allowed value: 1–100.'
       zh-cn: 其他服务器数量，允许值:1~100。
     Default: 1
     MinValue: 1
@@ -149,8 +147,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters; must contain uppercase letters, lowercase letters, numbers, and at least three special symbols. Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'
