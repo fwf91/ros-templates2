@@ -57,14 +57,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: '<font color=''blue''><b>1.Before selecting the model please confirm that
-        the current available zone under the model is in stock, some models need to
-        be reported in advance</b></font>]<br><font color=''blue''><b>2.List of optional
-        models</font>]<br></b></font>[ecs.c5.large: <font color=''green''>2vCPU 4GiB
-        Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPSS</font>]<br></b>[ecs.c5.xlarge:
-        <font color=''green''>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending
-        and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge: <font color=''green''>8vCPU
-        16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]'
+      en: "<font color='blue'><b>1. Before selecting the model, please confirm that the current available zone under the model is in stock; some models need to be reported in advance.</b></font><br><font color='blue'><b>2. List of optional models</b></font><br>[ecs.c5.large: <font color='green'>2vCPU 4GiB Intranet bandwidth 1Gbps In-grid sending and receiving packages 30 Million PPS</font>]<br>[ecs.c5.xlarge: <font color='green'>4vCPU 8GiB Intranet bandwidth 1.5Gbps In-grid sending and receiving packages 50 Million PPS</font>]<br>[ecs.c5.2xlarge: <font color='green'>8vCPU 16GiB Intranet bandwidth 2.5Gbps In-grid sending and receiving packages 80 Million PPS</font>]"
       zh-cn: '<font color=''blue''><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font
         color=''blue''><b>2.可选机型列表</font><br></b></font>[ecs.c5.large: <font color=''green''>2vCPU
         4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge: <font color=''green''>4vCPU
@@ -94,7 +87,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -105,9 +98,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]'
     Default: cloud_efficiency
@@ -131,7 +122,7 @@ Parameters:
       en: Instance Amount
       zh-cn: 实例数量
     Description:
-      en: 'ECS Instance Amount, Allowed value: 3~10'
+      en: 'ECS Instance Amount, allowed value: 3–10'
       zh-cn: 购买实例数量，允许值：3~10
     Default: 3
     MinValue: 3
@@ -142,12 +133,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Constraints: RDS specifications need to be supported under the single Availability
-        Zone of an existing switch<br>Details of the specifications can be found at:
-        <a href=''https://www.alibabacloud.com/help/doc-detail/26312.htm'' target=''_blank''><b><font
-        color=''blue''>Primary instance types</font></b></a><br>General specifications
-        are recommended: <br>[rds.mysql.s2.large: <font color=''green''>2vCPU 4GiB
-        Max Connections 1200 IOPS2000</font>]'
+      en: "Constraints: RDS specifications must be supported in a single Availability Zone of an existing switch. Details can be found at: <a href='https://www.alibabacloud.com/help/doc-detail/26312.htm' target='_blank'><b><font color='blue'>Primary instance types</font></b></a><br>General specifications are recommended: <br>[rds.mysql.s2.large: <font color='green'>2 vCPU, 4 GiB, Max Connections 1200, IOPS 2000</font>]"
       zh-cn: '约束： RDS规格需要在已有交换机的单可用区下支持创建<br>规格详见：<a href=''https://help.aliyun.com/document_detail/26312.html''
         target=''_blank''><b><font color=''blue''>实例规格表</font></b></a><br>推荐通用规格:
         <br>[rds.mysql.s2.large: <font color=''green''>2vCPU 4GiB 最大连接数 1200 IOPS2000</font>]'
@@ -170,10 +156,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: 'The type of disk supported by the current RDS specification is required<br><font
-        color=''blue''><b>Optional values:</b></font><br>[local_ssd: <font color=''green''>Local
-        SSD disk</font>]<br>[cloud_ssd: <font color=''green''>SSD cloud disk</font>]<br>[cloud_essd:
-        <font color=''green''>ESSD cloud disk</font>]'
+      en: "The type of disk supported by the current RDS specification is required<br><font color='blue'><b>Optional values:</b></font><br>[local_ssd: <font color='green'>Local SSD disk</font>]<br>[cloud_ssd: <font color='green'>SSD cloud disk</font>]<br>[cloud_essd: <font color='green'>ESSD cloud disk</font>]"
       zh-cn: '需要使用当前RDS规格支持的磁盘类型<br><font color=''blue''><b>可选值：</b></font><br>[local_ssd:
         <font color=''green''>本地SSD盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]'
@@ -194,13 +177,11 @@ Parameters:
       en: Account Password
       zh-cn: 账号密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols
-        (including:!@ # $% ^ & * - + = _).'
+      en: "8–32 characters long, can contain uppercase and lowercase letters, numbers, and special symbols (!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols
-        (including:!@ # $% ^ & * - + = _).'
+      en: "8-32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: 8
     MaxLength: 32

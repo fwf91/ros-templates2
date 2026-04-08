@@ -11,8 +11,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR block form. You can use the
-        following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12  192.168.0.0/16'
+      en: "The IP address range of the VPC in the CIDR block form. You can use the following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
       zh-cn: 专有网络的网段，可选值：10.0.0.0/8，172.16.0.0/12，192.168.0.0/16。
     Default: 192.168.0.0/16
     AllowedValues:
@@ -26,7 +25,7 @@ Parameters:
       zh-cn: 可用区ID
     Default: Null
     Description:
-      en: The available zone ID, you should confirm the zone support SLB or not.
+      en: The available zone ID. You should confirm whether the zone supports SLB.
       zh-cn: 可用区ID，需确认所选可用区下是否支持SLB等资源。
     AssociationProperty: ALIYUN::ECS::Instance::ZoneId
     AssociationPropertyMetadata:
@@ -129,7 +128,7 @@ Resources:
 Outputs:
   SlbLoadBalancerId:
     Description:
-      en: The ID of load balance created.
+      en: The ID of the load balancer created.
       zh-cn: 创建的负载均衡ID。
     Value:
       Fn::GetAtt:

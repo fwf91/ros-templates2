@@ -8,7 +8,7 @@ Parameters:
       zh-cn: ECS可用区A
       en: Availability Zone A of ECS
     Description:
-      en: An availability zone to create for the ECS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
+      en: An availability zone to create the ECS instance in. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
       zh-cn: 创建ECS实例的可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。
   ECS_ZoneId_2:
     Type: String
@@ -17,7 +17,7 @@ Parameters:
       zh-cn: ECS可用区B
       en: Availability Zone B of ECS
     Description:
-      en: An availability zone to create for the ECS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
+      en: An availability zone to create the ECS instance in. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
       zh-cn: 创建ECS实例的可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。
   RDS_ZoneId_1:
     Type: String
@@ -26,7 +26,7 @@ Parameters:
       zh-cn: RDS主可用区
       en: Master availability zone
     Description:
-      en: The master availability zone to create for the RDS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
+      en: The master availability zone for the RDS instance. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
       zh-cn: 创建RDS实例的主可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。
   RDS_ZoneId_2:
     Type: String
@@ -35,7 +35,7 @@ Parameters:
       zh-cn: RDS备可用区
       en: Slave availability zone
     Description:
-      en: The slave availability zone to create for the RDS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
+      en: The slave availability zone for the RDS instance. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
       zh-cn: 创建RDS实例的备可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。
   InstanceType:
     Type: String
@@ -56,10 +56,10 @@ Parameters:
       en: ECS instance password
       zh-cn: ECS实例密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-='
+      en: '8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-='
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-='
+      en: '8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-='
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     MinLength: 8
     MaxLength: 32
@@ -79,10 +79,10 @@ Parameters:
       en: Database password
       zh-cn: 数据库密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-= <br>It applies to both the password of the self-built database on ECS and the password of RDS.'
+      en: '8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-= <br>It applies to both the password of the self-built database on ECS and the password of RDS.'
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）<br>同时适用于ECS上自建数据库的密码与RDS的密码。
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-='
+      en: '8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-='
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）
     MinLength: 8
     MaxLength: 32
@@ -101,7 +101,7 @@ Parameters:
       zh-cn: SLB主可用区
       en: Master availability zone
     Description:
-      en: The master availability zone to create for the SLB instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.
+      en: The master availability zone to create for the SLB instance. Ensure that the current region has at least two different availability zones to choose from. If there are no two availability zones, please change other parameters or switch to another region and check again.
       zh-cn: 创建SLB实例的主可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。
 Metadata:
   ALIYUN::ROS::Interface:
@@ -458,7 +458,7 @@ Workspace:
           "en": "Availability Zone A of ECS"
         },
         "Description": {
-          "en": "An availability zone to create for the ECS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
+          "en": "An availability zone to create the ECS instance in. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
           "zh-cn": "创建ECS实例的可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。"
         }
       }
@@ -475,7 +475,7 @@ Workspace:
           "en": "Availability Zone B of ECS"
         },
         "Description": {
-          "en": "An availability zone to create for the ECS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
+          "en": "An availability zone to create the ECS instance in. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
           "zh-cn": "创建ECS实例的可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。"
         }
       }
@@ -492,7 +492,7 @@ Workspace:
           "en": "Master availability zone"
         },
         "Description": {
-          "en": "The master availability zone to create for the RDS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
+          "en": "The master availability zone for the RDS instance. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
           "zh-cn": "创建RDS实例的主可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。"
         }
       }
@@ -509,7 +509,7 @@ Workspace:
           "en": "Slave availability zone"
         },
         "Description": {
-          "en": "The slave availability zone to create for the RDS instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
+          "en": "The slave availability zone for the RDS instance. <font color='red'><b>Ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
           "zh-cn": "创建RDS实例的备可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。"
         }
       }
@@ -553,11 +553,11 @@ Workspace:
           "zh-cn": "ECS实例密码"
         },
         "Description": {
-          "en": "Length 8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-=",
+          "en": "8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-=",
           "zh-cn": "长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）"
         },
         "ConstraintDescription": {
-          "en": "8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-=",
+          "en": "8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-=",
           "zh-cn": "8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）"
         },
         "MinLength": 8,
@@ -593,11 +593,11 @@ Workspace:
           "zh-cn": "数据库密码"
         },
         "Description": {
-          "en": "Length 8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-= <br>It applies to both the password of the self-built database on ECS and the password of RDS.",
+          "en": "8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-= <br>It applies to both the password of the self-built database on ECS and the password of RDS.",
           "zh-cn": "长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）<br>同时适用于ECS上自建数据库的密码与RDS的密码。"
         },
         "ConstraintDescription": {
-          "en": "8-32 characters, can contain size letters, Numbers and special symbols, including: !@#$%^&*()_+-=",
+          "en": "8-32 characters, can contain uppercase letters, numbers, and special symbols, including: !@#$%^&*()_+-=",
           "zh-cn": "8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*()_+-=）"
         },
         "MinLength": 8,
@@ -630,7 +630,7 @@ Workspace:
           "en": "Master availability zone"
         },
         "Description": {
-          "en": "The master availability zone to create for the SLB instance, <font color='red'><b>ensure that the current region has at least two different availability zones to choose from</b>. If there are no two availability zones, please change other parameters or switch to another region and check again.",
+          "en": "The master availability zone to create for the SLB instance. Ensure that the current region has at least two different availability zones to choose from. If there are no two availability zones, please change other parameters or switch to another region and check again.",
           "zh-cn": "创建SLB实例的主可用区，<font color='red'><b>请确保当前地域有至少两个不同的可用区可供选择</b></font>。若无双可用区，请修改其他参数或切换至其他地域后重新查看。"
         }
       }

@@ -9,8 +9,7 @@ Parameters:
       en: VPC Cidrblock
       zh-cn: VPC网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR block form. You can use the
-        following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12  192.168.0.0/16'
+      en: "The IP address range of the VPC in the CIDR block form. You can use the following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
       zh-cn: 专有网络的网段，可选值：10.0.0.0/8，172.16.0.0/12，192.168.0.0/16。
     Default: 10.0.0.0/8
     AllowedValues:
@@ -33,7 +32,7 @@ Parameters:
       en: VSwitch CidrBlock
       zh-cn: VSwitch网段
     Description:
-      en: VSwitch subnet which is within VPC.
+      en: VSwitch subnet, which must be within the VPC.
       zh-cn: 交换机网段，必须为VPC子网段。
     Default: 10.0.10.0/24
   InstanceType:
@@ -64,8 +63,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. see detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
@@ -86,8 +84,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8–30; must contain uppercase letters, lowercase letters, numbers, and special symbols. Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'
@@ -224,7 +221,7 @@ Parameters:
         characters, hyphen and underline
       zh-cn: WordPress数据库密码，由8~32位大小写字母、数字、下划线、连字符组成。
     ConstraintDescription:
-      en: Consist of 8 to 32 characters of alphanumeric characters, hyphen and underline
+      en: Must consist of 8 to 32 characters, including alphanumeric characters, hyphens, and underscores.
       zh-cn: 由 8 到 32 个字母数字字符、连字符和下划线组成
     MinLength: 8
     MaxLength: 32
@@ -582,7 +579,7 @@ Resources:
 Outputs:
   JumpHostIp:
     Description:
-      en: The jump host IP.
+      en: Jump Host IP
       zh-cn: 跳转主机IP。
     Value:
       Fn::GetAtt:
@@ -590,7 +587,7 @@ Outputs:
       - PublicIp
   WordPressUrl:
     Description:
-      en: WordPress URL.
+      en: WordPress URL
       zh-cn: WordPress 网址。
     Value:
       Fn::Join:

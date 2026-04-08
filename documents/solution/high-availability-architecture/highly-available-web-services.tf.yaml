@@ -17,7 +17,7 @@ Metadata:
       - zone2
     - Label:
         default:
-          en: Instance Configure
+          en: Instance Configuration
           zh-cn: ECS实例配置
       Parameters:
       - ecs_instance_type1
@@ -35,10 +35,10 @@ Parameters:
       ExclusiveTo:
       - zone2
     Description:
-      en: Availability zone 1 must be different from Availability zone 2.
+      en: Availability zone 1 must be different from availability zone 2.
       zh-cn: 可用区1要不同与可用区2。
     Label:
-      en: VSwitch Availability Zone1
+      en: VSwitch in Availability Zone 1
       zh-cn: 交换机可用区1
     Type: String
   zone2:
@@ -47,10 +47,10 @@ Parameters:
       ExclusiveTo:
       - zone1
     Description:
-      en: Availability zone 2 must be different from Availability zone 1.
+      en: Availability zone 2 must be different from availability zone 1.
       zh-cn: 可用区2要不同与可用区1。
     Label:
-      en: VSwitch Availability Zone2
+      en: VSwitch in Availability Zone 2
       zh-cn: 交换机可用区2
     Type: String
   ecs_instance_type1:
@@ -60,7 +60,7 @@ Parameters:
       SystemDiskCategory: cloud_essd
       ZoneId: ${zone1}
     Label:
-      en: Instance Type Of Availability Zone1
+      en: Instance Type for Availability Zone 1
       zh-cn: 可用区1的实例规格
     Type: String
   ecs_instance_type2:
@@ -70,7 +70,7 @@ Parameters:
       SystemDiskCategory: cloud_essd
       ZoneId: ${zone2}
     Label:
-      en: Instance Type Of Availability Zone2
+      en: Instance Type for Availability Zone 2
       zh-cn: 可用区2的实例规格
     Type: String
   ecs_instance_password:

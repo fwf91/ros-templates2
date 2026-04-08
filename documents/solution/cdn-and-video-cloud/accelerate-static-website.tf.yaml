@@ -17,7 +17,7 @@ Parameters:
     Type: String
     Label:
       zh-cn: 加速区域
-      en: Acceleration area
+      en: Acceleration Area
     Description:
       zh-cn: 选择加速区域。加速区域为仅中国内地和全球时，服务域名必须备案。
       en: Select the acceleration area. When the acceleration region is only in 
@@ -31,10 +31,10 @@ Parameters:
     Type: Json
     Label:
       zh-cn: 加速域名
-      en: Accelerated domain name
+      en: Accelerated Domain Name
     Description:
       zh-cn: 加速域名是指接入CDN，用于加速源站的域名。请填写您账号下的域名。仅支持二级域名，例如 prefix.example.com。
-      en: Accelerated domain name refers to the domain name of the access CDN 
+      en: Accelerated Domain Name refers to the domain name of the access CDN 
         used to accelerate the source site. Please fill in the domain name under
         your account.
     AssociationProperty: ALIYUN::DomainName

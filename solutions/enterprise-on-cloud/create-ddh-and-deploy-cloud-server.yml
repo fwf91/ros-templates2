@@ -10,9 +10,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 10.0.0.0/8
@@ -47,10 +45,7 @@ Parameters:
       en: DDH Type
       zh-cn: 规格
     Description:
-      en: 'Please confirm the inventory of this specification under the Availability
-        Zone in the product console，<br>general specifications：<font color=''red''><b>ddh.c5</b></font><br>See
-        Detail: <a href=''https://www.alibabacloud.com/help/zh/doc-detail/68564.htm''
-        target=''_blank''><b><font color=''blue''>Host specifications</font></a></b>'
+      en: "Please confirm the inventory of this specification under the Availability Zone in the product console,<br>general specifications: <font color='red'><b>ddh.c5</b></font><br>See Detail: <a href='https://www.alibabacloud.com/help/zh/doc-detail/68564.htm' target='_blank'><b><font color='blue'>Host specifications</font></a></b>"
       zh-cn: 请在该产品控制台确认此规格在可用区下的库存情况，<br>通用规格：<font color='red'><b>ddh.c5</b></font><br>注：可用区可能不支持通用规格<br>详见：<a
         href='https://help.aliyun.com/document_detail/68564.html' target='_blank'><b><font
         color='blue'>宿主机规格</font></a></b>
@@ -73,12 +68,10 @@ Parameters:
       en: ECS Amount
       zh-cn: 实例数量
     Description:
-      en: 'The number of servers created in combination with the specifications of
-        the host machine, the value range: 1 to 100.'
+      en: "The number of servers created in combination with the host machine's specifications. Value range: 1 to 100."
       zh-cn: 结合宿主机的规格创建服务器的数量，取值范围：1~100。
     ConstraintDescription:
-      en: 'The number of servers created in combination with the specifications of
-        the host machine, the value range: 1 to 100.'
+      en: "The number of servers created in combination with the host machine's specifications. Value range: 1 to 100."
       zh-cn: 结合宿主机的规格创建服务器的数量，取值范围：1~100。
     Default: 1
     MinValue: 1
@@ -100,10 +93,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Please confirm that an instance of this specification is appropriate under
-        the host;</b></font><br>general specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Please confirm that an instance of this specification is appropriate under the host;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 请确认在该宿主机下适合创建该规格的实例；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -116,11 +106,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:

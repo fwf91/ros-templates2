@@ -10,11 +10,11 @@ Parameters:
       en: VPC Name
       zh-cn: 虚拟专有网络名称
     Description:
-      en: Name of VPC, [2, 128] English or Chinese characters, must start with a letter
+      en: Name of VPC, [2, 128] characters (English or Chinese), must start with a letter
         or Chinese in size, can contain numbers, '_' or '.', '-'.
       zh-cn: VPC 名称，[2，128]英文或中文字符，必须以字母或中文开头，可以包含数字、下划线或“.”、“-”。
     ConstraintDescription:
-      en: '[2, 128] English or Chinese characters'
+      en: '[2, 128] characters (English or Chinese)'
       zh-cn: '[2, 128] 英文或中文字符'
     Default: MyVPC
     MinLength: 2
@@ -25,9 +25,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: VPC网段
     Description:
-      en: 'The VPC CIDR Block; <br>You can use the following IP address ranges and
-        their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font color=''green''>[172.16.0.0/12]</font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "VPC CIDR Block<br>You can use the following IP address ranges and their subnets:<br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC网段；<br>您可以使用以下IP地址范围及其子网：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 10.0.0.0/8
@@ -41,7 +39,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机的子网
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created VSwitch; must be within the VPC CIDR Block.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 10.0.10.0/24
   ZoneId:
@@ -61,7 +59,7 @@ Parameters:
       en: Instance Name
       zh-cn: 实例名称
     Description:
-      en: The name of ECS instance, [2, 128] English or Chinese characters, must start
+      en: The name of ECS instance, [2, 128] characters (English or Chinese), must start
         with a letter or Chinese in size, can contain numbers, '_' or '.', '-'.
       zh-cn: ECS实例名称，[2，128]英文或中文字符，必须以字母或中文开头，可以包含数字、下划线或“.”、“-”。
     Default: DefaultECSInstance
@@ -106,8 +104,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters, must contain uppercase letters, lowercase letters, numbers, and special symbols (three required); special characters include: `()~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'

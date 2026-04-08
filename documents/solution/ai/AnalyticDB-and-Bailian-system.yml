@@ -1,6 +1,6 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
-  en: AnalyticDB and Bailian build intelligent question and answer system.
+  en: Build an intelligent question-and-answer system using AnalyticDB and Bailian.
   zh-cn: AnalyticDB与百炼搭建智能问答系统。
 Parameters:
   ZoneId:
@@ -23,7 +23,7 @@ Parameters:
   APP_ID:
     Type: String
     Label:
-      en: Application ID of Bilian application
+      en: Application ID of Bailian application
       zh-cn: 百炼应用的应用ID
   InstanceType:
     Type: String
@@ -240,7 +240,7 @@ Outputs:
   WebUrl:
     Description:
       zh-cn: Web 访问地址。
-      en: The Addresses of Web.
+      en: Web addresses
     Value:
       'Fn::Sub':
         - 'http://${ServerAddress}:5000/home'
@@ -253,7 +253,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: ECS登录地址。
-      en: Ecs login address.
+      en: ECS login address
     Value:
       'Fn::Sub':
         - >-
@@ -275,14 +275,14 @@ Metadata:
           - InstancePassword
         Label:
           default:
-            en: Ecs Configuration
+            en: ECS Configuration
             zh-cn: ECS 实例配置
       - Parameters:
           - APP_ID
           - DASHSCOPE_API_KEY
         Label:
           default:
-            en: Bilian Application Configuration
+            en: Bailian Application Configuration
             zh-cn: 百炼应用配置
     Hidden:
       - CommonName

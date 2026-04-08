@@ -22,7 +22,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -221,7 +221,7 @@ Outputs:
               - Ref: EcsInstance
   Url:
     Description:
-      en: test address.
+      en: Test address.
       zh-cn: 测试访问地址。
     Value:
       Fn::Sub:

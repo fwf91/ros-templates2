@@ -11,7 +11,7 @@ Parameters:
   VSwitchZoneId:
     Type: String
     Label:
-      en: Availability zone
+      en: Availability Zone
       zh-cn: 可用区
     Description:
       en: Available area id, <a href='https://help.aliyun.com/document_detail/123712.html'
@@ -45,7 +45,7 @@ Parameters:
       en: Name of sls project
       zh-cn: 日志项目的名称
     Description:
-      en: The name contains 3 to 36 characters. It must start and end with a lowercase letter or number. The value can contain lowercase letters, digits, and hyphens (-).
+      en: The name must be 3 to 36 characters long. It must start and end with a lowercase letter or digit. It can contain lowercase letters, digits, and hyphens (-).
       zh-cn: 长度为3~36个字符。必须以小写英文字母或数字开头和结尾。可包含小写英文字母、数字和短划线（-）。
     AssociationProperty: AutoCompleteInput
     AssociationPropertyMetadata:
@@ -62,7 +62,7 @@ Parameters:
     Description:
       en: |-
         The name of the log library must be unique within a logging project.
-        The name contains 3 to 36 characters. It must start and end with a lowercase letter or number. The value can contain lowercase letters, digits, and hyphens (-).
+        The name must be 3 to 36 characters long. It must start and end with a lowercase letter or digit. It can contain lowercase letters, digits, and hyphens (-).
       zh-cn: |-
         在一个日志项目中，日志库的名称必须具有唯一性。
         长度为3~36个字符。必须以小写英文字母或数字开头和结尾。可包含小写英文字母、数字和短划线（-）。
@@ -73,7 +73,7 @@ Parameters:
       en: Bucket name
       zh-cn: 存储空间名称
     Description:
-      en: The name contains 3 to 36 characters. It must start and end with a lowercase letter or number. The value can contain lowercase letters, digits, and hyphens (-).
+      en: The name must be 3 to 36 characters long. It must start and end with a lowercase letter or digit. It can contain lowercase letters, digits, and hyphens (-).
       zh-cn: 长度为3~36个字符。必须以小写英文字母或数字开头和结尾。可包含小写英文字母、数字和短划线（-）。
     AssociationProperty: AutoCompleteInput
     AssociationPropertyMetadata:

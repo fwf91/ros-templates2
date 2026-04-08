@@ -34,7 +34,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机网段
     Description:
-      en: Network segments of new switches, subnets of virtual proprietary networks
+      en: Network segments for new switches, subnets of virtual private networks
       zh-cn: 新建交换机的网段，所属虚拟专有网络的子网
     Default: 192.168.0.0/24
   InstanceType:
@@ -81,7 +81,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -112,7 +112,7 @@ Parameters:
       en: Kafka Listeners Port
       zh-cn: Kafka监听端口
     Description:
-      en: Kafka Listeners Port, please use more than 1000 port Numbers
+      en: Kafka Listeners Port, please use a port number greater than 1000
       zh-cn: Kafka监听端口，请使用1000以上的端口号
     Default: 9092
     MinValue: 1000

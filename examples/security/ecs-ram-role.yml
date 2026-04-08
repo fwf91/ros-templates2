@@ -7,7 +7,7 @@ Parameters:
   RoleName:
     Type: String
     Label:
-      en: RoleName
+      en: Role Name
       zh-cn: Ram角色名
     Description:
       en: Ram role name, 1 to 64 characters in length, beginning with English letters

@@ -28,7 +28,7 @@ Parameters:
       en: Outputs Data Path
     Description:
       zh-cn: 输出数据所在的地域和OSS目录。输出数据路径需要为空目录，否则可能会导致输出目录中存在多个任务的人群文件。
-      en: OSS directory where the output data is located. The output data path needs to be an empty directory, otherwise crowd files for multiple tasks may exist in the output directory.
+      en: OSS directory where the output data is located. The output data path must be an empty directory; otherwise, crowd files for multiple tasks may exist in the output directory.
 Resources:
   Campaign:
     Type: ALIYUN::PAIPlugin::Campaign

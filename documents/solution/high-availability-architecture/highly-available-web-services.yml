@@ -592,7 +592,7 @@ Metadata:
         Label:
           default:
             zh-cn: ECS实例配置
-            en: Instance Configure
+            en: Instance Configuration
     TemplateTags:
       - 'acs:technical-solution:high-availability-architecture:高可用及共享存储Web服务-tech_solu_12'
       - acs:public_template:Solution:highly-available-web-services

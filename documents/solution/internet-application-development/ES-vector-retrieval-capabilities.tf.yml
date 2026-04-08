@@ -4,10 +4,10 @@ Parameters:
   app_username:
     ConstraintDescription:
       zh-cn: 3 到 63 个字母组成。
-      en: 3 to 63 letters.
+      en: 3 to 63 characters.
     Description:
       zh-cn: 在浏览器中登录示例应用程序时的用户名。
-      en: Username when logging into the sample application in the browser.
+      en: Username for logging into the sample application in the browser.
     Label:
       zh-cn: 登录用户名
       en: Login Username

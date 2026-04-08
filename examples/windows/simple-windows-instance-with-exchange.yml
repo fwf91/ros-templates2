@@ -9,9 +9,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -46,9 +44,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像
     Description:
-      en: 'Image ID, About exchange server 2013 system requirements, see detail: <a
-        href=''https://docs.microsoft.com/en-us/exchange/exchange-2013-system-requirements-exchange-2013-help''
-        target=''_blank''><b><font color=''blue''>Exchange server 2013 system requirements</b></font></a>'
+      en: "Image ID. For Exchange Server 2013 system requirements, see details: <a href='https://docs.microsoft.com/en-us/exchange/exchange-2013-system-requirements-exchange-2013-help' target='_blank'><b><font color='blue'>Exchange Server 2013 system requirements</b></font></a>"
       zh-cn: 镜像ID，关于Exchange Server2013系统要求，详见： <a href='https://docs.microsoft.com/zh-cn/exchange/exchange-2013-system-requirements-exchange-2013-help'
         target='_blank'><b><font color='blue'>Exchange Server2013系统要求</b></font></a>
     Default: win2012r2_64_dtc_9600_en-us_40G_alibase_20190318.vhd
@@ -58,11 +54,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -80,11 +72,7 @@ Parameters:
       en: Server System Disk Space
       zh-cn: 服务器系统盘空间
     Description:
-      en: 'System disk size, units: GB.It is recommended to install no less than 40g
-        in accordance with the exchange installation requirements. For details, please
-        refer to： <a href=''https://docs.microsoft.com/en-us/exchange/exchange-2013-system-requirements-exchange-2013-help''
-        target=''_blank''><b><font color=''blue''>Exchange server 2013 configuration
-        requirements</b></font></a>'
+      en: "System disk size, units: GB.It is recommended to install no less than 40g in accordance with the exchange installation requirements. For details, please refer to: <a href='https://docs.microsoft.com/en-us/exchange/exchange-2013-system-requirements-exchange-2013-help' target='_blank'><b><font color='blue'>Exchange server 2013 configuration requirements</b></font></a>"
       zh-cn: 系统盘大小, 单位：GB。建议按照exchange安装要求不少于40G，详情请参照：<a href='https://docs.microsoft.com/zh-cn/exchange/exchange-2013-system-requirements-exchange-2013-help'
         target='_blank'><b><font color='blue'>Exchange Server2013配置要求</b></font></a>
     Default: 80
@@ -94,8 +82,7 @@ Parameters:
       en: Exchange Image Download Path
       zh-cn: Exchange镜像下载路径
     Description:
-      en: 'Exchange image download path, see detail: <a href=''https://docs.microsoft.com/en-us/Exchange/new-features/build-numbers-and-release-dates''
-        target=''_blank''><b><font color=''blue''>Exchange image download path</b></font></a>'
+      en: "Exchange image download path. See details: <a href='https://docs.microsoft.com/en-us/Exchange/new-features/build-numbers-and-release-dates' target='_blank'><b><font color='blue'>Exchange image download path</b></font></a>"
       zh-cn: Exchange镜像下载路径，详见： <a href='https://docs.microsoft.com/zh-cn/Exchange/new-features/build-numbers-and-release-dates'
         target='_blank'><b><font color='blue'>Exchange镜像下载路径</b></font></a>
     Default: https://download.microsoft.com/download/7/9/8/7982ED00-C0F5-44BB-8B40-768951AE4CC7/Exchange2013-x64-cu22.exe
@@ -105,11 +92,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone; Hardware requirements: 8 GB of memory;</b></font><br>general specifications：<font
-        color=''red''><b>ecs.c5.xlarge</b></font><br>note: a few zones do not support
-        general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone; Hardware requirements: 8 GB of memory;</b></font><br>general specifications: <font color='red'><b>ecs.c5.xlarge</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；硬件要求：8 GB内存；<br>通用规格：<font color='red'><b>ecs.c5.xlarge</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>

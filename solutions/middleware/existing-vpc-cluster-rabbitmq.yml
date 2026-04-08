@@ -92,11 +92,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -115,7 +111,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘空间
     Description:
-      en: 'System disk size, range of values: 20-500, units: GB.'
+      en: 'System disk size, range: 20–500 GB.'
       zh-cn: 系统盘大小, 取值范围：[20, 500], 单位：GB。
     Default: 20
   Password:
@@ -124,13 +120,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters,
-        lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol
-        in).
+      en: "Server login password, Password length: 8–30 characters, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)."
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers,
-        ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Password length: 8–30 characters, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AssociationProperty: ALIYUN::ECS::Instance::Password
   ClusterAmount:
@@ -165,7 +158,7 @@ Parameters:
       en: Number of Queues
       zh-cn: Queue数量
     Description:
-      en: 'Single Vhost Creates Queue Quantity, Value Range: 1~2000'
+      en: 'Single VHost Creates Queue Quantity, Value Range: 1–2000'
       zh-cn: 单Vhost创建的Queue数量，取值范围：[1, 2000]
     Default: 100
     MinValue: 1
@@ -176,9 +169,7 @@ Parameters:
       en: Flow Control Limits
       zh-cn: 流控限制
     Description:
-      en: 'RabbitMQ service uses a certain threshold of system memory, it activates
-        a memory alarm and triggers a flow control mechanism, with optional configurations:
-        0.4 (40%), 0.6 (60%), 0.8 (80%)'
+      en: "RabbitMQ service uses a certain threshold of system memory; it activates a memory alarm and triggers a flow control mechanism. Optional configurations: 0.4 (40%), 0.6 (60%), 0.8 (80%)"
       zh-cn: RabbitMQ服务占用系统内存达到一定阈值时，会启动内存报警，触发流控机制，可选配置：0.4（40%），0.6（60%），0.8（80%）
     Default: '0.4'
     AllowedValues:
@@ -200,10 +191,10 @@ Parameters:
       en: Administrator User Login Password
       zh-cn: 管理员用户登录密码
     Description:
-      en: RabbitMQ administrator user login password, length 8-30
+      en: RabbitMQ administrator user login password, length 8–30 characters
       zh-cn: RabbitMQ管理员用户登录密码,长度8-30
     ConstraintDescription:
-      en: Length 8-30
+      en: "Password length: 8–30 characters"
       zh-cn: 长度8-30
     NoEcho: true
 Resources:

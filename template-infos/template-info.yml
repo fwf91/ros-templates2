@@ -2,7 +2,7 @@ AnalyticDB-and-Bailian-system:
   Categories:
     - Solution
   Description:
-    en: AnalyticDB and Bailian build intelligent question and answer system.
+    en: AnalyticDB and Bailian build an intelligent question-and-answer system.
     zh-cn: AnalyticDB与百炼搭建智能问答系统。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/AnalyticDB-and-Bailian-system/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/AnalyticDB-and-Bailian-system/README.md
@@ -348,7 +348,7 @@ aigc-text-generation-3d-model:
   Categories:
     - Example
   Description:
-    en: AIGC text generation 3D model.
+    en: AIGC text-to-3D model generation.
     zh-cn: AIGC文本生成3D模型。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-3d-model/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-3d-model/README.md
@@ -404,7 +404,7 @@ aigc-text-generation-video:
   Categories:
     - Example
   Description:
-    en: AIGC text generation video.
+    en: AIGC text-to-video generation.
     zh-cn: AIGC文本生成视频。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-video/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-video/README.md
@@ -455,7 +455,7 @@ aliyun-kafka-instance:
   Categories:
     - Example
   Description:
-    en: This template is used to create a Message Queue for Apache Kafka instance.
+    en: This template creates a Message Queue for Apache Kafka instance.
     zh-cn: 使用此模板创建一台阿里云消息队列Kafka实例。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aliyun-kafka-instance/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aliyun-kafka-instance/README.md
@@ -549,7 +549,7 @@ bailian-document-app:
   Categories:
     - Solution
   Description:
-    en: Rapid deployment of documentation intelligence app with bailian.
+    en: Rapidly deploy a documentation intelligence app using Bailian.
     zh-cn: 快速部署百炼文档智能应用
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/bailian-document-app/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/bailian-document-app/README.md
@@ -885,11 +885,7 @@ cen-open-isolated-networks:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to build the following VPCs: VPC 1, VPC 2, and VPC
-      3. VPC 1 and VPC 2 can access VPC 3, but VPC 1 and VPC 2 cannot access each
-      other. In this example, the VPC of the O&M environment can access the VPCs of
-      the production and staging environments, but the VPCs of the production and
-      staging environments cannot access each other.'
+    en: "This template is used to build the following VPCs: VPC 1, VPC 2, and VPC 3. VPC 1 and VPC 2 can access VPC 3, but VPC 1 and VPC 2 cannot access each other. In this example, the VPC of the O&M environment can access the VPCs of the production and staging environments, but the VPCs of the production and staging environments cannot access each other."
     zh-cn: 三个VPC1与VPC2、VPC3，允许VPC1、VPC2都能够访问VPC3，但VPC1与VPC2之间不通。示例场景是生产与预发VPC不通，但运维VPC需要连通生产、预发环境。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/cen-open-isolated-networks/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/cen-open-isolated-networks/README.md
@@ -1124,9 +1120,7 @@ collect-logs-across-alibaba-cloud-accounts:
   Categories:
     - Solution
   Description:
-    en: 'Cross-Account ECS Log Collection Solution: Deployed under Account A, interfacing
-      with ECS instances in Account B, it automates the configuration of Log Service
-      Project, Logstore, and collection settings, thereby realizing unified log management.'
+    en: "Cross-Account ECS Log Collection Solution: Deployed under Account A, interfacing with ECS instances in Account B, it automates the configuration of Log Service Project, Logstore, and collection settings, thereby realizing unified log management."
     zh-cn: 跨账号ECS日志采集方案：A账号部署，对接B账号ECS，自动化配置日志服务Project、Logstore及采集配置，实现日志统一管理。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/collect-logs-across-alibaba-cloud-accounts/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/collect-logs-across-alibaba-cloud-accounts/README.md
@@ -4922,12 +4916,7 @@ low-cost-link-to-business-data:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to migrate business data to the cloud. When you migrate
-      a large amount of business data to the cloud, a large amount of network bandwidth
-      is required. This causes high BGP costs. Alibaba Cloud allows you to purchase
-      static single-line EIP bandwidth plans in the desired region. BGP lines provided
-      by the following ISPs are supported: China Mobile, China Unicom, and China Telecom.
-      This helps reduce the costs of migrating data to the cloud.'
+    en: "This template is used to migrate business data to the cloud. When you migrate a large amount of business data to the cloud, a large amount of network bandwidth is required. This causes high BGP costs. Alibaba Cloud allows you to purchase static single-line EIP bandwidth plans in the desired region. BGP lines provided by the following ISPs are supported: China Mobile, China Unicom, and China Telecom. This helps reduce the costs of migrating data to the cloud."
     zh-cn: 本实践适用于提供业务数据搬迁上云服务。业务数据量一般都比较大，迁移上云需要大量的网络带宽，BGP费用比较高。 阿里云对用户开放所需地域购买静态单线共享带宽包的权限（移动/联通/电信均可），可用为迁移数据有效降低成本。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/low-cost-link-to-business-data/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/low-cost-link-to-business-data/README.md
@@ -5523,7 +5512,7 @@ multi-websites:
   Categories:
     - Example
   Description:
-    en: Use lnmp to deploy multi-websites by ros.
+    en: Use LNMP to deploy multiple websites using ROS.
     zh-cn: 使用LNMP环境部署多个站点。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/multi-websites/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/multi-websites/README.md
@@ -6033,7 +6022,7 @@ quickly-build-large-screen:
   Categories:
     - Solution
   Description:
-    en: Quickly build a large screen of enterprise management.
+    en: Quickly build an enterprise management dashboard.
     zh-cn: 快速搭建企业经营大屏。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/quickly-build-large-screen/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/quickly-build-large-screen/README.md
@@ -6127,7 +6116,7 @@ rapid-build-ai-robots-dialogue:
   Categories:
     - Example
   Description:
-    en: Rapid build AI robots dialogue.
+    en: Rapidly build AI-powered chatbots.
     zh-cn: 快速搭建AI对话机器人
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/rapid-build-ai-robots-dialogue/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/rapid-build-ai-robots-dialogue/README.md
@@ -6325,13 +6314,7 @@ security-vpc:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to build the following VPCs: VPC A, VPC B, and VPC
-      C. In this example, an enterprise user wants to deploy the VPCs in a region.
-      In VPC A, a security control service is deployed. The enterprise user wants
-      to enable mutual access for VPC B and VPC C under the condition that the traffic
-      between both VPCs is filtered by the security control service in VPC A before
-      mutual access is implemented. Mutual access between VPC A and VPC B or between
-      VPC A and VPC C is not enabled.'
+    en: "This template is used to create the following VPCs: VPC A, VPC B, and VPC C. In this example, an enterprise user wants to deploy these VPCs in a region. In VPC A, a security control service is deployed. The enterprise user wants to enable mutual access between VPC B and VPC C, with traffic filtered by the security control service in VPC A before mutual access is implemented. Mutual access between VPC A and VPC B or between VPC A and VPC C is not enabled."
     zh-cn: 企业在某地域部署了3个VPC，其中VPC_A部署有安全管控服务，3个VPC之间互不相通。出于业务发展和网络环境安全性考虑，企业希望VPC_B和VPC_C之间可以相互通信，且VPC_B和VPC_C之间的访问流量，需先经过VPC_A中的安全管控服务过滤后，再进行通信。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/security-vpc/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/security-vpc/README.md
@@ -6926,11 +6909,7 @@ sls-multi-cloud-log-processing-analysis:
   Categories:
     - Solution
   Description:
-    en: '{This template is used to collect data from third-party platforms or data
-      centers and write the data to Alibaba Cloud Simple Log Service for data analysis.
-      This template helps you simplify O&M and facilitate operations and provides
-      you with the capability to process a large number of logs in the data technology
-      era.'
+    en: "This template is used to collect data from third-party platforms or data centers and write the data to Alibaba Cloud Simple Log Service for data analysis. This template helps you simplify O&M and facilitates operations and provides you with the capability to process a large number of logs in the data technology era."
     zh-cn: 从第三方云平台或线下IDC服务器上采集日志写入到阿里云日志服务，通过日志服务进行数据分析，帮助提升运维、运营效率，建立 DT 时代海量日志处理能力。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/sls-multi-cloud-log-processing-analysis/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/sls-multi-cloud-log-processing-analysis/README.md
@@ -7033,7 +7012,7 @@ spark-cluster-on-yitian:
   Categories:
     - Solution
   Description:
-    en: Spark Cluster on Yitian.
+    en: Spark Cluster on Yitian
     zh-cn: 倚天ECS实例部署Spark集群。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/spark-cluster-on-yitian/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/spark-cluster-on-yitian/README.md

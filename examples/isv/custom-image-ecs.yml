@@ -8,7 +8,7 @@ Conditions:
   CreateVpcConditions:
     Fn::Equals:
     - true
-    - Ref: WhetherCreateVpc
+    - Ref: Whether to Create VPC
 Parameters:
   PayType:
     Type: String
@@ -78,10 +78,10 @@ Parameters:
       en: Availability Zone
       zh-cn: 可用区
     AssociationProperty: ALIYUN::ECS::Instance::ZoneId
-  WhetherCreateVpc:
+  Whether to Create VPC:
     Type: Boolean
     Label:
-      en: WhetherCreateVpc
+      en: Whether to Create VPC
       zh-cn: 是否新建VPC
     Default: false
   VpcCidrBlock:
@@ -92,15 +92,13 @@ Parameters:
     Description:
       zh-cn: VPC的ip地址段范围，<br>您可以使用以下的ip地址段或其子网:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
-      en: 'The ip address range of the VPC in the CidrBlock form; <br>You can use
-        the following ip address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>You can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
     AssociationProperty: ALIYUN::VPC::VPC::CidrBlock
     AssociationPropertyMetadata:
       Visible:
         Condition:
           Fn::Equals:
-          - ${WhetherCreateVpc}
+          - ${Whether to Create VPC}
           - true
     Default: 192.168.0.0/16
   VSwitchCidrBlock:
@@ -117,7 +115,7 @@ Parameters:
       Visible:
         Condition:
           Fn::Equals:
-          - ${WhetherCreateVpc}
+          - ${Whether to Create VPC}
           - true
     Default: 192.168.1.0/24
   VpcId:
@@ -130,7 +128,7 @@ Parameters:
       Visible:
         Condition:
           Fn::Equals:
-          - ${WhetherCreateVpc}
+          - ${Whether to Create VPC}
           - false
     Default: ''
   VSwitchId:
@@ -145,7 +143,7 @@ Parameters:
       Visible:
         Condition:
           Fn::Equals:
-          - ${WhetherCreateVpc}
+          - ${Whether to Create VPC}
           - false
     Default: ''
   InstancePassword:
@@ -347,7 +345,7 @@ Metadata:
 #            zh-cn: 可用区配置
 #            en: Zone Configuration
 #      - Parameters:
-#          - WhetherCreateVpc
+#          - Whether to Create VPC
 #          - VpcCidrBlock
 #          - VSwitchCidrBlock
 #          - VpcId
@@ -400,7 +398,7 @@ Metadata:
           zh-cn: 可用区配置
           en: Zone Configuration
     - Parameters:
-      - WhetherCreateVpc
+      - Whether to Create VPC
       - VpcCidrBlock
       - VSwitchCidrBlock
       - VpcId

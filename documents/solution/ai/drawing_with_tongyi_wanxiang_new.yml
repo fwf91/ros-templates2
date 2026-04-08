@@ -12,7 +12,7 @@ Parameters:
       en: 3 to 63 letters or numbers.
     Description:
       zh-cn: 在浏览器中登录示例应用程序时的用户名。
-      en: Username when logging into the sample application in the browser.
+      en: Username for logging into the sample application in the browser.
     Label:
       zh-cn: 登录用户名
       en: Login Username
@@ -62,8 +62,8 @@ Parameters:
         color='blue'><b>bucket name must be unique,existing one cannot be created again.</b></font>
     MinLength: 3
     Label:
-      zh-cn: OSS BUCKET
-      en: OSS BUCKE
+      zh-cn: OSS BucketT
+      en: OSS Bucket
     AllowedPattern: '^[a-z0-9]+[a-z0-9\-]*[a-z0-9]+$'
     MaxLength: 63
     Type: String
@@ -268,17 +268,17 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address.
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub: https://ecs-workbench.aliyun.com/?from=EcsConsole&instanceType=ecs&regionId=${ALIYUN::Region}&instanceId=${EcsInstance}
   Console@DemoUrl:
     Description:
-      en: Experience address.
+      en: Experience URL.
       zh-cn: 体验地址。
     Label:
       zh-cn: 体验地址
-      en: Experience Addresses
+      en: Experience URLs.
     Value:
       Fn::Sub:
         - http://${PublicIp}/wanx-demo
@@ -291,7 +291,7 @@ Outputs:
   Console@DemoUserName:
     Description:
       zh-cn: 在浏览器中登录示例应用程序时的用户名。
-      en: Username when logging into the sample application in the browser.
+      en: Username for logging into the sample application in the browser.
     Label:
       zh-cn: 登录用户名
       en: Login Username

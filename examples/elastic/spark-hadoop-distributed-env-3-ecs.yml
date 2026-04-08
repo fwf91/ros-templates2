@@ -29,8 +29,7 @@ Parameters:
       en: VPC Cidrblock
       zh-cn: VPC网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR block form. You can use the
-        following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12  192.168.0.0/16'
+      en: "The IP address range of the VPC in the CIDR block form. You can use the following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
       zh-cn: 专有网络的网段，可选值：10.0.0.0/8，172.16.0.0/12，192.168.0.0/16。
     Default: 192.168.0.0/16
     AllowedValues:
@@ -43,7 +42,7 @@ Parameters:
       en: VSwitch CidrBlock
       zh-cn: VSwitch网段
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created VSwitch. It must belong to the VPC CIDR Block.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 192.168.1.0/24
   ZoneId:
@@ -104,8 +103,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. see detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
@@ -126,8 +124,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters. Must contain uppercase letters, lowercase letters, numbers, and special symbols. Special characters include: `()~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'
@@ -149,7 +146,7 @@ Parameters:
       en: Hadoop Home
       zh-cn: Hadoop主目录
     Description:
-      en: HADOOP_HOME directory should be new.
+      en: The HADOOP_HOME directory should be new.
       zh-cn: HADOOP_HOME 主目录必须是新的
     Default: /usr/local/hadoop/hadoop-2.7.7
   Slave1Name:
@@ -175,10 +172,10 @@ Parameters:
   HadoopUrl:
     Type: String
     Label:
-      en: Hadoop Url
+      en: Hadoop URL
       zh-cn: Hadoop网址
     Description:
-      en: The official download path of .tar.gz
+      en: The official download path of .tar.gz..
       zh-cn: .tar.gz的官方下载路径
     Default: https://ros-template-resources.oss-cn-beijing.aliyuncs.com/Hadoop/hadoop-2.7.7.tar.gz
   ScalaHome:
@@ -187,16 +184,16 @@ Parameters:
       en: Scala Home
       zh-cn: Scala主目录
     Description:
-      en: SCALA_HOME directory should be new.
+      en: The SCALA_HOME directory should be new.
       zh-cn: SCALA_HOME 主目录必须是新的
     Default: /usr/local/scala/scala-2.12.1
   ScalaUrl:
     Type: String
     Label:
-      en: Scala Url
+      en: Scala URL
       zh-cn: Scala网址
     Description:
-      en: The official download path of .tar.gz
+      en: The official download path of .tar.gz..
       zh-cn: .tar.gz的官方下载路径
     Default: https://downloads.lightbend.com/scala/2.12.1/scala-2.12.1.tgz
   SparkHome:
@@ -205,16 +202,16 @@ Parameters:
       en: Spark Home
       zh-cn: Spark主目录
     Description:
-      en: SPARK_HOME directory should be new.
+      en: The SPARK_HOME directory should be new.
       zh-cn: SPARK_HOME 主目录必须是新的
     Default: /usr/local/hadoop/spark-2.1.0-bin-hadoop2.7
   SparkUrl:
     Type: String
     Label:
-      en: Spark Url
+      en: Spark URL
       zh-cn: Spark网址
     Description:
-      en: The official download path of -bin-hadoopx.x.tgz
+      en: The official download path of -bin-hadoopx.x.tgz.
       zh-cn: -bin-hadoopx.x.tgz的官方下载路径
     Default: http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
 Resources:
@@ -1018,7 +1015,7 @@ Resources:
 Outputs:
   HadoopWebsiteURL:
     Description:
-      en: URL for newly created Hadoop environment.
+      en: URL for the newly created Hadoop environment.
       zh-cn: 新创建的Hadoop环境的网址。
     Value:
       Fn::Join:
@@ -1030,7 +1027,7 @@ Outputs:
         - :50070
   SparkWebsiteURL:
     Description:
-      en: URL for newly created Spark environment.
+      en: URL for the newly created Spark environment.
       zh-cn: 新创建的Spark环境的网址。
     Value:
       Fn::Join:

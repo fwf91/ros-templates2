@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 创建小型VPC网络，含两个子网，配置NatGateway实现ECS访问与对外服务，自动部署ECS实例并设置安全组规则。
-  en: Create a small VPC network with two subnets, configure NatGateway to implement ECS access and external services, automatically deploy ECS instances and set security group rules.
+  en: Create a small VPC network with two subnets, configure NAT gateway to enable ECS access to external services, automatically deploy ECS instances, and set security group rules.
 Parameters:
   VpcCidrBlock:
     Type: String
@@ -9,9 +9,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The VPC CIDR Block; <br>You can use the following IP network segments:
-        <br><font color=''green''>[10.0.0.0/8]</font><br><font color=''green''>[172.16.0.0/12]</font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "The VPC CIDR block. You can use the following IP network segments:<br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的IP网段；<br>您可以使用以下IP地址范围：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 192.168.0.0/16
@@ -32,16 +30,16 @@ Parameters:
   FirstVSwitchCidrBlock:
     Type: String
     Label:
-      en: VSwitch1 CIDR Block
+      en: VSwitch 1 CIDR Block
       zh-cn: 交换机1子网网段
     Description:
-      en: CIDR Block of created First VSwitch，It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created First VSwitch,It must belong to itself VPC CIDR Block.
       zh-cn: 创建的第一个虚拟交换机的子网，它必须属于自己的VPC内
     Default: 192.168.1.0/24
   VSwitchZoneId2:
     Type: String
     Label:
-      en: VSwitch Zone ID 2
+      en: VSwitch Zone ID
       zh-cn: 交换机2可用区
     Description:
       en: The available zone ID, you should confirm the zone support ECS、VPC、VSwitch
@@ -51,10 +49,10 @@ Parameters:
   SecondVSwitchCidrBlock:
     Type: String
     Label:
-      en: VSwitch2 CIDR Block
+      en: VSwitch CIDR Block
       zh-cn: 交换机2子网网段
     Description:
-      en: CIDR Block of created Second VSwitch，It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created Second VSwitch,It must belong to itself VPC CIDR Block.
       zh-cn: 创建的第二个虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 192.168.2.0/24
   Bandwidth:
@@ -63,29 +61,29 @@ Parameters:
       en: Nat Gateway Bandwidth
       zh-cn: 网关带宽
     Description:
-      en: 'EIP Bandwidth for Nat Gateway.Value range: [1,200], unit: Mbps.'
+      en: 'EIP Bandwidth for Nat Gateway. Value range: [1, 200], unit: Mbps.'
       zh-cn: Nat网关绑定的EIP带宽。取值范围：1~200， 单位：Mbps。
     ConstraintDescription:
-      en: 'EIP Bandwidth for Nat Gateway.Value range: [1,200], unit: Mbps.'
+      en: 'EIP Bandwidth for Nat Gateway. Value range: [1, 200], unit: Mbps.'
       zh-cn: Nat网关绑定的EIP带宽。取值范围：1~200， 单位：Mbps。
     Default: 5
     MinValue: 5
   NumberOfNodeInFirstSubnet:
     Type: Number
     Label:
-      en: Number of instances in host group 1.
+      en: Number of instances in Host Group 1.
       zh-cn: 主机组1内实例个数
     Description:
-      en: Number of Node In First Group.
+      en: Number of Nodes in First Group.
       zh-cn: 第一个主机组中的节点数。
     Default: 2
   NumberOfNodeInSecondSubnet:
     Type: Number
     Label:
-      en: Number of instances in host group 2.
+      en: Number of instances in Host Group 2.
       zh-cn: 主机组2内实例个数
     Description:
-      en: Number of Node In Second Group
+      en: Number of Nodes in Second Group.
       zh-cn: 第二个主机组中的节点数。
     Default: 2
   InstanceType:

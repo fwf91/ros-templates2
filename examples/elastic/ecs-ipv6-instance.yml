@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 创建双栈云服务器(ECS)，自动配置IPv6公网IP，含VPC、安全组、IPv6网关及带宽设置。
-  en: Create a dual-stack cloud server (ECS) and automatically configure IPv6 public IP, including VPC, security group, IPv6 gateway and bandwidth settings.
+  en: Create a dual-stack cloud server (ECS) and automatically configure an IPv6 public IP, including VPC, security group, IPv6 gateway, and bandwidth settings.
 Conditions:
   CreateLinux:
     Fn::Equals:
@@ -15,7 +15,7 @@ Parameters:
   VpcCidrBlock:
     Type: String
     Label:
-      en: VPC IPV4 CIDR Block
+      en: VPC IPv4 CIDR Block
       zh-cn: 专有网络IPV4网段
     Description:
       en: New proprietary network IP address segment range, recommended use of the
@@ -31,10 +31,10 @@ Parameters:
   VSwitchCidrBlock:
     Type: String
     Label:
-      en: VSwitch IPV4 CIDR Block
+      en: VSwitch IPv4 CIDR Block
       zh-cn: 交换机IPV4网段
     Description:
-      en: Network segments of new switches, subnets of virtual proprietary networks
+      en: Network segments of new switches, subnets of virtual private networks
       zh-cn: 新建交换机的网段，所属虚拟专有网络的子网
     Default: 192.168.0.0/24
   VSwitchZoneId:
@@ -73,10 +73,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -86,25 +83,25 @@ Parameters:
   SystemDiskSize:
     Type: Number
     Label:
-      en: System Disk Space
+      en: System Disk Size
       zh-cn: 系统盘空间
     Description:
-      en: 'System disk size, range of values: 20-500, units: GB.'
+      en: 'System disk size, range: 20–500 GB'
       zh-cn: 系统盘大小, 取值范围：[20, 500], 单位：GB。
     Default: 40
   InstancePublicIP:
     Type: Boolean
     Label:
-      en: Allocate IPV4 Public IP
+      en: Allocate IPv4 Public IP
       zh-cn: 分配IPV4公网IP
     Description:
-      en: Whether to assign a IPV4 common IP.
+      en: Whether to assign a public IPv4 address
       zh-cn: 是否分配IPV4公共IP。
     Default: false
   InternetChargeType:
     Type: String
     Label:
-      en: IPv6 Metric Bandwidth Metering Method.
+      en: IPv6 Metric Bandwidth Metering Method
       zh-cn: IPv6公网带宽的计费方式
     AssociationPropertyMetadata:
       LocaleKey: InternetChargeType
@@ -115,13 +112,10 @@ Parameters:
   IPV6Bandwidth:
     Type: Number
     Label:
-      en: IPv6 Network Gateway Public Network Bandwidth
+      en: IPv6 Network Gateway Public Bandwidth
       zh-cn: IPv6网关公网带宽
     Description:
-      en: 'IPv6 network Gateway public network bandwidth, value range: s1, 5000, in
-        Mbps. When the public network bandwidth billing method is based on the use
-        of traffic billing value range of 1 to 2000Mbps, when the public network bandwidth
-        billing method is metered by bandwidth when the value range is 1 to 5000Mbps.'
+      en: "IPv6 Network Gateway Public Network Bandwidth: value range is 1 to 5000 Mbps. When the public network bandwidth billing method is traffic-based, the value range is 1 to 2000 Mbps; when billed by bandwidth, the range is 1 to 5000 Mbps."
       zh-cn: IPv6网关公网带宽, 取值范围：[1, 5000], 单位：Mbps。当公网带宽计费方式为按使用流量计费时取值范围为1~2000Mbps，当公网带宽计费方式为按带宽计费时取值范围为1~5000Mbps。
     Default: 10
   IPV6GateWaySpec:
@@ -130,8 +124,7 @@ Parameters:
       en: Specifications for the IPv6 Gateway
       zh-cn: IPv6网关的规格
     Description:
-      en: 'IPv6 gateway specifications, optional values: Small (free version), Medium
-        (enterprise version), Large (enterprise enhancement version)'
+      en: "IPv6 Gateway Specifications: Optional values are Small (Free Version), Medium (Enterprise Version), Large (Enterprise Enhancement Version)."
       zh-cn: IPv6网关的规格,可选值：Small（免费版），Medium（企业版），Large（企业增强版）
     AssociationPropertyMetadata:
       LocaleKey: NatGatewaySpec
@@ -146,11 +139,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:

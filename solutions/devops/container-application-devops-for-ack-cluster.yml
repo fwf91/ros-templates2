@@ -11,9 +11,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font></font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR notation;<br>you can use the following IP address ranges:<br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font></font><br><font
         color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -63,7 +61,7 @@ Parameters:
       en: Storage Space
       zh-cn: 存储空间
     Description:
-      en: 'Database storage space, units: GB, per 5GB increment, value range: 5-1000.'
+      en: 'Database storage space, in GB units, increments of 5GB, range: 5–1000.'
       zh-cn: 数据库存储空间, 单位：GB, 每5GB进行递增，取值范围：5-1000。
     Default: 5
     MinValue: 5
@@ -97,13 +95,11 @@ Parameters:
       en: Account Password
       zh-cn: 账号密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols
-        (including:!@ # $% ^ & * - + = _).'
+      en: "8–32 characters, can contain lowercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols
-        (including:!@ # $% ^ & * - + = _).'
+      en: "8–32 characters, can contain lowercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: 8
     MaxLength: 32
@@ -144,9 +140,7 @@ Parameters:
       en: Disk Category
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]'
   ManagedKubernetesClusterSystemDiskSize:
@@ -233,9 +227,7 @@ Parameters:
       en: Repository Name
       zh-cn: 仓库名称
     Description:
-      en: 'Repository name length: 2-64 characters. The name can contain lowercase
-        English letters numbers and the separators _ - and . (separators cannot be
-        the first or last character)'
+      en: "Repository name length: 2-64 characters. The name can contain lowercase English letters, numbers, and the separators _ , - , and . (separators cannot be the first or last character)."
       zh-cn: 长度为2-64个字符，可使用小写英文字母、数字，可使用分隔符“_”、“-”、“.”（分隔符不能在首位或末位）
     Default: devops_repository
 Resources:

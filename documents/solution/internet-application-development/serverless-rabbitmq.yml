@@ -9,10 +9,10 @@ Parameters:
     Type: String
     Default: test
     Label:
-      en: CommonName
+      en: Common Name
       zh-cn: 名称前缀
     Description:
-      en: The prefix of the name of the resource to be created.
+      en: The prefix of the resource name to be created.
       zh-cn: 创建的资源的名称前缀，RabbitMQ 的实例、Vhost、Exchange、Queue、Binding等资源的名称前缀。
     ReadOnly: true
   PayType:
@@ -22,7 +22,7 @@ Parameters:
       en: RabbitMQ Instance PayType
       zh-cn: RabbitMQ实例付费类型
     Description:
-      en: The billing method of the RabbitMQ instance.
+      en: The billing method for the RabbitMQ instance.
       zh-cn: RabbitMQ 实例的计费方式。
     ReadOnly: true
 Resources:
@@ -95,13 +95,13 @@ Outputs:
   AccessKeyId:
     Description:
       zh-cn: AccessKey ID。
-      en: AccessKey ID.
+      en: Access Key ID
     Value:
       Fn::Sub: ${AccessKey.AccessKeyId}
   AccessKeySecret:
     Description:
       zh-cn: AccessKey Secret。
-      en: AccessKey Secret.
+      en: Access Key Secret
     Value:
       Fn::Sub: ${AccessKey.AccessKeySecret}
 Metadata:

@@ -120,7 +120,7 @@ Parameters:
   LoadBalancerSpec:
     Type: String
     Label:
-      en: LoadBalancer Specifications
+      en: Load Balancer Specifications
       zh-cn: 负载均衡实例规格
     AssociationProperty: ALIYUN::SLB::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -131,7 +131,7 @@ Parameters:
       zh-cn: 数据库账号名称
       en: DB Username
     Description:
-      en: Primary account name of the database instance.
+      en: Primary account name for the database instance.
       zh-cn: 数据库实例的主账号名称。
     ConstraintDescription:
       en: Consist of 2 to 16 characters of lowercase letters, underline. Must begin
@@ -380,27 +380,27 @@ Metadata:
       Label:
         default:
           zh-cn: 选择已有基础资源配置
-          en: Choose existing Infrastructure Configuration
+          en: Choose existing infrastructure configuration
     - Parameters:
       - PayType
       - PayPeriodUnit
       - PayPeriod
       Label:
         default:
-          en: PayType Configuration
+          en: Pay Type Configuration
           zh-cn: 付费类型
     - Parameters:
       - EcsInstanceType
       - InstancePassword
       Label:
         default:
-          en: Instance Configure
+          en: Instance Configuration
           zh-cn: ECS实例配置
     - Parameters:
       - LoadBalancerSpec
       Label:
         default:
-          en: SLB Configure
+          en: SLB Configuration
           zh-cn: SLB负载均衡配置
     - Parameters:
       - DBInstanceClass

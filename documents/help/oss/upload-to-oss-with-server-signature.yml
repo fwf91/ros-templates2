@@ -16,7 +16,7 @@ Parameters:
     Type: String
     Description:
       zh-cn: 输入您的IP信息，<b><a href='https://www.ip.cn/' target='_blank'><font color='blue'>IP查询地址</font></a></b>。
-      en: Enter your IP information,<b><a href="https://www.ip.cn/" target ="_blank"><fontcolor='blue'> IP address query </font> </a> </b>.
+      en: Enter your IP information. <b><a href="https://www.ip.cn/" target="_blank"><font color="blue">IP address query</font></a></b>.
     Label:
       zh-cn: IP 地址
       en: IP Address
@@ -25,7 +25,7 @@ Parameters:
     Type: String
     Description:
       zh-cn: 可用区ID，需确认所选可用区下是否支持ECS、VPC、VSwitch等资源。
-      en: The available zone ID, you should confirm the zone support ECS、VPC、VSwitch or not.
+      en: Available zone ID. Confirm whether the zone supports ECS, VPC, and VSwitch.
     Label:
       zh-cn: 可用区ID
       en: Zone ID
@@ -38,10 +38,10 @@ Parameters:
           min: 1
     Description:
       zh-cn: Bucket 名称在 OSS 范围内必须全局唯一。长度为3~63个字符。必须以小写英文字母或数字开头和结尾，可包含小写英文字母、数字和短划线（-）。
-      en: Bucket names must be globally unique within the scope of OSS. The length is 3~63 characters. Must start and end with a lowercase English letter or number, and can contain lowercase English letters, numbers, and dashes (-).
+      en: "Bucket names must be globally unique within OSS. Length: 3–63 characters. Must start and end with a lowercase letter or digit, and can contain lowercase letters, digits, and hyphens (-)."
     Label:
       zh-cn: 新建存储空间名称
-      en: NewBucketName
+      en: New Bucket Name
     AllowedPattern: ^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$
     AssociationProperty: AutoCompleteInput
     Type: String
@@ -73,7 +73,7 @@ Outputs:
   OssClientAddress:
     Description:
       zh-cn: 客户端地址，使用此地址可直接体验文件上传。
-      en: Client address, use this address to directly experience file upload.
+      en: "Client address: use this address to directly experience file upload."
     Value:
       Fn::Sub: http://${Eip.EipAddress}:3001/index.html
 Resources:

@@ -34,7 +34,7 @@ Parameters:
       en: VSwitch Availability Zone2
       zh-cn: 交换机可用区2
     Description:
-      en: Please make sure that <font color='red'><b>VSwitch Availability Zone2 is different from VSwitch Availability Zone1</b></font>.
+      en: Please make sure that <font color='red'><b>VSwitch Availability Zone 2 is different from VSwitch Availability Zone 1</b></font>.
       zh-cn: 请确保<font color='red'><b>交换机可用区2与交换机可用区1不相同</b></font>。
     AssociationProperty: ALIYUN::ECS::Instance::ZoneId
   common_name:

@@ -87,7 +87,7 @@ Parameters:
     Type: String
     Label:
       zh-cn: Pod 网络 CIDR
-      en: Pod Network CIDR
+      en: "Please fill in a valid private segment, i.e., the following segments and their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16. These cannot duplicate network segments already used by clusters in VPC and VPC Kubernetes."
     Description:
       zh-cn: 请填写有效的私有网段，即以下网段及其子网：10.0.0.0/8，172.16-31.0.0/12-16，192.168.0.0/16<br>不能与 VPC 及 VPC 内已有 Kubernetes 集群使用的网段重复。<font color='blue'><b>创建成功后不能修改</b></font>
       en: 'Please fill in a valid private segment, i.e. the following segments and their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16<br> which cannot duplicate the network segments already used by clusters in VPC and VPC Kunetberes. <font color=''blue''><b>Cannot be modified after successful creation</b></font>'
@@ -142,10 +142,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: Login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AssociationProperty: ALIYUN::ECS::Instance::Password
 Metadata:
@@ -337,7 +337,7 @@ Workspace:
       {
         "Label": {
           "zh-cn": "Pod 网络 CIDR",
-          "en": "Pod Network CIDR"
+          "en": "Please fill in a valid private segment, i.e., the following segments and their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16. These cannot duplicate network segments already used by clusters in VPC and VPC Kubernetes."
         },
         "Description": {
           "zh-cn": "请填写有效的私有网段，即以下网段及其子网：10.0.0.0/8，172.16-31.0.0/12-16，192.168.0.0/16<br>不能与 VPC 及 VPC 内已有 Kubernetes 集群使用的网段重复。<font color='blue'><b>创建成功后不能修改</b></font>",
@@ -359,7 +359,7 @@ Workspace:
         },
         "Description": {
           "zh-cn": "可选范围：10.0.0.0/16-24，172.16-31.0.0/16-24，192.168.0.0/16-24<br>不能与 VPC 及 VPC 内已有 Kubernetes 集群使用的网段重复。<font color='blue'><b>创建成功后不能修改</b></font>",
-          "en": "Optional range: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24<br> cannot duplicate segments already used by existing Kubernetes clusters in VPC and VPC.<font color='blue'><b>Cannot be modified after successful creation</b></font>"
+          "en": "Optional range: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24. These cannot duplicate segments already used by existing Kubernetes clusters in VPC."
         },
         "AssociationProperty": "ALIYUN::CS::ManagedKubernetesCluster::ServiceCidr"
       }
@@ -433,11 +433,11 @@ Workspace:
           "zh-cn": "实例密码"
         },
         "Description": {
-          "en": "Login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)",
+          "en": "Login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）"
         },
         "ConstraintDescription": {
-          "en": "Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).",
+          "en": "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/).",
           "zh-cn": "长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。"
         },
         "AssociationProperty": "ALIYUN::ECS::Instance::Password"
