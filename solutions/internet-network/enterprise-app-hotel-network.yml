@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 构建混合云网络，支持多地域访问，含VPC、ECS、SLB、RDS资源，确保酒店PMS系统云上云下互访，兼顾安全性与性能需求。
-  en: Build a hybrid cloud network to support multi-regional access, including VPC, ECS, SLB, and RDS resources, ensuring mutual access between the hotel PMS system on and off the cloud, taking into account security and performance requirements.
+  en: Build a hybrid cloud network to support multi-regional access, including VPC, ECS, SLB, and RDS resources, ensuring mutual access between the hotel PMS system on and off the cloud, while considering security and performance requirements.
 Conditions:
   ConnectToCCN:
     Fn::Not:
@@ -15,9 +15,7 @@ Parameters:
       en: VPC network segment
       zh-cn: 专有网络网段
     Description:
-      en: 'The ip address range of the VPC in the CidrBlock form; <br>You can use
-        the following ip address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR notation.<br>Valid ranges include: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络ip地址段范围，<br>您可以使用以下的ip地址段或其子网:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -103,10 +101,7 @@ Parameters:
       en: Specification
       zh-cn: 规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -117,11 +112,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -177,7 +168,7 @@ Parameters:
       en: Backend Server Weights
       zh-cn: 后端服务器权重
     Description:
-      en: The back-end server weight added by load balancing.
+      en: The weight assigned to the backend server by load balancing.
       zh-cn: 负载均衡添加的后端服务器权重。
     Default: 100
     MinValue: 1
@@ -266,13 +257,11 @@ Parameters:
       en: High-Privileged Account Password
       zh-cn: 高权限账号密码
     Description:
-      en: 'Length 8-32 bits, large /lowercase letters, numbers, special characters
-        accounted for three: !@#$%^&*()_+-='
+      en: "8-32 characters long, must include uppercase and lowercase letters, numbers, and special characters (e.g., !@#$%^&*()_+-=)."
       zh-cn: '长度8－32位，大/小写字母、数字、特殊字符占三种；特殊字符包含: !@#$%^&*()_+-='
     AssociationProperty: ALIYUN::RDS::Instance::AccountPassword
     ConstraintDescription:
-      en: 'Length 8-32 bits, large /lowercase letters, numbers, special characters
-        accounted for three: !@#$%^&*()_+-='
+      en: "8-32 characters long, must include uppercase and lowercase letters, numbers, and special characters (e.g., !@#$%^&*()_+-=)."
       zh-cn: '长度8－32位，大/小写字母、数字、特殊字符占三种；特殊字符包含: !@#$%^&*()_+-='
     MinLength: 8
     MaxLength: 32
@@ -662,6 +651,7 @@ Metadata:
         default: SAG
     TemplateTags:
     - acs:solution:网络组网:企业应用（酒店PMS）混合云组网
+    - acs:public_template:Solution:enterprise-app-hotel-network
   ALIYUN::ROS::Composer:
     16b17b6f:
       Rect:

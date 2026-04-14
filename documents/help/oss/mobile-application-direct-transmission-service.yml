@@ -27,13 +27,13 @@ Parameters:
     NoEcho: true
     Type: String
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password: length 8–30 characters, must contain at least three of: uppercase letters, lowercase letters, numbers, and special symbols (including ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 服务器登录密码，长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     Label:
       en: ECS Instance Password
       zh-cn: ECS实例密码
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Length 8-30, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols (`` ` ~ ! @ # $ % ^ & * _ - + = | { } [ ] : ; ' < > , . ? / )."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
 Resources:
@@ -189,7 +189,7 @@ Resources:
 Outputs:
   RoleArn:
     Description:
-      en: Role ARN.
+      en: Role ARN
       zh-cn: 角色的ARN。
     Value:
       Fn::GetAtt:
@@ -209,7 +209,7 @@ Outputs:
       Fn::Sub: http://${Eip.EipAddress}:7080
   EcsInstanceId:
     Description:
-      en: Ecs instance id.
+      en: ECS instance ID
       zh-cn: ECS实例id。
     Value:
       Fn::Select:
@@ -219,7 +219,7 @@ Outputs:
             - InstanceIds
   EipAllocationId:
     Description:
-      en: Eip allocation id.
+      en: EIP allocation ID
       zh-cn: EIP实例id。
     Value:
       Fn::GetAtt:
@@ -227,7 +227,7 @@ Outputs:
         - AllocationId
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -253,6 +253,7 @@ Metadata:
             en: Instance
     TemplateTags:
       - acs:document-help:oss:快速搭建移动应用直传服务
+      - acs:public_template:Example:mobile-application-direct-transmission-service
   ALIYUN::ROS::Composer:
     f5a78c30:
       Rect:

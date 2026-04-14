@@ -19,7 +19,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -290,7 +290,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -345,7 +345,7 @@ Outputs:
             - Data
   Console@PASSWORD:
     Description:
-      en: The default initial password can only be obtained correctly before logging into the panel for the first time. Please use the bt 5 command to change the password at other times.
+      en: The default initial password can only be obtained correctly the first time you log in to the panel. Use the `bt 5` command to change the password at other times.
       zh-cn: 默认初始密码仅在首次登录面板前能正确获取，其它时间请通过 bt 5 命令修改密码。
     Label:
       en: PASSWORD
@@ -372,6 +372,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署宝塔服务
+      - acs:public_template:Example:baota-on-ecs
   ALIYUN::ROS::Composer:
     86eb3bf8:
       Rect:

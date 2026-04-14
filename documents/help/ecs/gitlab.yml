@@ -24,7 +24,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
     Default: CreateNew
     AllowedValues:
     - CreateNew
@@ -250,7 +250,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -262,7 +262,7 @@ Outputs:
           - Ref: EcsInstance
   Console@Url:
     Description:
-      en: GitLab server address.
+      en: GitLab server address
       zh-cn: GitLab访问地址。
     Value:
       Fn::Sub:
@@ -287,6 +287,7 @@ Metadata:
       - EcsInstanceId
     TemplateTags:
     - acs:document-help:ecs:部署GitLab服务
+    - acs:public_template:Example:gitlab
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

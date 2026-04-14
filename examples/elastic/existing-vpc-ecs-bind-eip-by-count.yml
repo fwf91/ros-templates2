@@ -46,7 +46,7 @@ Parameters:
       en: EIP Bandwidth
       zh-cn: 弹性公网带宽
     Description:
-      en: 'EIP Bandwidth, Value range: [1,200], unit: Mbps.'
+      en: 'EIP Bandwidth. Value range: [1, 200], unit: Mbps.'
       zh-cn: 弹性公网地址带宽。取值范围：1~200， 单位：Mbps。
     Default: 1
     MinValue: 1
@@ -68,7 +68,7 @@ Parameters:
       en: Count
       zh-cn: 数量
     Description:
-      en: 'The number of ecs and eip to be created, value range: [1,140]'
+      en: 'The number of ECS and EIP instances to be created. Value range: [1, 140]'
       zh-cn: 需要创建的ecs和eip的数量，取值范围：[1,140]
     Default: 2
     MinValue: 1
@@ -79,12 +79,7 @@ Parameters:
       en: VSwitch Availability Zone
       zh-cn: 交换机可用区
     Description:
-      en: 'Availability zone ID.<br><b>Note: <font color=''blue''>Before selecting,
-        please confirm whether the availability zone supports the specification of
-        creating ECS resources. It is recommended to be different from other switch
-        availability zones</font></b ><br><font color=''red''>The switch availability
-        zone and the selected switch instance ID must be in the same availability
-        zone.</font>'
+      en: "Availability zone ID.<br><b>Note: <font color='blue'>Before selecting, please confirm whether the availability zone supports the specification for creating ECS resources. It is recommended to be different from other switch availability zones.</font></b><br><font color='red'>The VSwitch availability zone and the selected VSwitch instance ID must be in the same availability zone.</font>"
       zh-cn: 可用区ID。<br><b>注： <font color='blue'>选择前请确认该可用区是否支持创建ECS资源的规格，建议与其他交换机可用区不同</font></b><br><font
         color='red'>交换机可用区和已选择的交换机实例ID必须在同一个可用区。</font>
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
@@ -134,11 +129,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -356,6 +347,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:弹性计算:使用Count创建VPC类型ECS，并依次绑定EIP(已有VPC)
+    - acs:public_template:Example:existing-vpc-ecs-bind-eip-by-count
   ALIYUN::ROS::Composer:
     dc5cb784:
       Rect:

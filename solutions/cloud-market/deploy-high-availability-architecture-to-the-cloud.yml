@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 在两个可用区自动创建VPC、ECS、RDS、Redis与SLB，配置高可用架构，支持自定义资源规格与计费方式，适用于通用产品云端部署。
-  en: Automatically create VPC, ECS, RDS, Redis and SLB in two availability zones, configure a high-availability architecture, support customized resource specifications and billing methods, and are suitable for cloud deployment of general products.
+  en: Automatically create VPC, ECS, RDS, Redis, and SLB in two availability zones, configure a high-availability architecture, support customized resource specifications and billing methods, and are suitable for cloud deployment of general products.
 Parameters:
   VpcCidrBlock:
     Type: String
@@ -54,10 +54,10 @@ Parameters:
   ECSPeriodUnit:
     Type: String
     Label:
-      en: ECS Purchase duration of prepaid resources.
+      en: ECS purchase duration for prepaid resources.
       zh-cn: 云服务器预付费资源的购买周期
     Description:
-      en: 'ECS Purchase time and period of prepaid resource, value: [Week, Month].'
+      en: 'ECS purchase time and period for prepaid resources. Value: [Week, Month].'
       zh-cn: 云服务器预付费资源的购买时长周期，取值：[Week（周）, Month（月）]
     AssociationPropertyMetadata:
       Visible:
@@ -73,12 +73,10 @@ Parameters:
   ECSPeriod:
     Type: Number
     Label:
-      en: ECS Purchase time of prepaid resources.
+      en: ECS purchase time for prepaid resources.
       zh-cn: 云服务器预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is week, the value range is:
-        [1,2,3,4]; when the purchase cycle of prepaid resource is month, the value
-        is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60].'
+      en: "When the purchase cycle for prepaid resources is week, the value range is [1, 2, 3, 4]; when it is month, the values are [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 24, 36, 48, 60]."
       zh-cn: 云服务器预付费资源的购买时长，当预付费资源的购买周期为Week时，取值范围：[1，2，3，4]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9，12，24，36，48，60]。
     AssociationPropertyMetadata:
       Visible:
@@ -112,7 +110,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘空间
     Description:
-      en: 'System disk size, range of values: 40-500, units: GB.'
+      en: 'System disk size, value range: 40–500 GB.'
       zh-cn: 系统盘大小, 取值范围：[40, 500], 单位：GB。
     Default: 40
     MinValue: 40
@@ -143,7 +141,7 @@ Parameters:
       en: The number of ECS instances created under VSwitch1
       zh-cn: 交换机1下创建的ECS实例数量
     Description:
-      en: 'Number of the servers, value range: [1, 100].'
+      en: 'Number of servers. Value range: [1, 100].'
       zh-cn: '创建服务器的数量，取值范围: [1, 100]。'
     Default: 1
     MinValue: 1
@@ -154,7 +152,7 @@ Parameters:
       en: The number of ECS instances created under VSwitch2
       zh-cn: 交换机2下创建的ECS实例数量
     Description:
-      en: 'Number of the servers, value range: [1, 100].'
+      en: 'Number of servers. Value range: [1, 100].'
       zh-cn: '创建服务器的数量，取值范围: [1, 100]。'
     Default: 1
     MinValue: 1
@@ -165,9 +163,7 @@ Parameters:
       en: Payment Type
       zh-cn: 付费类型
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[PayOnDemand：<font
-        color=''green''>pay-as-you-go</font>]<br>[PrePay：<font color=''green''>prepayment，monthly
-        or annual</font>]<br><font color=''blue''></a>'
+      en: "<font color='blue'><b>Optional values: </b></font><br>[PayOnDemand: <font color='green'>pay-as-you-go</font>]<br>[PrePay: <font color='green'>prepayment,monthly or annual</font>]<br><font color='blue'></a>"
       zh-cn: '<font color=''blue''><b>可选值: </b></font><br>[PayOnDemand：<font color=''green''>按量付费</font>]<br>[PrePay：<font
         color=''green''>预付费，包月</font>]<br><font color=''blue''></a>'
     Default: PayOnDemand
@@ -177,10 +173,10 @@ Parameters:
   SLBPeriodUnit:
     Type: String
     Label:
-      en: SLB Purchase duration of prepaid resources.
+      en: SLB purchase duration for prepaid resources.
       zh-cn: 负载均衡实例预付费资源的购买周期
     Description:
-      en: 'SLB Purchase time and period of prepaid resource, value: [month，year].'
+      en: 'SLB Purchase time and period of prepaid resource, value: [month,year].'
       zh-cn: 负载均衡实例预付费资源的购买时长周期，取值：[month（月），year（年）]
     AssociationPropertyMetadata:
       Visible:
@@ -196,12 +192,10 @@ Parameters:
   SLBPeriod:
     Type: Number
     Label:
-      en: SLB Purchase time of prepaid resources.
+      en: SLB purchase time for prepaid resources.
       zh-cn: 负载均衡实例预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is Year, the value range is:
-        [1,2,3]; when the purchase cycle of prepaid resource is month, the value is:
-        [1,2,3,4,5,6,7,8,9].'
+      en: "When the purchase cycle for prepaid resources is year, the value range is [1, 2, 3]; when the purchase cycle is month, the value is [1, 2, 3, 4, 5, 6, 7, 8, 9]."
       zh-cn: 负载均衡实例预付费资源的购买时长，当预付费资源的购买周期为Year时，取值范围：[1，2，3]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9]。
     AssociationPropertyMetadata:
       Visible:
@@ -236,10 +230,10 @@ Parameters:
   RDSPeriodUnit:
     Type: String
     Label:
-      en: RDS Purchase duration of prepaid resources.
+      en: RDS purchase duration for prepaid resources.
       zh-cn: 云服务器预付费资源的购买周期
     Description:
-      en: 'RDS Purchase time and period of prepaid resource, value: [Month，Year].'
+      en: 'RDS Purchase time and period of prepaid resource, value: [Month,Year].'
       zh-cn: 云数据库预付费资源的购买时长周期，取值：[Month（月），Year（年）]
     AssociationPropertyMetadata:
       Visible:
@@ -255,12 +249,10 @@ Parameters:
   RDSPeriod:
     Type: Number
     Label:
-      en: RDS Purchase time of prepaid resources.
+      en: RDS purchase time for prepaid resources.
       zh-cn: 云数据库预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is Year, the value range is:
-        [1,2,3]; when the purchase cycle of prepaid resource is month, the value is:
-        [1,2,3,4,5,6,7,8,9].'
+      en: "When the purchase cycle for prepaid resources is year, the value range is [1, 2, 3]; when the purchase cycle is month, the value is [1, 2, 3, 4, 5, 6, 7, 8, 9]."
       zh-cn: 云数据库预付费资源的购买时长，当预付费资源的购买周期为Year时，取值范围：[1，2，3]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9]。
     AssociationPropertyMetadata:
       Visible:
@@ -289,7 +281,7 @@ Parameters:
   DBInstanceClass:
     Type: String
     Label:
-      en: The instance specification
+      en: Instance specification.
       zh-cn: 实例规格
     AssociationProperty: ALIYUN::RDS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -312,7 +304,7 @@ Parameters:
       en: Storage Space
       zh-cn: 存储空间
     Description:
-      en: 'Database storage space, units: GB, per 5GB increment, value range: 5-1000.'
+      en: 'Database storage space, units: GB, increments of 5GB, value range: 5–1000.'
       zh-cn: 数据库存储空间, 单位：GB, 每5GB进行递增，取值范围：5-1000。
     Default: 50
     MinValue: 5
@@ -339,7 +331,7 @@ Parameters:
         (including:!@#$%^&*-+=_).
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     ConstraintDescription:
-      en: Length 8-32, can contain size letters, Numbers and special symbols (including:!@#$%^&*-+=_).
+      en: "Length 8-32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 长度8-32,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: 8
     MaxLength: 32
@@ -350,10 +342,7 @@ Parameters:
       en: Payment Type
       zh-cn: 付费类型
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[PayOnDemand：<font
-        color=''green''>pay-as-you-go</font>]<br>[PrePay：<font color=''green''>prepayment，monthly
-        or annual</font>]<br><font color=''blue''>The monthly instance can not create
-        a database (db) and an account.'
+      en: "<font color='blue'><b>Optional values: </b></font><br>[PayOnDemand: <font color='green'>pay-as-you-go</font>]<br>[PrePay: <font color='green'>prepayment,monthly or annual</font>]<br><font color='blue'>The monthly instance can not create a database (db) and an account."
       zh-cn: '<font color=''blue''><b>付费类型；可选值: </b></font><br>[Postpaid：<font color=''green''>按量付费</font>]<br>[Prepaid：<font
         color=''green''>预付费，包月</font>]<br>预付费，包月实例不创建数据库（db）和账号。'
     Default: PostPaid
@@ -363,10 +352,10 @@ Parameters:
   RedisPeriodUnit:
     Type: String
     Label:
-      en: Redis Purchase duration of prepaid resources.
+      en: Redis purchase duration of prepaid resources.
       zh-cn: Redis实例预付费资源的购买周期
     Description:
-      en: 'Redis Purchase time and period of prepaid resource, value: [Month，Year].'
+      en: 'Redis Purchase time and period of prepaid resource, value: [Month,Year].'
       zh-cn: Redis实例预付费资源的购买时长周期，取值：[Month（月），Year（年）]
     AssociationPropertyMetadata:
       Visible:
@@ -382,12 +371,10 @@ Parameters:
   RedisPeriod:
     Type: Number
     Label:
-      en: Redis Purchase time of prepaid resources.
+      en: Redis purchase time of prepaid resources.
       zh-cn: Redis实例预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is Year, the value range is:
-        [1,2,3]; when the purchase cycle of prepaid resource is month, the value is:
-        [1，2，3，4，5，6，7，8，9，12，24，36，48，60].'
+      en: "When the purchase cycle of prepaid resource is Year, the value range is: [1,2,3]; when the purchase cycle of prepaid resource is month, the value is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60]."
       zh-cn: Redis实例预付费资源的购买时长，当预付费资源的购买周期为Year时，取值范围：[1，2，3]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9，12，24，36，48，60]。
     AssociationPropertyMetadata:
       Visible:
@@ -831,7 +818,7 @@ Outputs:
       - PrivateIps
   RdsInnerConnectionString:
     Description:
-      en: Relational database Intranet connection strings
+      en: Relational database intranet connection strings.
       zh-cn: 关系型数据库内网连接串
     Value:
       Fn::GetAtt:
@@ -916,6 +903,7 @@ Metadata:
         zh-cn: Redis配置
     TemplateTags:
     - acs:solution:云市场:通用产品上云部署架构（高可用）
+    - acs:public_template:Solution:deploy-high-availability-architecture-to-the-cloud
   ALIYUN::ROS::Composer:
     '28619642':
       Rect:

@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Transform: Aliyun::Terraform-v1.5
 Description:
-  en: AnalyticDB and Bailian build intelligent question and answer system using Terraform.
+  en: Build an intelligent question-and-answer system using AnalyticDB and Bailian with Terraform.
   zh-cn: 使用Terraform搭建AnalyticDB与百炼智能问答系统。
 Parameters:
   zone_id:
@@ -43,7 +43,7 @@ Parameters:
   app_id:
     Type: String
     Label:
-      en: Application ID of Bilian application
+      en: Application ID of Bailian application
       zh-cn: 百炼应用的应用ID
     Description:
       zh-cn: "创建百炼应用，并获得应用ID，请参考： <a href=\"https://help.aliyun.com/zh/model-studio/developer-reference/create-application\"  target=\"_blank\">创建应用</a>。"
@@ -56,10 +56,10 @@ Parameters:
       zh-cn: ECS实例密码
     Description:
       zh-cn: "服务器登录密码，长度8-30，必须包含三项（大写字母、小写字母、数字、特殊符号）"
-      en: "Server login password, length 8-30, must contain three items (uppercase letters, lowercase letters, numbers, special symbols)"
+      en: "Server login password, 8-30 characters long, must contain three of the following: uppercase letters, lowercase letters, numbers, and special symbols"
     ConstraintDescription:
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、特殊符号）
-      en: Length 8-30, must contain three items (uppercase letters, lowercase letters, numbers, special symbols)
+      en: "8-30 characters long, must contain three of the following: uppercase letters, lowercase letters, numbers, and special symbols"
     AssociationProperty: ALIYUN::ECS::Instance::Password
   common_name:
     Type: String

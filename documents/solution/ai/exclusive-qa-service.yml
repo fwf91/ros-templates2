@@ -9,9 +9,9 @@ Parameters:
     Type: String
     NoEcho: true
     Label:
-      en: BaiLian API-KEY
+      en: BaiLian API Key
       zh-cn: 百炼 API-KEY
-    AssociationProperty: ALIYUN::Bailian::ApiKey::ApiKeyInfo
+    AssociationProperty: ALIYUN::Bailian::API Key::API KeyInfo
     Description:
       zh-cn: >-
         开通百炼模型服务，并获得 API-KEY，请参考：
@@ -26,8 +26,8 @@ Parameters:
     NoEcho: true
     AssociationProperty: 'ALIYUN::DashVector::ApiKey'
     Label:
-      en: DashVector API-KEY
-      zh-cn: DashVector API-KEY
+      en: DashVector API Key
+      zh-cn: DashVector API Key
     Description:
       zh-cn: >-
         开通DashVector向量检索服务，并获得 API-KEY，请参考：
@@ -52,7 +52,7 @@ Parameters:
           min: 1
     ConstraintDescription:
       zh-cn: 由大小写字母、数字、下划线(_)、中划线(-)组成，长度[3, 32]。
-      en: It consists of uppercase and lowercase letters, numbers, underline (_), and dash (-). The length is [3, 32]
+      en: It must consist of uppercase letters, lowercase letters, numbers, underscores (_), and hyphens (-). The length must be between 3 and 32 characters.
     Description:
       zh-cn: 本方案会创建一个免费版的集群，如果您账号下已经创建好了免费版的集群，请输入免费版集群的名称。
       en: >- 
@@ -201,7 +201,7 @@ Outputs:
   WebUrl:
     Description:
       zh-cn: Web 访问地址。
-      en: The Addresses of Web.
+      en: Web Address
     Value:
       'Fn::Sub':
         - 'http://${ServerAddress}'
@@ -214,7 +214,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: ECS登录地址。
-      en: Ecs login address.
+      en: ECS login address
     Value:
       'Fn::Sub':
         - >-
@@ -244,10 +244,11 @@ Metadata:
           - InstancePassword
         Label:
           default:
-            en: Ecs Instance
+            en: ECS Instance
             zh-cn: ECS实例配置
     TemplateTags:
       - acs:technical-solution:ai:向量检索与通义千问搭建专属问答服务-tech_solu_109
+      - acs:public_template:Solution:exclusive-qa-service
   ALIYUN::ROS::Composer:
     052f5b74:
       Rect:

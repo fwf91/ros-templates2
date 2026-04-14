@@ -113,9 +113,10 @@ Metadata:
           - RDAccountName2
         Label:
           zh-cn: 资源目录配置
-          en: ResourceDirectory Configuration
+          en: Resource Directory Configuration
     TemplateTags:
       - acs:technical-solution:security-and-compliance:企业多账号配置统一合规审计-tech_solu_68
+      - acs:public_template:Solution:multiple-accounts-support-configuration-auditing
   ALIYUN::ROS::Composer:
     fe8fd441:
       Rect:

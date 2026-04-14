@@ -2,7 +2,7 @@ AnalyticDB-and-Bailian-system:
   Categories:
     - Solution
   Description:
-    en: AnalyticDB and Bailian build intelligent question and answer system.
+    en: AnalyticDB and Bailian build an intelligent question-and-answer system.
     zh-cn: AnalyticDB与百炼搭建智能问答系统。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/AnalyticDB-and-Bailian-system/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/AnalyticDB-and-Bailian-system/README.md
@@ -16,6 +16,7 @@ AnalyticDB-and-Bailian-system:
       - ArtificialIntelligenceAndMachineLearning
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ECS::RunCommand
@@ -29,6 +30,7 @@ AnalyticDB-and-Bailian-system:
   TemplateName: AnalyticDB-and-BaiLian-built-an-intelligent-question-and-answer-system
   TemplateNameAlias: AnalyticDB与百炼搭建智能问答系统
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ai/AnalyticDB-and-Bailian-system.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ai/AnalyticDB-and-Bailian-system.tf.yml
 ES-vector-retrieval-capabilities:
   Categories:
     - Solution
@@ -59,6 +61,7 @@ ES-vector-retrieval-capabilities:
       - BigDataComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ECS::RunCommand
@@ -72,6 +75,7 @@ ES-vector-retrieval-capabilities:
   TemplateName: Personalized-recommendation-using-vector-retrieval-capabilities-of-Elasticsearch
   TemplateNameAlias: 使用Elasticsearch的向量检索能力进行个性化推荐
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/ES-vector-retrieval-capabilities.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/ES-vector-retrieval-capabilities.tf.yml
 Nginx-access-log-data-archive:
   Categories:
     - Solution
@@ -92,6 +96,7 @@ Nginx-access-log-data-archive:
       - ElasticComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::Instance
       - ALIYUN::ECS::RunCommand
@@ -113,6 +118,7 @@ Nginx-access-log-data-archive:
   TemplateName: Application-Log-Data-Archiving
   TemplateNameAlias: 应用日志数据归档
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/Nginx-access-log-data-archive.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/Nginx-access-log-data-archive_intl_en.tf.yml
 OLAP-analysis-based-on-Hologres:
   Categories:
     - Solution
@@ -132,6 +138,7 @@ OLAP-analysis-based-on-Hologres:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::VPC
       - ALIYUN::ECS::VSwitch
@@ -140,6 +147,7 @@ OLAP-analysis-based-on-Hologres:
   TemplateName: Based-on-Hologres-lightweight-high-performance-OLAP-analysis
   TemplateNameAlias: 基于Hologres轻量高性能OLAP分析
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/data-analysis/OLAP-analysis-based-on-Hologres.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/data-analysis/OLAP-analysis-based-on-Hologres.tf.yaml
 accelerate-static-website:
   Categories:
     - Solution
@@ -160,6 +168,7 @@ accelerate-static-website:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CDN::Domain
       - ALIYUN::CDN::DomainConfig
@@ -170,6 +179,7 @@ accelerate-static-website:
   TemplateName: Cross-region-access-acceleration-for-static-resources-on-websites
   TemplateNameAlias: 网站静态资源跨地域访问加速
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/cdn-and-video-cloud/accelerate-static-website.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/cdn-and-video-cloud/accelerate-static-website.tf.yaml
 ack-ai-fine-tuning:
   Categories:
     - Solution
@@ -338,7 +348,7 @@ aigc-text-generation-3d-model:
   Categories:
     - Example
   Description:
-    en: AIGC text generation 3D model.
+    en: AIGC text-to-3D model generation.
     zh-cn: AIGC文本生成3D模型。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-3d-model/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-3d-model/README.md
@@ -394,7 +404,7 @@ aigc-text-generation-video:
   Categories:
     - Example
   Description:
-    en: AIGC text generation video.
+    en: AIGC text-to-video generation.
     zh-cn: AIGC文本生成视频。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-video/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aigc-text-generation-video/README.md
@@ -440,11 +450,12 @@ alb-cross-region-load-balance:
   TemplateName: ALB-realizes-cross-region-load-balancing
   TemplateNameAlias: ALB实现跨地域负载均衡
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/alb-cross-region-load-balance.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/alb-cross-region-load-balance.yml
 aliyun-kafka-instance:
   Categories:
     - Example
   Description:
-    en: This template is used to create a Message Queue for Apache Kafka instance.
+    en: This template creates a Message Queue for Apache Kafka instance.
     zh-cn: 使用此模板创建一台阿里云消息队列Kafka实例。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aliyun-kafka-instance/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/aliyun-kafka-instance/README.md
@@ -538,7 +549,7 @@ bailian-document-app:
   Categories:
     - Solution
   Description:
-    en: Rapid deployment of documentation intelligence app with bailian.
+    en: Rapidly deploy a documentation intelligence app using Bailian.
     zh-cn: 快速部署百炼文档智能应用
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/bailian-document-app/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/bailian-document-app/README.md
@@ -615,6 +626,7 @@ basic-highly-available-architecture:
       - Databases
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ALB::BackendServerAttachment
       - ALIYUN::ALB::Listener
@@ -632,6 +644,7 @@ basic-highly-available-architecture:
   TemplateName: Cloud-High-Availability-Architecture-Basic-Edition
   TemplateNameAlias: 云上高可用架构-基础版
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/basic-highly-available-architecture.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/basic-highly-available-architecture_intl_en.tf.yaml
 batch-of-ecs-instances:
   Categories:
     - Example
@@ -720,6 +733,7 @@ build-a-dialogue-model-based-on-Qwen-and-LangChain:
       - ArtificialIntelligenceAndMachineLearning
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::SecurityGroup
       - ALIYUN::ECS::VPC
@@ -735,6 +749,7 @@ build-a-dialogue-model-based-on-Qwen-and-LangChain:
   TemplateName: Construct-a-dialogue-model-with-Tongyi-Qianwen-and-LangChain
   TemplateNameAlias: 通义千问和LangChain搭建对话模型
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ai/build-a-dialogue-model-based-on-Qwen-and-LangChain.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ai/build-a-dialogue-model-based-on-Qwen-and-LangChain.tf.yaml
 build-microservices-on-ack:
   Categories:
     - Solution
@@ -755,6 +770,7 @@ build-microservices-on-ack:
       - Containers
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CS::ClusterApplication
       - ALIYUN::CS::ClusterNodePool
@@ -768,6 +784,7 @@ build-microservices-on-ack:
   TemplateName: How-to-quickly-use-ACK-to-build-microservices
   TemplateNameAlias: 如何快速使用ACK搭建微服务
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/micro/build-microservices-on-ack.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/micro/build-microservices-on-ack.tf.yaml
 business-security-for-e-commerce-sites:
   Categories:
     - Solution
@@ -823,6 +840,7 @@ cdn-speeds-up-distribution-of-file-on-oss:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CDN::Domain
       - ALIYUN::CDN::DomainConfig
@@ -833,6 +851,7 @@ cdn-speeds-up-distribution-of-file-on-oss:
   TemplateName: File-download-acceleration-and-cost-optimization
   TemplateNameAlias: 文件下载加速及成本优化
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/cdn-and-video-cloud/cdn-speeds-up-distribution-of-file-on-oss.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/cdn-and-video-cloud/cdn-speeds-up-distribution-of-file-on-oss_intl_en.tf.yaml
 cdn-speeds-up-oss-access:
   Categories:
     - Example
@@ -866,11 +885,7 @@ cen-open-isolated-networks:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to build the following VPCs: VPC 1, VPC 2, and VPC
-      3. VPC 1 and VPC 2 can access VPC 3, but VPC 1 and VPC 2 cannot access each
-      other. In this example, the VPC of the O&M environment can access the VPCs of
-      the production and staging environments, but the VPCs of the production and
-      staging environments cannot access each other.'
+    en: "This template is used to build the following VPCs: VPC 1, VPC 2, and VPC 3. VPC 1 and VPC 2 can access VPC 3, but VPC 1 and VPC 2 cannot access each other. In this example, the VPC of the O&M environment can access the VPCs of the production and staging environments, but the VPCs of the production and staging environments cannot access each other."
     zh-cn: 三个VPC1与VPC2、VPC3，允许VPC1、VPC2都能够访问VPC3，但VPC1与VPC2之间不通。示例场景是生产与预发VPC不通，但运维VPC需要连通生产、预发环境。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/cen-open-isolated-networks/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/cen-open-isolated-networks/README.md
@@ -883,6 +898,7 @@ cen-open-isolated-networks:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CEN::CenInstance
       - ALIYUN::CEN::TransitRouter
@@ -898,6 +914,7 @@ cen-open-isolated-networks:
   TemplateName: Plan-Enterprise-Grade-Networking---Build-Networks-to-Share-Services
   TemplateNameAlias: 企业级组网规划-搭建共享服务网络区
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/network/cen-open-isolated-networks.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/network/cen-open-isolated-networks.tf.yml
   Title: Cen_Open_Isolated_Networks
 centOS-ecs-oss:
   Categories:
@@ -1103,9 +1120,7 @@ collect-logs-across-alibaba-cloud-accounts:
   Categories:
     - Solution
   Description:
-    en: 'Cross-Account ECS Log Collection Solution: Deployed under Account A, interfacing
-      with ECS instances in Account B, it automates the configuration of Log Service
-      Project, Logstore, and collection settings, thereby realizing unified log management.'
+    en: "Cross-Account ECS Log Collection Solution: Deployed under Account A, interfacing with ECS instances in Account B, it automates the configuration of Log Service Project, Logstore, and collection settings, thereby realizing unified log management."
     zh-cn: 跨账号ECS日志采集方案：A账号部署，对接B账号ECS，自动化配置日志服务Project、Logstore及采集配置，实现日志统一管理。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/collect-logs-across-alibaba-cloud-accounts/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/collect-logs-across-alibaba-cloud-accounts/README.md
@@ -1265,6 +1280,7 @@ cross-region-account-network-interwork-scheme:
   TemplateName: Interoperability-scheme-across-regions-and-accounts
   TemplateNameAlias: 跨地域跨账号网络互通方案
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/cross-region-account-network-interwork-scheme.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/cross-region-account-network-interwork-scheme.yml
 cross-the-available-zone-disaster:
   Categories:
     - Solution
@@ -1359,6 +1375,7 @@ custom-image-ecs:
       - ElasticComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ECS::RunCommand
@@ -1370,6 +1387,7 @@ custom-image-ecs:
   TemplateName: Use-a-Custom-Image-to-Create-an-ECS-Instance-(Data-Disk-Attachment-Unsupported)
   TemplateNameAlias: 自定义镜像创建单实例ECS云服务器(未添加数据盘)
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/isv/custom-image-ecs.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/isv/custom-image-ecs.tf.yml
   Title: Custom_Image_Ecs
 custom-image-ecs-datadisk:
   Categories:
@@ -1532,6 +1550,7 @@ deploy-nginx-services-through-ingress:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CS::ManagedKubernetesCluster
       - ALIYUN::ECS::SecurityGroup
@@ -1544,6 +1563,7 @@ deploy-nginx-services-through-ingress:
   TemplateName: Deploy-Nginx-and-expose-and-monitor-services-through-Ingress
   TemplateNameAlias: 部署Nginx并通过Ingress暴露和监控服务
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ops-on-cloud/deploy-nginx-services-through-ingress.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/ops-on-cloud/deploy-nginx-services-through-ingress.tf.yaml
 deploy-small-architecture-to-the-cloud:
   Categories:
     - Solution
@@ -1861,6 +1881,7 @@ e-commerce-business-and-db-on-the-cloud:
       - Databases
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::DTS::Instance
       - ALIYUN::DTS::MigrationJob2
@@ -1879,6 +1900,7 @@ e-commerce-business-and-db-on-the-cloud:
   TemplateName: Migrate-E-commerce-Applications-and-Databases-to-the-Cloud
   TemplateNameAlias: 电商行业业务及数据库上云
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/enterprise-on-cloud/e-commerce-business-and-db-on-the-cloud.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/enterprise-on-cloud/e-commerce-business-and-db-on-the-cloud.tf.yml
   Title: E-Commerce_Business_And_DB_On_The_Cloud
 ecs-a-record:
   Categories:
@@ -2147,6 +2169,7 @@ ecs-multi-dynamic-ip:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::AssignPrivateIpAddresses
       - ALIYUN::ECS::InstanceGroup
@@ -2160,6 +2183,7 @@ ecs-multi-dynamic-ip:
   TemplateName: Create-an-ECS-instance-with-multiple-private-IP-addresses
   TemplateNameAlias: 创建绑定了多个私网地址的ECS
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/ecs-multi-dynamic-ip.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/ecs-multi-dynamic-ip.tf.yml
   Title: Ecs_Multi_Dynamic_Ip
 ecs-ram-role:
   Categories:
@@ -2237,6 +2261,7 @@ efficiently-build-a-new-account-with-security-and-compliance:
   TemplateName: Efficiently-build-a-new-account-that-complies-with-security-regulations
   TemplateNameAlias: 高效构建安全合规的新账号
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/security-and-compliance/efficiently-build-a-new-account-with-security-and-compliance.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/security-and-compliance/efficiently-build-a-new-account-with-security-and-compliance.yml
 efficiently-build-app-on-the-cloud:
   Categories:
     - Solution
@@ -2258,6 +2283,7 @@ efficiently-build-app-on-the-cloud:
       - Databases
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::DNS::DomainRecord
       - ALIYUN::ECS::InstanceGroup
@@ -2271,6 +2297,7 @@ efficiently-build-app-on-the-cloud:
   TemplateName: Mobile-development-secret:-Efficient-construction-of-APP-on-the-cloud
   TemplateNameAlias: 移动开发秘籍：云上高效构建APP
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/efficiently-build-app-on-the-cloud.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/internet-application-development/efficiently-build-app-on-the-cloud.tf.yaml
 ehpc-industrial-simulation:
   Categories:
     - Solution
@@ -2327,6 +2354,7 @@ elastic-application-with-ess:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ALB::BackendServerAttachment
       - ALIYUN::ALB::Listener
@@ -2346,6 +2374,7 @@ elastic-application-with-ess:
   TemplateName: Improve-the-availability-of-applications-through-ALB+ESS
   TemplateNameAlias: 通过ALB+ESS提升应用的可用性
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/elastic-application-with-ess.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/elastic-application-with-ess_intl_en.tf.yaml
 elastic-ha-architecture-to-the-cloud:
   Categories:
     - Solution
@@ -2366,6 +2395,7 @@ elastic-ha-architecture-to-the-cloud:
       - Databases
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::CustomImage
       - ALIYUN::ECS::Instance
@@ -2389,6 +2419,7 @@ elastic-ha-architecture-to-the-cloud:
   TemplateName: Deploy-a-High-availability,-Elastic-Common-Services-Stack-to-the-Cloud
   TemplateNameAlias: 通用产品上云部署架构（高可用、弹性）
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/cloud-market/elastic-ha-architecture-to-the-cloud.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/cloud-market/elastic-ha-architecture-to-the-cloud.tf.yml
   Title: Elastic_HA_Architecture_To_The_Cloud
 elastic-scaling-container-through-hpa:
   Categories:
@@ -2409,6 +2440,7 @@ elastic-scaling-container-through-hpa:
       - Containers
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CS::ClusterApplication
       - ALIYUN::CS::ClusterHelmApplication
@@ -2425,6 +2457,7 @@ elastic-scaling-container-through-hpa:
   TemplateName: Horizontal-elastic-scaling-of-container-applications-through-HPA
   TemplateNameAlias: 通过HPA实现容器应用的水平弹性伸缩
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/micro/elastic-scaling-container-through-hpa.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/micro/elastic-scaling-container-through-hpa.tf.yaml
 enterprise-app-hotel-network:
   Categories:
     - Solution
@@ -2488,6 +2521,7 @@ enterprise-cloud-network-architecture-planning:
       - ElasticComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CEN::CenInstance
       - ALIYUN::CEN::TransitRouter
@@ -2511,6 +2545,7 @@ enterprise-cloud-network-architecture-planning:
   TemplateName: Cloud-based-network-architecture-planning-for-enterprises
   TemplateNameAlias: 企业云上网络架构规划
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/enterprise-cloud-network-architecture-planning.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/enterprise-cloud-network-architecture-planning.tf.yml
 enterprise-multi-account-identity-authority-centralized-management:
   Categories:
     - Solution
@@ -2567,6 +2602,7 @@ entire-ecs-clone:
       - Storage
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::Disk
       - ALIYUN::ECS::InstanceGroupClone
@@ -2574,6 +2610,7 @@ entire-ecs-clone:
   TemplateName: Clone-an-ECS-instance
   TemplateNameAlias: 克隆一台ECS实例
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/entire-ecs-clone.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/entire-ecs-clone.tf.yml
   Title: Entire_Ecs_Clone
 exclusive-qa-service:
   Categories:
@@ -2625,11 +2662,13 @@ existing-vpc-ack:
       - ElasticComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::CS::ManagedKubernetesCluster
   TemplateName: Create-an-ACK-dedicated-cluster-(existing-VPC)
   TemplateNameAlias: 创建Kubernetes专有版集群（已有VPC）
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/isv/existing-vpc-ack.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/isv/existing-vpc-ack.tf.yml
   Title: Existing_Vpc_Ack
 existing-vpc-anycasteip-attach-slb-bind-ecs:
   Categories:
@@ -3564,6 +3603,7 @@ existing-vpc-single-jenkins:
       - ElasticComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ROS::WaitCondition
@@ -3573,6 +3613,7 @@ existing-vpc-single-jenkins:
   TemplateName: Installs-Jenkins-on-an-ECS-instance-(Existing-VPC)
   TemplateNameAlias: Jenkins单机版（已有VPC）
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/existing-vpc-single-jenkins.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/examples/elastic/existing-vpc-single-jenkins.tf.yml
   Title: Existing_Vpc_Single_Jenkins
 existing-vpc-single-jump-server:
   Categories:
@@ -4372,6 +4413,7 @@ highly-available-web-services:
       - Storage
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ECS::RunCommand
@@ -4387,6 +4429,7 @@ highly-available-web-services:
   TemplateName: Highly-Available-and-Shared-Storage-Web-Service
   TemplateNameAlias: 高可用及共享存储Web服务
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/highly-available-web-services.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/high-availability-architecture/highly-available-web-services.tf.yaml
 hybrid-cloud-uses-ali-ai-acceleration-tools:
   Categories:
     - Solution
@@ -4721,6 +4764,7 @@ landing-zone-cen-ack:
   TemplateName: Plan-Networking-for-Multiple-ACK-Clusters
   TemplateNameAlias: 面向多套容器集群的网络规划方案
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-ack.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-ack.yml
   Title: Landing_Zone_Cen_Ack
 landing-zone-cen-privatelink:
   Categories:
@@ -4746,6 +4790,7 @@ landing-zone-cen-privatelink:
   TemplateName: Establish-an-Enterprise-grade-Connection-Between-Private-Networks
   TemplateNameAlias: 企业级私网互联方案
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-privatelink.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-privatelink.yml
   Title: Landing_Zone_Cen_Privatelink
 landing-zone-cen-tr:
   Categories:
@@ -4772,6 +4817,7 @@ landing-zone-cen-tr:
   TemplateName: Uses-CEN-instances-and-Transit-Routers-to-Establish-Enterprise-grade-Network-Connections
   TemplateNameAlias: 基于CEN-TR实现企业级云上互联
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-tr.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-tr.yml
   Title: Landing_Zone_Cen_TR
 landing-zone-cen-tr-peer:
   Categories:
@@ -4798,6 +4844,7 @@ landing-zone-cen-tr-peer:
   TemplateName: Use-a-CEN-Instance-and-a-Transit-Router-to-Establish-Enterprise-grade-VPC-Connections-Based-on-a-Peering-Connection
   TemplateNameAlias: 基于VPC对等连接与转发路由器组合实现多VPC互通
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-tr-peer.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/solutions/internet-network/landing-zone-cen-tr-peer.yml
   Title: Landing_Zone_Cen_TR_Peer
 light-weight-gpu-deployed-cloud-games:
   Categories:
@@ -4869,12 +4916,7 @@ low-cost-link-to-business-data:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to migrate business data to the cloud. When you migrate
-      a large amount of business data to the cloud, a large amount of network bandwidth
-      is required. This causes high BGP costs. Alibaba Cloud allows you to purchase
-      static single-line EIP bandwidth plans in the desired region. BGP lines provided
-      by the following ISPs are supported: China Mobile, China Unicom, and China Telecom.
-      This helps reduce the costs of migrating data to the cloud.'
+    en: "This template is used to migrate business data to the cloud. When you migrate a large amount of business data to the cloud, a large amount of network bandwidth is required. This causes high BGP costs. Alibaba Cloud allows you to purchase static single-line EIP bandwidth plans in the desired region. BGP lines provided by the following ISPs are supported: China Mobile, China Unicom, and China Telecom. This helps reduce the costs of migrating data to the cloud."
     zh-cn: 本实践适用于提供业务数据搬迁上云服务。业务数据量一般都比较大，迁移上云需要大量的网络带宽，BGP费用比较高。 阿里云对用户开放所需地域购买静态单线共享带宽包的权限（移动/联通/电信均可），可用为迁移数据有效降低成本。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/low-cost-link-to-business-data/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/low-cost-link-to-business-data/README.md
@@ -5186,6 +5228,7 @@ migrate-rds-mysql-to-polardb-mysql:
       - Databases
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::InstanceGroup
       - ALIYUN::ECS::RunCommand
@@ -5202,6 +5245,7 @@ migrate-rds-mysql-to-polardb-mysql:
   TemplateName: RDS-MySQL-migration-to-PolarDB-MySQL-Edition
   TemplateNameAlias: RDS MySQL迁移至PolarDB MySQL版
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/database/migrate-rds-mysql-to-polardb-mysql.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/database/migrate-rds-mysql-to-polardb-mysql.tf.yml
 mobile-application-direct-transmission-service:
   Categories:
     - Example
@@ -5468,7 +5512,7 @@ multi-websites:
   Categories:
     - Example
   Description:
-    en: Use lnmp to deploy multi-websites by ros.
+    en: Use LNMP to deploy multiple websites using ROS.
     zh-cn: 使用LNMP环境部署多个站点。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/multi-websites/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/multi-websites/README.md
@@ -5790,6 +5834,7 @@ one-stop-htap-service:
       - BigDataComputing
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ClickHouse::DBCluster
       - ALIYUN::ClickHouse::SynDb
@@ -5806,6 +5851,7 @@ one-stop-htap-service:
   TemplateName: RDS+ClickHouse-builds-a-one-stop-HTAP
   TemplateNameAlias: RDS+ClickHouse构建一站式HTAP
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/database/one-stop-htap-service.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/database/one-stop-htap-service.tf.yaml
 operating-system-migration:
   Categories:
     - Solution
@@ -5976,7 +6022,7 @@ quickly-build-large-screen:
   Categories:
     - Solution
   Description:
-    en: Quickly build a large screen of enterprise management.
+    en: Quickly build an enterprise management dashboard.
     zh-cn: 快速搭建企业经营大屏。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/quickly-build-large-screen/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/quickly-build-large-screen/README.md
@@ -5989,6 +6035,7 @@ quickly-build-large-screen:
       - NetworksAndCDN
     DeployTypes:
       - ROS
+      - Terraform
     ResourceTypes:
       - ALIYUN::ECS::VPC
       - ALIYUN::ECS::VSwitch
@@ -5998,6 +6045,7 @@ quickly-build-large-screen:
   TemplateName: Quickly-build-a-big-screen-for-enterprise-operations
   TemplateNameAlias: 快速搭建企业经营大屏
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/data-analysis/quickly-build-large-screen.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/data-analysis/quickly-build-large-screen.tf.yaml
 ram-account-rights-management:
   Categories:
     - Solution
@@ -6068,7 +6116,7 @@ rapid-build-ai-robots-dialogue:
   Categories:
     - Example
   Description:
-    en: Rapid build AI robots dialogue.
+    en: Rapidly build AI-powered chatbots.
     zh-cn: 快速搭建AI对话机器人
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/rapid-build-ai-robots-dialogue/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/rapid-build-ai-robots-dialogue/README.md
@@ -6266,13 +6314,7 @@ security-vpc:
   Categories:
     - Solution
   Description:
-    en: 'This template is used to build the following VPCs: VPC A, VPC B, and VPC
-      C. In this example, an enterprise user wants to deploy the VPCs in a region.
-      In VPC A, a security control service is deployed. The enterprise user wants
-      to enable mutual access for VPC B and VPC C under the condition that the traffic
-      between both VPCs is filtered by the security control service in VPC A before
-      mutual access is implemented. Mutual access between VPC A and VPC B or between
-      VPC A and VPC C is not enabled.'
+    en: "This template is used to create the following VPCs: VPC A, VPC B, and VPC C. In this example, an enterprise user wants to deploy these VPCs in a region. In VPC A, a security control service is deployed. The enterprise user wants to enable mutual access between VPC B and VPC C, with traffic filtered by the security control service in VPC A before mutual access is implemented. Mutual access between VPC A and VPC B or between VPC A and VPC C is not enabled."
     zh-cn: 企业在某地域部署了3个VPC，其中VPC_A部署有安全管控服务，3个VPC之间互不相通。出于业务发展和网络环境安全性考虑，企业希望VPC_B和VPC_C之间可以相互通信，且VPC_B和VPC_C之间的访问流量，需先经过VPC_A中的安全管控服务过滤后，再进行通信。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/security-vpc/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/security-vpc/README.md
@@ -6867,11 +6909,7 @@ sls-multi-cloud-log-processing-analysis:
   Categories:
     - Solution
   Description:
-    en: '{This template is used to collect data from third-party platforms or data
-      centers and write the data to Alibaba Cloud Simple Log Service for data analysis.
-      This template helps you simplify O&M and facilitate operations and provides
-      you with the capability to process a large number of logs in the data technology
-      era.'
+    en: "This template is used to collect data from third-party platforms or data centers and write the data to Alibaba Cloud Simple Log Service for data analysis. This template helps you simplify O&M and facilitates operations and provides you with the capability to process a large number of logs in the data technology era."
     zh-cn: 从第三方云平台或线下IDC服务器上采集日志写入到阿里云日志服务，通过日志服务进行数据分析，帮助提升运维、运营效率，建立 DT 时代海量日志处理能力。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/sls-multi-cloud-log-processing-analysis/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/sls-multi-cloud-log-processing-analysis/README.md
@@ -6974,7 +7012,7 @@ spark-cluster-on-yitian:
   Categories:
     - Solution
   Description:
-    en: Spark Cluster on Yitian.
+    en: Spark Cluster on Yitian
     zh-cn: 倚天ECS实例部署Spark集群。
   Detail: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/spark-cluster-on-yitian/README_EN.md
   DetailAlias: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/template-infos/spark-cluster-on-yitian/README.md
@@ -7351,6 +7389,7 @@ tf-chat-glm-6b:
   TemplateName: Deploy-ChatGLM-6B-using-AMD-CPU-instances
   TemplateNameAlias: 使用AMD CPU实例部署ChatGLM-6B
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-chat-glm-6b.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-chat-glm-6b.yml
 tf-chat-glm2-6b:
   Categories:
     - Example
@@ -7375,6 +7414,7 @@ tf-chat-glm2-6b:
   TemplateName: Deploy-ChatGLM2-6B-using-c8i-instances-based-on-Intel-CPU
   TemplateNameAlias: 使用基于英特尔CPU的c8i实例部署ChatGLM2-6B
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-chat-glm2-6b.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-chat-glm2-6b.yml
 tf-qwen-7b-chat:
   Categories:
     - Example
@@ -7399,6 +7439,7 @@ tf-qwen-7b-chat:
   TemplateName: Deploy-Qwen-7B-Chat-using-AMD-CPU-instances
   TemplateNameAlias: 使用AMD CPU实例部署通义千问Qwen-7B-Chat
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-7b-chat.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-7b-chat.yml
 tf-qwen-audio-chat:
   Categories:
     - Example
@@ -7423,6 +7464,7 @@ tf-qwen-audio-chat:
   TemplateName: Deploy-Qwen-Audio-Chat-using-AMD-CPU-instances
   TemplateNameAlias: 使用AMD CPU实例部署通义千问Qwen-Audio-Chat
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-audio-chat.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-audio-chat.yml
 tf-qwen-vl-chat:
   Categories:
     - Example
@@ -7447,6 +7489,7 @@ tf-qwen-vl-chat:
   TemplateName: Deploy-Qwen-VL-Chat-using-AMD-CPU-instances
   TemplateNameAlias: 使用AMD CPU实例部署通义千问Qwen-VL-Chat
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-vl-chat.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-qwen-vl-chat.yml
 tf-stable-diffusion:
   Categories:
     - Example
@@ -7470,6 +7513,7 @@ tf-stable-diffusion:
   TemplateName: Deploy-Stable-Diffusion-using-AMD-CPU-instances
   TemplateNameAlias: 使用AMD CPU实例部署Stable Diffusion
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-stable-diffusion.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/help/ecs/tf-stable-diffusion.yml
 through-RocketMQ-transaction-messages:
   Categories:
     - Solution
@@ -7532,6 +7576,7 @@ two-region-three-center-high-availability:
   TemplateName: Two-places-and-three-centers-multi-active-network
   TemplateNameAlias: 两地三中心异地多活网络
   TemplateUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/two-region-three-center-high-availability.yml
+  TerraformUrl: https://raw.githubusercontent.com/aliyun/ros-templates/refs/heads/master/documents/solution/network/two-region-three-center-high-availability.yml
 unified-internet-egress-with-nat-gateway:
   Categories:
     - Solution

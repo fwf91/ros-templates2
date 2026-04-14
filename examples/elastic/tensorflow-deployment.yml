@@ -16,7 +16,7 @@ Parameters:
       en: Nodes Amount
       zh-cn: 实例的数量
     Description:
-      en: 'The number of ECS instances will be created,Allowed value: 1~100.'
+      en: 'The number of ECS instances to be created. Allowed value: 1~100.'
       zh-cn: 创建实例的数量，范围1-100。
     Default: 1
     MinValue: 1
@@ -59,8 +59,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. See details: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the image</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
@@ -82,8 +81,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8–30 characters; must contain uppercase letters, lowercase letters, numbers, and special symbols (at least three types).<br>Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AssociationProperty: 'ALIYUN::ECS::Instance::Password'
   ZoneId:
@@ -259,7 +257,7 @@ Resources:
 Outputs:
   tensorflow_nodes_ips:
     Description:
-      en: Public IP address list of created ecs instance.
+      en: Public IP address list of created ECS instances.
       zh-cn: 已创建的ecs实例的公共IP地址列表。
     Value:
       Fn::GetAtt:
@@ -281,6 +279,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:人工智能:部署TensorFlow开发环境
+    - acs:public_template:Example:tensorflow-deployment
   ALIYUN::ROS::Composer:
     '40402546':
       Res:

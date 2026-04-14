@@ -11,9 +11,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR notation; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -27,7 +25,7 @@ Parameters:
       en: VSwitch Availability Zone
       zh-cn: 可用区ID
     Description:
-      en: Availability Zone ID,<br><b>note： <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating RDS and ECS resources.</font></b>
+      en: "Availability Zone ID,<br><b>note: <font color='blue'>Before selecting, please confirm that the Availability Zone supports the specification of creating RDS and ECS resources.</font></b>"
       zh-cn: 可用区ID。<br><b>注： <font color='blue'>选择可用区前请确认该可用区是否支持创建RDS及ECS资源的规格。</font></b>
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
   VSwitchCidrBlock:
@@ -36,7 +34,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机子网网段
     Description:
-      en: CIDR Block of created VSwitch, It must belong to itself VPC CIDR Block.
+      en: CIDR block of the created VSwitch; it must be within the VPC CIDR block.
       zh-cn: 交换机网段，必须为专有网络子网段。
     Default: 192.168.0.0/24
   InstanceType:
@@ -45,10 +43,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例类型
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family.</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family.</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族。</font></a></b>
@@ -388,6 +383,7 @@ Metadata:
           default: RDS
     TemplateTags:
       - acs:example:网站:基于ECS和RDS创建WordPress环境
+      - acs:public_template:Example:wordpress-instance
   ALIYUN::ROS::Composer:
     691bae4e:
       Rect:

@@ -80,8 +80,7 @@ Parameters:
         letter and number. <br> special characters include()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8–30 characters. Must contain uppercase letters, lowercase letters, numbers, and at least three special symbols. Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[0-9A-Za-z\_\-&:;''<>,=%`~!@#\(\)\$\^\*\+\|\{\}\[\]\.\?\/]+$'
     MinLength: '8'
@@ -104,8 +103,7 @@ Parameters:
       en: Address Type
       zh-cn: 网络类型
     Description:
-      en: 'Network type of LoadBalancer. Optional value: Internet: public network
-        access, Intranet: Intranet access.'
+      en: "Network type of LoadBalancer. Optional values: Internet (public network access), Intranet (intranet access)."
       zh-cn: 负载均衡实例的网络类型，可选值：internet：公网访问，intranet：内网访问。
     Default: internet
     AllowedValues:
@@ -238,7 +236,7 @@ Resources:
 Outputs:
   BackendServerInstanceId:
     Description:
-      en: The instance IDs of create EcsInstanceGroup
+      en: The instance IDs of the created EcsInstanceGroup.
       zh-cn: 创建ECS的实例IDs
     Value:
       Fn::GetAtt:
@@ -246,7 +244,7 @@ Outputs:
       - InstanceIds
   BackendServerPublicIp:
     Description:
-      en: The instance public IPs of create EcsInstanceGroup.
+      en: The instance public IPs of the created EcsInstanceGroup.
       zh-cn: 创建ECS的实例公共IPs。
     Value:
       Fn::GetAtt:
@@ -254,7 +252,7 @@ Outputs:
       - PublicIps
   LoadBalancerId:
     Description:
-      en: The ID of load balance created.
+      en: The ID of the created load balancer.
       zh-cn: 已创建负载平衡的ID。
     Value:
       Fn::GetAtt:
@@ -299,6 +297,7 @@ Metadata:
           zh-cn: 安全组
     TemplateTags:
     - acs:example:网络:创建两个ECS和SLB并将ECS创建添加到SLB后端服务器
+    - acs:public_template:Example:slb-with-2-ecs
   ALIYUN::ROS::Composer:
     fd210f1b:
       Rect:

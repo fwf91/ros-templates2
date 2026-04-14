@@ -550,13 +550,13 @@ Outputs:
   TeaUrl:
     Description:
       zh-cn: tea服务访问地址。
-      en: The addresses of tea service.
+      en: The address of the tea service.
     Value:
       'Fn::Sub': http://${IngressInfo}/tea
   CoffeeUrl:
     Description:
       zh-cn: coffee服务访问地址。
-      en: The addresses of coffee service.
+      en: The address of the coffee service.
     Value:
       'Fn::Sub': http://${IngressInfo}/coffee
 Metadata:
@@ -571,6 +571,7 @@ Metadata:
           - InstancePassword
     TemplateTags:
       - acs:technical-solution:micro:通过HPA实现容器应用的水平弹性伸缩-tech_solu_125
+      - acs:public_template:Solution:elastic-scaling-container-through-hpa
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

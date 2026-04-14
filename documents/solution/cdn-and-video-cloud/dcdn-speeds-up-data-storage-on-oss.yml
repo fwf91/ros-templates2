@@ -138,6 +138,7 @@ Metadata:
           default: Domain
     TemplateTags:
       - 'acs:technical-solution:network:多媒体数据存储与分发-tech_solu_46'
+      - acs:public_template:Solution:dcdn-speeds-up-data-storage-on-oss
   ALIYUN::ROS::Composer:
     1753022b:
       Rect:

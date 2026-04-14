@@ -55,6 +55,7 @@ Metadata:
         default: OSS
     TemplateTags:
     - acs:example:存储:创建一个OSSBucket
+    - acs:public_template:Example:simple-oss-bucket
   ALIYUN::ROS::Composer:
     cab34326:
       Rect:

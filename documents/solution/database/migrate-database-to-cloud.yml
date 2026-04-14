@@ -16,7 +16,7 @@ Parameters:
     Type: String
     Description:
       zh-cn: 自建数据库的ECS实例类型。
-      en: ECS instance on-premises database.
+      en: ECS instance for on-premises database
     Label:
       zh-cn: ECS实例类型
       en: ECS instance type.
@@ -75,7 +75,7 @@ Parameters:
   RDSUserDTSUsername:
     Type: String
     ConstraintDescription:
-      en: Consist of 2 to 16 characters of lowercase letters, underline. Must begin with a letter and be end with an alphanumeric character
+      en: Consist of 2 to 16 characters, lowercase letters and underscores. Must begin with a letter and end with an alphanumeric character.
       zh-cn: 由 2 到 16 个小写字母组成，下划线。必须以字母开头，以字母数字字符结尾
     Label:
       zh-cn: RDS数据库账号
@@ -93,11 +93,11 @@ Parameters:
   WPUserForSQLUsername:
     Type: String
     ConstraintDescription:
-      en: Consist of 2 to 16 characters of lowercase letters, underline. Must begin with a letter and be end with an alphanumeric character
+      en: Consist of 2 to 16 characters, lowercase letters and underscores. Must begin with a letter and end with an alphanumeric character.
       zh-cn: 由 2 到 16 个小写字母组成，下划线。必须以字母开头，以字母数字字符结尾
     Label:
       zh-cn: ECS 自建 MySQL 数据库账号 (SQL)
-      en: ECS builds its own MySQL database account (SQL)
+      en: ECS creates its own MySQL database account (SQL).
     Description:
       zh-cn: ECS 自建 MySQL 数据库账号，该账号用于数据库 SQL 操作。
       en: ECS creates its own MySQL database account, which is used for database SQL operations.
@@ -108,7 +108,7 @@ Parameters:
     Type: String
     Label:
       zh-cn: ECS 自建 MySQL 数据库密码 (SQL)
-      en: ECS builds its own MySQL database password (SQL)
+      en: ECS creates its own MySQL database password (SQL).
     AllowedPattern: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=]).{8,32}$
     NoEcho: true
     Description:
@@ -330,20 +330,20 @@ Outputs:
     Value: root
   ECSInstancePassword:
     Description:
-      en: Login password for the ECS instance..
+      en: Login password for the ECS instance.
       zh-cn: ECS 实例登录密码。
     NoEcho: true
     Value:
       Ref: InstancePassword
   WPUserForSQLUsername:
     Description:
-      en: ECS builds its own MySQL database account, which is used for SQL operations in the database.
+      en: ECS creates its own MySQL database account, which is used for SQL operations in the database.
       zh-cn: ECS 自建 MySQL 数据库账号，该账号用于数据库 SQL 操作。
     Value:
       Ref: WPUserForSQLUsername
   WPUserForSQLPassword:
     Description:
-      en: ECS builds its own MySQL database account password, which is used for SQL operations in the database.
+      en: ECS creates its own MySQL database password, which is used for SQL operations in the database.
       zh-cn: ECS 自建 MySQL 数据库账号密码，该账号用于数据库 SQL 操作。
     NoEcho: true
     Value:
@@ -390,7 +390,7 @@ Outputs:
       Fn::Sub: https://rdsnext.console.aliyun.com/detail/${Database}/basicInfo?region=${ALIYUN::Region}
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS Login Address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub: https://ecs-workbench.aliyun.com/?from=EcsConsole&instanceType=ecs&regionId=${ALIYUN::Region}&instanceId=${WebServer}
@@ -421,6 +421,7 @@ Metadata:
           default: RDS
     TemplateTags:
       - acs:technical-solution:database:自建数据库迁移到云数据库-tech_solu_112
+      - acs:public_template:Solution:migrate-database-to-cloud
   ALIYUN::ROS::Composer:
     '34727653':
       Res:

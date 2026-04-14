@@ -25,9 +25,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -62,10 +60,7 @@ Parameters:
       en: Compute Instance Specifications
       zh-cn: 计算实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.g6.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.g6.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.g6.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -89,10 +84,7 @@ Parameters:
       en: Login Instance Specifications
       zh-cn: 登录实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.g6.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.g6.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.g6.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -105,10 +97,7 @@ Parameters:
       en: Manager Instance Specifications
       zh-cn: 管理实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>general specifications：<font color=''red''><b>ecs.g6.large</b></font><br>note:
-        a few zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.g6.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.g6.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -151,11 +140,7 @@ Parameters:
       en: Access Control
       zh-cn: 读写权限
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[private：<font
-        color=''green''>All access to the file requires authentication</font>]<br>[public-read：<font
-        color=''green''>File writes need to be authenticated；Files can be read anonymously</font>]<br>[public-read-write：<font
-        color=''green''>Anyone (including anonymous visitors) can perform read and
-        write operators on the files in the bucket</font>]'
+      en: "<font color='blue'><b>Optional values: </b></font><br>[private: <font color='green'>All access to the file requires authentication</font>]<br>[public-read: <font color='green'>File writes need to be authenticated;Files can be read anonymously</font>]<br>[public-read-write: <font color='green'>Anyone (including anonymous visitors) can perform read and write operators on the files in the bucket</font>]"
       zh-cn: '<font color=''blue''><b>可选值: </b></font><br>[private：<font color=''green''>对文件的所有访问操作需要进行身份验证</font>]<br>[public-read：<font
         color=''green''>对文件写操作需要进行身份验证；可以对文件进行匿名读</font>]<br>[public-read-write：<font
         color=''green''>所有人都可以对文件进行读写操作</font>]'
@@ -170,10 +155,7 @@ Parameters:
       en: Storage Type
       zh-cn: 存储类型
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[Standard：<font
-        color=''green''>Standard storage type</font>]<br>[IA：<font color=''green''>Low
-        frequency access storage type</font>]<br>[Archive：<font color=''green''>Archive
-        storage type</font>]'
+      en: "<font color='blue'><b>Optional values: </b></font><br>[Standard: <font color='green'>Standard storage type</font>]<br>[IA: <font color='green'>Low frequency access storage type</font>]<br>[Archive: <font color='green'>Archive storage type</font>]"
       zh-cn: '<font color=''blue''><b>可选值: </b></font><br>[Standard：<font color=''green''>标准存储类型</font>]<br>[IA：<font
         color=''green''>低频访问存储类型</font>]<br>[Archive：<font color=''green''>归档存储类型</font>]'
     Default: Standard
@@ -360,6 +342,7 @@ Metadata:
           zh-cn: 对象存储
     TemplateTags:
     - acs:solution:高性能计算:EHPC工业仿真
+    - acs:public_template:Solution:ehpc-industrial-simulation
   ALIYUN::ROS::Composer:
     efd4f660:
       Rect:

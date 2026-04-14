@@ -52,8 +52,7 @@ Parameters:
         letter and number. <br> special characters include（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/.
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters, must contain three of: uppercase letters, lowercase letters, numbers, and special symbols. Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[a-zA-Z0-9-\(\)\`\~\!@\#\$%\^&\*-+=\|\{\}\[\]\:\;\‘\,\.\?\/]*'
     MinLength: 8
@@ -238,6 +237,7 @@ Metadata:
       - Password
     TemplateTags:
     - acs:document-help:oss:Python服务端签名直传并设置上传回调
+    - acs:public_template:Example:add-signatures-on-server-configure-upload-callback
   ALIYUN::ROS::Composer:
     2979661b:
       Rect:

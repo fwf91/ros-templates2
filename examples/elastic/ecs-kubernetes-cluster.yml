@@ -36,7 +36,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: It is recommended to use the configuration 4vCPU 8GiB or above, low configuration may result in unsuccessful cluster creation<br><font color='blue'><b>Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance.</b></font>
+      en: It is recommended to use a configuration of 4 vCPU and 8 GiB or higher. Low configuration may result in failed cluster creation.<br><font color='blue'><b>Before selecting the instance type, please confirm that the model is available in the current zone. Some models require advance reporting.</b></font>
       zh-cn: 建议使用配置4vCPU 8GiB或以上的规格，配置过低可能会导致集群创建不成功<br><font color='blue'><b>选择机型前请先确认交换机可用区下该机型是否有货，部分机型需要提前报备</b></font>
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -78,7 +78,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: Worker node instance specifications<br> before selecting the specification, please confirm whether the model is in stock under the switch availability area, and some models need to be reported in advance .
+      en: Worker node instance specifications.<br>Before selecting the specification, please confirm whether the model is in stock in the selected availability zone. Some models require advance reporting.
       zh-cn: Worker节点实例规格<br>选择规格前请先确认交换机可用区下该机型是否有货，部分机型需要提前报备
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     AssociationPropertyMetadata:
@@ -113,10 +113,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password, length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8-30 characters, must contain three of: capital letters, lowercase letters, numbers, and special symbols (e.g., ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/)"
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AssociationProperty: 'ALIYUN::ECS::Instance::Password'
   ImageId:
@@ -128,7 +128,7 @@ Parameters:
       en: The Resource Name Prefix
       zh-cn: 资源名称前缀
     Description:
-      en: The resource name prefix, Contains case letters, numbers.
+      en: The resource name prefix, contains letters and numbers.
       zh-cn: 资源名称前缀，包含大小写字母、数字。
     Default: k8s
     MinLength: 1
@@ -752,6 +752,7 @@ Metadata:
             zh-cn: Worker实例信息（必填）
     TemplateTags:
     - acs:example:容器:ECS搭建Kubernetes集群(新建VPC)
+    - acs:public_template:Example:ecs-kubernetes-cluster
     Hidden:
     - ImageId
     - ResourceNamePrefix

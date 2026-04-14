@@ -15,7 +15,7 @@ Parameters:
         64 characters,English letters, Numbers, or '-' are allowed.
       zh-cn: 用户组1的名称，指定最多包含64个字符、英文字母、数字或“-”的组名。
     ConstraintDescription:
-      en: No more than 64 characters,English letters, Numbers, or '-' are allowed.
+      en: "No more than 64 characters: English letters, numbers, or '-' are allowed."
       zh-cn: 不得超过 64 个字符、英文字母、数字或'-'。
     Default: UserGroup
     AllowedPattern: ^[a-zA-Z0-9\-]+$
@@ -24,14 +24,14 @@ Parameters:
   GroupName2:
     Type: String
     Label:
-      en: Group 2 Name
+      en: User Group 2 Name
       zh-cn: 用户组2的名称
     Description:
       en: The name of user group 2, <br>Specifies the group name, containing up to
         64 characters,English letters, Numbers, or '-' are allowed.
       zh-cn: 用户组2的名称，指定最多包含64个字符、英文字母、数字或“-”的组名。
     ConstraintDescription:
-      en: No more than 64 characters,English letters, Numbers, or '-' are allowed.
+      en: "No more than 64 characters: English letters, numbers, or '-' are allowed."
       zh-cn: 不得超过 64 个字符、英文字母、数字或'-'。
     Default: AdminGroup
     AllowedPattern: ^[a-zA-Z0-9\-]+$
@@ -47,7 +47,7 @@ Parameters:
         , '_' or '-', not more than 64 characters.
       zh-cn: 不能是已经存在的用户名，<br>用户名可包含英文字母，数字，'.'， '_'或'-'，不超过64个字符。
     ConstraintDescription:
-      en: No more than 64 characters,English letters, Numbers, or '-' are allowed.
+      en: "No more than 64 characters: English letters, numbers, or '-' are allowed."
       zh-cn: 不得超过 64 个字符、英文字母、数字或'-'。
     Default: test-user
     AllowedPattern: '[a-zA-Z0-9\.\-\_]+$'
@@ -167,6 +167,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:example:弹性计算:创建具有不同策略的用户组的用户
+    - acs:public_template:Example:single-user-with-different-policies
   ALIYUN::ROS::Composer:
     '98374557':
       Res:

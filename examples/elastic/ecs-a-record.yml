@@ -10,7 +10,7 @@ Parameters:
       en: Top-level Domain Name
       zh-cn: 顶级域名
     Description:
-      en: Top-level domain, default, do not resolve the domain name, such as “test.com”
+      en: Top-level domain, default, do not resolve the domain name, such as "test.com"
       zh-cn: 顶级域名，默认值default时不做域名解析, 如“test.com”
   DomainNamePre:
     Type: String
@@ -62,10 +62,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone;</b></font><br>recommended specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note:
-        a few zones do not support recommended specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone;</b></font><br>recommended specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support recommended specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；<br>推荐规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持推荐规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -264,6 +261,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建绑定A记录域名的ECS
+    - acs:public_template:Example:ecs-a-record
   ALIYUN::ROS::Composer:
     '67269199':
       Res:

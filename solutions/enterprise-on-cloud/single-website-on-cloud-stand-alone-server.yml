@@ -14,9 +14,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following ip address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following ip address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -51,9 +49,7 @@ Parameters:
       en: EIP Billing
       zh-cn: 弹性公网IP计费方式
     Description:
-      en: '<font color=''blue''><b>Optional values: </b></font><br>[PayByBandwidth：<font
-        color=''green''>Pay-by-bandwidth</font>]<br>[paybytraffic：<font color=''green''>Pay-by-data-transfer</font>]<br><font
-        color=''blue''></a>'
+      en: "<font color='blue'><b>Optional values: </b></font><br>[PayByBandwidth: <font color='green'>Pay-by-bandwidth</font>]<br>[paybytraffic: <font color='green'>Pay-by-data-transfer</font>]<br><font color='blue'></a>"
       zh-cn: '<font color=''blue''><b>可选值: </b></font><br>[PayByBandwidth：<font color=''green''>按固定带宽计费</font>]<br>[paybytraffic：<font
         color=''green''>按流量计费</font>]<br><font color=''blue''></a>'
     Default: PayByTraffic
@@ -66,7 +62,7 @@ Parameters:
       en: EIP Bandwidth
       zh-cn: 弹性公网IP带宽值
     Description:
-      en: 'Elastic public network IP bandwidth， range of values:  1~1000, Unit: Mbps.'
+      en: 'Elastic public network IP bandwidth, range of values: 1~1000, Unit: Mbps.'
       zh-cn: '弹性公网Ip带宽值,取值范围: 1~1000，单位： Mbps。'
     Default: 5
     MinValue: 1
@@ -77,10 +73,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the availability zone;</b></font><br>general
-        specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note: a few
-        zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the availability zone;</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写可用区下可使用的规格；<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -93,11 +86,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -124,7 +113,7 @@ Parameters:
       en: Amount
       zh-cn: 实例数量
     Description:
-      en: 'Number of instances，value range: 1~100.'
+      en: 'Number of instances, value range: 1~100.'
       zh-cn: 实例数量,取值范围：1~100。
     Default: 1
     MinValue: 1
@@ -147,8 +136,7 @@ Parameters:
       en: Instance/Host Name Prefix
       zh-cn: 实例名/主机名名称前缀
     Description:
-      en: 'Server name prefix, such as: WP002, will eventually display [wp002-000,
-        wp002-001...].'
+      en: "Server name prefix, e.g., WP002, will eventually display as [wp002-000, wp002-001...]."
       zh-cn: 服务器名称前缀，如：WP002, 最终会显示[WP002-000, WP002-001...]。
     Default: WP001
   Ecs1GroupPassword:
@@ -172,11 +160,7 @@ Parameters:
       en: Disk Type
       zh-cn: 数据盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -205,12 +189,10 @@ Parameters:
       en: Root Account Password
       zh-cn: 安装数据库root账户密码
     Description:
-      en: 'Installed database Root account password，length 8-32 characters, can contain
-        size letters, Numbers and special symbols (including: !@#$%^&*-+=_).'
+      en: "Installed database Root account password,length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 安装的数据库Root账户密码，长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols
-        (including: !@#$%^&*-+=_).'
+      en: "8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: '8'
     MaxLength: '32'
@@ -241,12 +223,10 @@ Parameters:
       en: Database Account Password
       zh-cn: 数据库账号密码
     Description:
-      en: 'Length 8-32 characters, can contain size letters, Numbers and special symbols
-        (including: !@#$%^&*-+=_).'
+      en: "Length 8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 长度8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     ConstraintDescription:
-      en: '8-32 characters, can contain size letters, Numbers and special symbols
-        (including: !@#$%^&*-+=_).'
+      en: "8–32 characters, can contain uppercase letters, numbers, and special symbols (including: !@#$%^&*-+=_)."
       zh-cn: 8-32个字符,可包含大小字母、数字及特殊符号（包含：!@#$%^&*-+=_）。
     MinLength: '8'
     MaxLength: '32'
@@ -477,7 +457,7 @@ Resources:
 Outputs:
   Ecs1HostNames:
     Description:
-      en: List of cloud server host names.
+      en: List of cloud server hostnames.
       zh-cn: 云服务器主机名称列表。
     Value:
       Fn::GetAtt:
@@ -501,7 +481,7 @@ Outputs:
       - PrivateIps
   Ecs1PublicIps:
     Description:
-      en: Cloud server public network IP list
+      en: Cloud server public network IP list.
       zh-cn: 云服务器公网IP列表。
     Value:
       Fn::GetAtt:
@@ -509,7 +489,7 @@ Outputs:
       - PublicIps
   EipIp:
     Description:
-      en: Eip IP (binding to cloud server).
+      en: EIP IP (bound to cloud server).
       zh-cn: 弹性公网IP（绑定云服务器）。
     Value:
       Fn::GetAtt:
@@ -517,7 +497,7 @@ Outputs:
       - EipAddress
   SgId:
     Description:
-      en: Security group ID
+      en: Security group ID.
       zh-cn: 安全组ID
     Value:
       Fn::GetAtt:
@@ -525,7 +505,7 @@ Outputs:
       - SecurityGroupId
   VSwitchId:
     Description:
-      en: VSwitch instance ID
+      en: VSwitch instance ID.
       zh-cn: 交换机实例ID
     Value:
       Fn::GetAtt:
@@ -533,7 +513,7 @@ Outputs:
       - VSwitchId
   VpcId:
     Description:
-      en: 虚拟专有网络实例ID。
+      en: 虚拟专有网络实例ID.
       zh-cn: Virtual proprietary network instance ID.
     Value:
       Fn::GetAtt:
@@ -572,6 +552,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:solution:业务上云:单机网站上云架构云化-单机服务器部署
+    - acs:public_template:Solution:single-website-on-cloud-stand-alone-server
   ALIYUN::ROS::Composer:
     6310268f:
       Rect:

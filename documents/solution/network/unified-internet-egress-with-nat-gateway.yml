@@ -206,7 +206,7 @@ Resources:
 Outputs:
   EcsLoginAddress1:
     Description:
-      en: Ecs1 login address.
+      en: ECS1 login address
       zh-cn: ECS1 登录地址。
     Value:
       Fn::Sub: >-
@@ -214,7 +214,7 @@ Outputs:
         &instanceType=ecs&regionId=${ALIYUN::Region}&instanceId=${EcsInstance1}
   EcsLoginAddress2:
     Description:
-      en: Ecs2 login address.
+      en: ECS2 login address
       zh-cn: ECS2 登录地址。
     Value:
       Fn::Sub: >-
@@ -240,6 +240,7 @@ Metadata:
             zh-cn: ECS实例配置
     TemplateTags:
       - acs:technical-solution:network:通过公网NAT网关实现云上统一公网出口-tech_solu_134
+      - acs:public_template:Solution:unified-internet-egress-with-nat-gateway
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

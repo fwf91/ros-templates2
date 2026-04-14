@@ -48,9 +48,7 @@ Parameters:
       en: ECS Purchase duration of prepaid resources
       zh-cn: 云服务器预付费资源的购买时长
     Description:
-      en: 'When the purchase cycle of prepaid resource is week, the value range is:
-        [1,2,3,4]; when the purchase cycle of prepaid resource is month, the value
-        is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60]<br>'
+      en: "When the purchase cycle of prepaid resource is week, the value range is: [1,2,3,4]; when the purchase cycle of prepaid resource is month, the value is: [1,2,3,4,5,6,7,8,9,12,24,36,48,60]<br>"
       zh-cn: 云服务器预付费资源的购买时长，当预付费资源的购买周期为Week时，取值范围：[1，2，3，4]; 当预付费资源的购买周期为Month时，取值：[1，2，3，4，5，6，7，8，9，12，24，36，48，60]<br>
     AssociationPropertyMetadata:
       Visible:
@@ -147,11 +145,7 @@ Parameters:
       en: Stage Vpc System Disk Category
       zh-cn: 预发环境的ECS系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -189,7 +183,7 @@ Parameters:
   ProdVpcInstanceType:
     Type: String
     Label:
-      en: Prod Vpc Instance Type
+      en: Prod VPC Instance Type
       zh-cn: 生产环境的ECS实例规格
     Description:
       en: <font color='blue'><b>1.Before selecting the model please confirm that the
@@ -212,14 +206,10 @@ Parameters:
   ProdVpcSystemDiskCategory:
     Type: String
     Label:
-      en: Prod Vpc System Disk Category
+      en: Prod VPC System Disk Category
       zh-cn: 测试环境的ECS系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -257,7 +247,7 @@ Parameters:
   OpsVpcInstanceType:
     Type: String
     Label:
-      en: Ops Vpc Instance Type
+      en: Ops VPC Instance Type
       zh-cn: 运维环境的ECS实例规格
     Description:
       en: <font color='blue'><b>1.Before selecting the model please confirm that the
@@ -280,14 +270,10 @@ Parameters:
   OpsVpcSystemDiskCategory:
     Type: String
     Label:
-      en: Ops Vpc System Disk Category
+      en: Ops VPC System Disk Category
       zh-cn: 运维环境的ECS系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -789,6 +775,7 @@ Metadata:
         default: Ops Configuration
     TemplateTags:
     - acs:example:网络场景:隔离VPC使用共享服务
+    - acs:public_template:Solution:cen-open-isolated-networks
   ALIYUN::ROS::Composer:
     '19562680':
       Res:

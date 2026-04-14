@@ -13,9 +13,7 @@ Parameters:
     Description:
       zh-cn: VPC的IP网段；<br>您可以使用以下IP地址范围：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
-      en: 'The VPC CIDR Block; <br>You can use the following IP network segments:
-        <br><font color=''green''>[10.0.0.0/8]</font><br><font color=''green''>[172.16.0.0/12]</font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "The VPC CIDR Block; <br>You can use the following IP network segments: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
     Default: 192.168.0.0/16
     AllowedValues:
     - 192.168.0.0/16
@@ -28,7 +26,7 @@ Parameters:
       zh-cn: 交换机子网网段
     Description:
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created VSwitch. It must belong to the VPC CIDR Block.
     Default: 192.168.1.0/24
   Bandwidth:
     Type: Number
@@ -291,6 +289,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建ECS并配置NatGateway使VPC网络中的ECS可访问外网和提供服务
+    - acs:public_template:Example:vpc-nat-gateway
   ALIYUN::ROS::Composer:
     2fdd9fcf:
       Rect:

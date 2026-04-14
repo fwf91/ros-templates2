@@ -44,7 +44,7 @@ Parameters:
       en: The Bucket name cannot be changed after it is created successfully. The Bucket name must be unique in OSS.
       zh-cn: Bucket名称，创建成功后将不可更改，Bucket名称在OSS全局范围内必须唯一。
     ConstraintDescription:
-      en: Must begin and be end with a lowercase letter or number. The length is within [3, 63]
+      en: Must begin and end with a lowercase letter or number. The length is within [3, 63].
       zh-cn: 必须以小写英文字母或数字开头和结尾。长度为3~63个字符。
     AllowedPattern: ^[a-z0-9]{1}[a-z0-9\-]{1,62}[a-z0-9]{1}$
     AssociationProperty: AutoCompleteInput
@@ -68,10 +68,10 @@ Parameters:
       en: Instance Password
       zh-cn: 实例密码
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Server login password, length 8-30, must contain three of: capital letters, lowercase letters, numbers, and special symbols ((), `~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in)
+      en: "Length 8-30, must contain three of: capital letters, lowercase letters, numbers, and special symbols ((), `~!@#$%^&*_-+=|{}[]:;'<>,.?/)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）
     AssociationProperty: ALIYUN::ECS::Instance::Password
     NoEcho: true
@@ -618,6 +618,7 @@ Metadata:
           - ZoneId
     TemplateTags:
       - acs:technical-solution:ecs:yitian-Spark集群
+      - acs:public_template:Solution:spark-cluster-on-yitian
     Hidden:
       - CommonName
       - AutomaticTesting

@@ -79,11 +79,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -134,9 +130,7 @@ Parameters:
       en: Flow Control Limits
       zh-cn: 流控限制
     Description:
-      en: 'RabbitMQ service uses a certain threshold of system memory, it activates
-        a memory alarm and triggers a flow control mechanism, with optional configurations:
-        0.4 (40%), 0.6 (60%), 0.8 (80%)'
+      en: "RabbitMQ service uses a certain threshold of system memory; it activates a memory alarm and triggers a flow control mechanism. Optional configurations: 0.4 (40%), 0.6 (60%), 0.8 (80%)."
       zh-cn: RabbitMQ服务占用系统内存达到一定阈值时，会启动内存报警，触发流控机制，可选配置：0.4（40%），0.6（60%），0.8（80%）
     Default: '0.4'
     AllowedValues:
@@ -281,6 +275,7 @@ Metadata:
           zh-cn: RabbitMQ 配置（必填）
     TemplateTags:
     - acs:example:弹性计算:RabbitMQ单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-single-rabbitmq
   ALIYUN::ROS::Composer:
     e1b26e01:
       Rect:

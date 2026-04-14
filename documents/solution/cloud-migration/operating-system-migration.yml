@@ -150,7 +150,7 @@ Parameters:
   DbPassword:
     Type: String
     Label:
-      en: DB User Password
+      en: The MySQL user password, consisting of letters, numbers, and underscores (_), 8 to 32 characters in length.
       zh-cn: 数据库用户密码
     Description:
       en: >-
@@ -628,6 +628,7 @@ Metadata:
           default: ECS
     TemplateTags:
       - 'acs:technical-solution:cloud-migration:CentOS到Alinux操作系统迁移-tech_solu_80'
+      - acs:public_template:Solution:operating-system-migration
   ALIYUN::ROS::Composer:
     82cf544a:
       Rect:

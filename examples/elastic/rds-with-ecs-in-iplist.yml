@@ -22,11 +22,10 @@ Parameters:
   VpcCidrBlock:
     Type: String
     Label:
-      en: VPC Cidrblock
+      en: VPC CIDR Block
       zh-cn: VPC网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR block form. You can use the
-        following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12  192.168.0.0/16'
+      en: "The IP address range of the VPC in the CIDR block form. You can use the following IP address ranges and their subnets: 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
       zh-cn: 专有网络的网段，可选值：10.0.0.0/8，172.16.0.0/12，192.168.0.0/16。
     Default: 192.168.0.0/16
     AllowedValues:
@@ -36,10 +35,10 @@ Parameters:
   VSwitchCidrBlock:
     Type: String
     Label:
-      en: VSwitch CidrBlock
+      en: VSwitch CIDR Block
       zh-cn: VSwitch网段
     Description:
-      en: VSwitch subnet which is within VPC.
+      en: VSwitch subnet within the VPC.
       zh-cn: 交换机网段，必须为VPC子网段。
     Default: 192.168.1.0/24
   ZoneId:
@@ -111,7 +110,7 @@ Parameters:
       en: System Disk Name
       zh-cn: 系统磁盘名称
     Description:
-      en: The name of system disk
+      en: The name of the system disk.
       zh-cn: 系统磁盘名称
     Default: systemdiskname
   SystemDiskCategory:
@@ -133,8 +132,7 @@ Parameters:
         Numbers, underscores, letters beginning, letters or Numbers ending.
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8–30 characters. Must contain uppercase letters, lowercase letters, numbers, and special symbols (three types). Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[a-zA-Z0-9-\(\)\`\~\!@\#\$%\^&\*-+=\|\{\}\[\]\:\;\‘\,\.\?\/]*'
     MinLength: 8
@@ -184,10 +182,10 @@ Parameters:
       en: Instance Storage
       zh-cn: 实例存储
     Description:
-      en: 'Incrementing in every 5G, unit: GB'
+      en: 'Incrementing in steps of 5 GB, unit: GB'
       zh-cn: 每5G递增，单位：GB
     ConstraintDescription:
-      en: '[5, 2000] Incrementing in every 5G, unit: GB'
+      en: '[5, 2000] Incrementing in steps of 5 GB, unit: GB'
       zh-cn: '[5, 2000] 每 5G 递增，单位：GB'
     Default: 50
     MinValue: 5
@@ -346,6 +344,7 @@ Metadata:
           zh-cn: 数据库
     TemplateTags:
     - acs:example:弹性计算:创建ECS和RDS并将ECS加入RDS白名单
+    - acs:public_template:Example:rds-with-ecs-in-iplist
   ALIYUN::ROS::Composer:
     50c21891:
       Rect:

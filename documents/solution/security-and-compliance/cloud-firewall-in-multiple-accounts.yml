@@ -48,14 +48,14 @@ Parameters:
   ECSPassword:
     Type: String
     Description:
-      en: Server login password, Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Server login password: Length 8-30 characters, must contain three of the following: capital letters, lowercase letters, numbers, and special symbols (!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~)."
       zh-cn: 服务器登录密码,长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
     AssociationProperty: 'ALIYUN::ECS::Instance::Password'
     Label:
       en: Instance Password
       zh-cn: 实例密码
     ConstraintDescription:
-      en: Length 8-30, must contain three(Capital letters, lowercase letters, numbers, ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ Special symbol in).
+      en: "Length 8-30 characters, must contain three of the following: capital letters, lowercase letters, numbers, and special symbols (!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~)."
       zh-cn: 长度8-30，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/ 中的特殊符号）。
   ECSZoneId:
     AssociationProperty: ALIYUN::ECS::Instance:ZoneId
@@ -74,7 +74,7 @@ Parameters:
     AssociationProperty: ALIYUN::ECS::Instance::InstanceType
     Type: String
     Description:
-      en: <font color='blue'><b>1.Before selecting the model please confirm that the current available zone under the model is in stock, some models need to be reported in advance</b></font><br><font color='blue'><b>2.List of optional models</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB Intranet bandwidth1Gbps In-grid sending and receiving packages30MillionPPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB Intranet bandwidth1.5Gbps In-grid sending and receiving packages50MillionPPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB Intranet bandwidth2.5Gbps In-grid sending and receiving packages80MillionPPS</font>]
+      en: "<font color='blue'><b>1. Before selecting a model, please confirm that the current availability zone has stock for the model. Some models require advance reporting.</b></font><br><font color='blue'><b>2. List of optional models:</b></font><br>[ecs.c5.large <font color='green'>2vCPU 4GiB, Intranet bandwidth 1Gbps, In-grid sending and receiving packets: 30 Million PPS</font>]<br>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB, Intranet bandwidth 1.5Gbps, In-grid sending and receiving packets: 50 Million PPS</font>]<br>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB, Intranet bandwidth 2.5Gbps, In-grid sending and receiving packets: 80 Million PPS</font>]"
       zh-cn: <font color='blue'><b>1.选择机型前请先确认当前可用区下该机型是否有货，部分机型需要提前报备</b></font><br><font color='blue'><b>2.可选机型列表</font><br></b></font>[ecs.c5.large <font color='green'>2vCPU 4GiB 内网带宽1Gbps 内网收发包30万PPS</font>]<br></b>[ecs.c5.xlarge <font color='green'>4vCPU 8GiB 内网带宽1.5Gbps 内网收发包50万PPS</font>]<br></b>[ecs.c5.2xlarge <font color='green'>8vCPU 16GiB 内网带宽2.5Gbps 内网收发包80万PPS</font>]
     Label:
       en: Instance Type
@@ -188,6 +188,7 @@ Metadata:
           default: ECS
     TemplateTags:
       - acs:technical-solution:security-and-compliance:云防火墙企业多账号统一管理-tech_solu_79
+      - acs:public_template:Solution:cloud-firewall-in-multiple-accounts
   ALIYUN::ROS::Composer:
     d8c7498a:
       Rect:

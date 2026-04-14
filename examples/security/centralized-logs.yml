@@ -152,6 +152,7 @@ Metadata:
         default: SLS
     TemplateTags:
     - acs:example:安全:集中式日志管理
+    - acs:public_template:Example:centralized-logs
   ALIYUN::ROS::Composer:
     04bddac1:
       Rect:

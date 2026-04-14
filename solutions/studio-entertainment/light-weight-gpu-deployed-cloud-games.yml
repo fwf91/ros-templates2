@@ -14,9 +14,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: 专有网络IP地址段范围，<br>您可以使用以下的IP地址段:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -65,11 +63,7 @@ Parameters:
       en: Instance Type
       zh-cn: 实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the VSwitch availability
-        zone, and use a lightweight GPU server with supported vgn5i or vgn6i specifications;</b></font><br>recommended
-        specifications：<font color=''red''><b>ecs.vgn6i-m8.2xlarge</b></font><br>note:
-        a few zones do not support recommended specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the VSwitch availability zone, and use a lightweight GPU server with supported vgn5i or vgn6i specifications;</b></font><br>recommended specifications: <font color='red'><b>ecs.vgn6i-m8.2xlarge</b></font><br>note: a few zones do not support recommended specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写VSwitch可用区下可使用的规格；请使用支持的vgn5i或vgn6i两类规格的轻量级GPU服务器；<br>推荐规格：<font color='red'><b>ecs.vgn6i-m8.2xlarge</b></font><br>注：可用区可能不支持推荐规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -82,11 +76,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -403,6 +393,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:影视娱乐:轻量级GPU部署云游戏
+    - acs:public_template:Solution:light-weight-gpu-deployed-cloud-games
   ALIYUN::ROS::Composer:
     d37e8404:
       Rect:

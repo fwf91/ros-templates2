@@ -12,7 +12,7 @@ Parameters:
       en: VSwitch Zone ID
       zh-cn: 交换机可用区
     Description:
-      en: Availability ID for existing switches
+      en: Availability zone ID for existing switches
       zh-cn: 现有交换机的可用区ID
     AssociationProperty: ALIYUN::ECS::Instance::ZoneId
   VpcId:
@@ -94,7 +94,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -110,7 +110,7 @@ Parameters:
       en: Data Disk Space
       zh-cn: 数据盘空间
     Description:
-      en: 'Instance disk size, range of values: 20-32768, units: GB'
+      en: 'Instance disk size: 20–32768 GB'
       zh-cn: 实例数据盘大小，单位为GiB。取值范围：20~32768
     Default: 100
     MinValue: 20
@@ -121,7 +121,7 @@ Parameters:
       en: Kafka Listeners Port
       zh-cn: Kafka监听端口
     Description:
-      en: Kafka Listeners Port, please use more than 1000 port Numbers
+      en: Kafka Listeners Port. Please use a port number greater than 1000.
       zh-cn: Kafka监听端口，请使用1000以上的端口号
     Default: 9092
     MinValue: 1000
@@ -470,6 +470,7 @@ Metadata:
           zh-cn: Kafka 配置（必填）
     TemplateTags:
     - acs:example:弹性计算:Kafka单机版(已有VPC)
+    - acs:public_template:Example:existing-vpc-single-kafka
   ALIYUN::ROS::Composer:
     '65243119':
       Parent: 32d72df7

@@ -1,7 +1,7 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 部署Java Web环境。
-  en: Deploy the Java Web environment.
+  en: Deploy Java Web environment
 Conditions:
   CreateInstance:
     Fn::Equals:
@@ -24,7 +24,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
     Default: CreateNew
     AllowedValues:
     - CreateNew
@@ -46,7 +46,7 @@ Parameters:
   ImageId:
     Type: String
     Label:
-      en: Image of Instance
+      en: Instance Image
       zh-cn: 实例镜像
     AssociationPropertyMetadata:
       ValueLabelMapping:
@@ -294,7 +294,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -306,7 +306,7 @@ Outputs:
           - Ref: EcsInstance
   Console@Url:
     Description:
-      en: Java Web Main Page.
+      en: Java Web Main Page
       zh-cn: Java Web主页。
     Value:
       Fn::Sub:
@@ -331,6 +331,7 @@ Metadata:
       - EcsInstanceId
     TemplateTags:
     - acs:document-help:ecs:部署Java Web环境
+    - acs:public_template:Example:java-web
     Hidden:
     - CommonName
   ALIYUN::ROS::Composer:

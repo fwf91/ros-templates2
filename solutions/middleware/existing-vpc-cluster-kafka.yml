@@ -2,14 +2,7 @@ ROSTemplateFormatVersion: '2015-09-01'
 Description:
   zh-cn: 在现有VPC下，创建Kafka集群：1台管理ECS（绑定EIP），其余ECS通过弹性伸缩管理，配置Java 1.8、Scala 2.12、Kafka
     0.10.2.2，数据存储于挂载的数据盘，安全组开放9000端口访问Kafka Manager。
-  en: 'This template is used to create multiple ECS instances based on an existing
-    VPC, vSwitch, and security group. The ECS instance that is assigned an EIP is
-    the management node. Auto Scaling manages the remaining ECS instances. Java JDK
-    version 1.8.0, Scala version 2.12, and Kafka version 0.10.2.2 are used. Application
-    data is stored in the mounted data disk (mount directory of the data disk: /home/software;
-    directory of Kafka bin: /home/software/kafka/bin). To log on to the Kafka Manager
-    console, you must configure the inbound rule that allows access over TCP port
-    9000.'
+  en: "This template is used to create multiple ECS instances based on an existing VPC, vSwitch, and security group. The ECS instance assigned an EIP is the management node. Auto Scaling manages the remaining ECS instances. Java JDK version 1.8.0, Scala version 2.12, and Kafka version 0.10.2.2 are used. Application data is stored in the mounted data disk (mount directory: /home/software; Kafka bin directory: /home/software/kafka/bin). To log on to the Kafka Manager console, you must configure an inbound rule that allows access over TCP port 9000."
 Parameters:
   VpcId:
     Type: String
@@ -98,7 +91,7 @@ Parameters:
       en: Public IP Bandwidth
       zh-cn: 公网IP带宽值
     Description:
-      en: 'Public network IP bandwidth，unit: Mbps'
+      en: 'Public network IP bandwidth,unit: Mbps'
       zh-cn: 公网IP带宽值，单位：Mbps
     Default: 5
     MinValue: 1
@@ -109,11 +102,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -142,7 +131,7 @@ Parameters:
       en: Kafka Listeners Port
       zh-cn: Kafka监听端口
     Description:
-      en: Kafka Listeners Port, please use more than 1000 port Numbers
+      en: Kafka Listeners Port, please use a port number greater than 1000.
       zh-cn: Kafka监听端口，请使用1000以上的端口号
     Default: 9092
     MinValue: 1000
@@ -835,6 +824,7 @@ Metadata:
           zh-cn: Kafka 配置（必填）
     TemplateTags:
     - acs:solution:中间件:Kafka集群版(已有VPC)
+    - acs:public_template:Solution:existing-vpc-cluster-kafka
   ALIYUN::ROS::Composer:
     853b1265:
       Rect:

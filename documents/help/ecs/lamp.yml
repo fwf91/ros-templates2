@@ -22,7 +22,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -262,6 +262,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署LAMP环境
+      - acs:public_template:Example:lamp
   ALIYUN::ROS::Composer:
     810b6cff:
       Rect:

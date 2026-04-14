@@ -1,6 +1,6 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Description:
-  en: Rapid build AI robots dialogue.
+  en: Rapid build AI robot dialogue
   zh-cn: 快速搭建AI对话机器人
 Mappings:
   Images:
@@ -174,7 +174,7 @@ Resources:
 Outputs:
   Endpoint:
     Description:
-      en: The Addresses of WebUI.
+      en: WebUI addresses
       zh-cn: WebUI地址。
     Value:
       Fn::Sub:
@@ -187,7 +187,7 @@ Outputs:
             - PublicIps
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -221,6 +221,7 @@ Metadata:
           zh-cn: 登录信息
     TemplateTags:
     - 'acs:document-help:ecs:快速搭建AI对话机器人'
+    - acs:public_template:Example:rapid-build-ai-robots-dialogue
   ALIYUN::ROS::Composer:
     34ea6c01:
       Rect:

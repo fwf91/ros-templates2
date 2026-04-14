@@ -12,7 +12,7 @@ Parameters:
       en: Acceleration area
     Description:
       zh-cn: 选择加速区域。加速区域为仅中国内地和全球时，服务域名必须备案。
-      en: Select the acceleration area. When the acceleration region is only in mainland China and the world, the service domain name must be filed.
+      en: Select the acceleration area. When the acceleration region is mainland China and the world, the service domain name must be filed.
     Default: domestic
     AllowedValues:
       - domestic
@@ -32,7 +32,7 @@ Parameters:
       en: Bucket Name
       zh-cn: 存储空间名称
     Description:
-      en: The name must be 3 to 63 bytes in length, The name must start and end with a lowercase letter or digit.The name can contain only lowercase letters, digits, and hyphens (-).;<br><b>note：<font color='blue'>A bucket name must be globally unique within OSS. Bucket names cannot be changed after the bucket is created.</b></font>
+      en: "The name must be 3 to 63 bytes in length, The name must start and end with a lowercase letter or digit.The name can contain only lowercase letters, digits, and hyphens (-).;<br><b>note: <font color='blue'>A bucket name must be globally unique within OSS. Bucket names cannot be changed after the bucket is created.</b></font>"
       zh-cn: 长度为3~63个字符，必须以小写字母或数字开头和结尾，可以包含小写字母、数字和连字符(-);<br><b>注：<font color='blue'>需要全网唯一性，已经存在的不能在创建。</b></font>
     AssociationProperty: AutoCompleteInput
     AssociationPropertyMetadata:
@@ -150,6 +150,7 @@ Metadata:
           - BucketName
     TemplateTags:
       - acs:technical-solution:cdn-and-video-cloud:网站静态资源跨地域访问加速-tech_solu_108
+      - acs:public_template:Solution:accelerate-static-website
   ALIYUN::ROS::Composer:
     e153ffe4:
       Rect:

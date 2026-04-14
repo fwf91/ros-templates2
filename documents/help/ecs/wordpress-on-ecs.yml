@@ -22,7 +22,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -221,7 +221,7 @@ Outputs:
               - Ref: EcsInstance
   Url:
     Description:
-      en: test address.
+      en: Test address.
       zh-cn: 测试访问地址。
     Value:
       Fn::Sub:
@@ -248,6 +248,7 @@ Metadata:
       - Ipv6CidrBlockNumber
     TemplateTags:
       - acs:document-help:ecs:在ECS实例上搭建WordPress博客平台
+      - acs:public_template:Example:wordpress-on-ecs
   ALIYUN::ROS::Composer:
     '52393355':
       Res:

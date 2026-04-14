@@ -357,6 +357,7 @@ Metadata:
           - SlsProjectName
     TemplateTags:
       - acs:technical-solution:storage:应用业务日志监控与告警-tech_solu_118
+      - acs:public_template:Solution:collect-application-log
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

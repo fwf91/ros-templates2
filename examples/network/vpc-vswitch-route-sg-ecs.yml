@@ -25,9 +25,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The VPC CIDR Block; <br>You can use the following IP network segments:
-        <br><font color=''green''>[10.0.0.0/8]</font><br><font color=''green''>[172.16.0.0/12]</font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "The VPC CIDR Block; <br>You can use the following IP network segments: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的IP网段；<br>您可以使用以下IP地址范围：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 10.0.0.0/8
@@ -53,7 +51,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机网段
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR  lock.
+      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR lock.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 10.0.10.0/24
   DestinationCidrBlock:
@@ -62,7 +60,7 @@ Parameters:
       en: Route Destination CIDR Block
       zh-cn: 路由目标子网
     Description:
-      en: The destination subnet of route, such as, 192.168.1.0/24 or 192.168.1.0
+      en: "The destination subnet of the route, for example: 192.168.1.0/24 or 192.168.1.0."
       zh-cn: 路由的目标子网，如192.168.1.0/24或192.168.1.0
     Default: 192.168.1.0
   InstanceType:
@@ -108,11 +106,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -276,6 +270,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:example:网络:创建VPC类型的ECS并添加一条自定义路由
+    - acs:public_template:Example:vpc-vswitch-route-sg-ecs
   ALIYUN::ROS::Composer:
     '52412145':
       Parent: 7438fd6c

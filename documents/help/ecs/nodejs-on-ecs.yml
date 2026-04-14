@@ -22,7 +22,7 @@ Parameters:
           en: Create New Instance
         UseExisted:
           zh-cn: 选择已有实例
-          en: Select Existed Instance
+          en: Select Existing Instance
   ZoneId:
     Type: String
     Default: null
@@ -254,7 +254,7 @@ Resources:
 Outputs:
   EcsLoginAddress:
     Description:
-      en: Ecs login address.
+      en: ECS login address
       zh-cn: ECS登录地址。
     Value:
       Fn::Sub:
@@ -266,7 +266,7 @@ Outputs:
               - Ref: EcsInstance
   Url:
     Description:
-      en: test address.
+      en: Test address
       zh-cn: 测试访问地址。
     Value:
       Fn::Sub:
@@ -292,6 +292,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:document-help:ecs:部署Node.js环境
+      - acs:public_template:Example:nodejs-on-ecs
   ALIYUN::ROS::Composer:
     b54c4187:
       Rect:

@@ -167,6 +167,7 @@ Metadata:
           zh-cn: ECS实例配置
     TemplateTags:
     - acs:document-help:ecs:AIGC文本生成视频
+    - acs:public_template:Example:aigc-text-generation-video
   ALIYUN::ROS::Composer:
     097efb2b:
       Rect:

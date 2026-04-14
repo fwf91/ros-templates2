@@ -26,9 +26,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: VPC网段
     Description:
-      en: 'The VPC IP network segment; <br>You can use the following IP network segments:
-        <br><font color=''green''>[10.0.0.0/8]</font><br><font color=''green''>[172.16.0.0/12]</font><br><font
-        color=''green''>[192.168.0.0/16]</font>'
+      en: "The VPC IP network segment; <br>You can use the following IP network segments: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的IP网段；<br>您可以使用以下IP网段：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 192.168.0.0/16
@@ -42,7 +40,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机网段
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR block of created VSwitch; must belong to the VPC CIDR block.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 192.168.1.0/24
   ZoneId:
@@ -119,8 +117,7 @@ Parameters:
         letter and number. <br> special characters include（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/.
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三个；<br>特殊字符包括：（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters, must contain uppercase letters, lowercase letters, numbers, and special symbols; special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[a-zA-Z0-9-\(\)\`\~\!@\#\$%\^&\*-+=\|\{\}\[\]\:\;\‘\,\.\?\/]*'
     MinLength: 8
@@ -313,6 +310,7 @@ Metadata:
         default: Nodejs
     TemplateTags:
     - acs:example:网站:部署Node.js开发测试环境
+    - acs:public_template:Example:nodejs-single-instance
   ALIYUN::ROS::Composer:
     08e8abd2:
       Rect:

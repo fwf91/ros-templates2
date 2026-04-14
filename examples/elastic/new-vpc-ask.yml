@@ -123,6 +123,8 @@ Metadata:
         default:
           en: ASK Configuration
           zh-cn: ASK配置
+    TemplateTags:
+      - acs:public_template:Example:new-vpc-ask
   ALIYUN::ROS::Composer:
     a14fd7b0:
       Rect:

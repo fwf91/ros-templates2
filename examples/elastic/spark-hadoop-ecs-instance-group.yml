@@ -28,9 +28,7 @@ Parameters:
       en: VPC CIDR Block
       zh-cn: 专有网络网段
     Description:
-      en: 'The IP address range of the VPC in the CIDR Block form; <br>you can use
-        the following IP address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in the CIDR Block form; <br>you can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的IP地址范围；<br>您可以使用以下IP地址范围及其子网：<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0/16]</font>
     Default: 192.168.0.0/16
@@ -44,7 +42,7 @@ Parameters:
       en: VSwitch CIDR Block
       zh-cn: 交换机网段
     Description:
-      en: CIDR Block of created VSwitch,It must belong to itself VPC CIDR Block.
+      en: CIDR Block of created VSwitch; it must belong to the VPC CIDR Block.
       zh-cn: 创建的虚拟交换机的子网，它必须属于自己的VPC网段内
     Default: 192.168.1.0/24
   ZoneId:
@@ -106,8 +104,7 @@ Parameters:
       en: Image
       zh-cn: 镜像
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. See details: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the image</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
@@ -124,10 +121,10 @@ Parameters:
       en: Slave Amount
       zh-cn: Slave数量
     Description:
-      en: The minimum of ECS instances, must be less than or equal to the maximum.
+      en: The minimum number of ECS instances; must be less than or equal to the maximum.
       zh-cn: ECS实例的最小值必须小于或等于最大值。
     ConstraintDescription:
-      en: An integer within [1, 100]
+      en: An integer within [1, 100].
       zh-cn: '[1, 100] 内的整数'
     Default: 1
     MinValue: 1
@@ -142,8 +139,7 @@ Parameters:
         Numbers, underscores, letters beginning, letters or Numbers ending.
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；<br>特殊字符包括：（）'~！@#$%^&*_-+=|{}[]:;'<>,.?/
     ConstraintDescription:
-      en: 'Length 8-30, must contain upper case letters, lower case letters, Numbers,
-        special symbols three; special characters include: ()`~!@#$%^&*_-+=|{}[]:;''<>,.?/'
+      en: "Length 8-30 characters; must contain uppercase letters, lowercase letters, numbers, and special symbols. Special characters include: ()`~!@#$%^&*_-+=|{}[]:;'<>,.?/"
       zh-cn: 长度8-30，必须包含大写字母、小写字母、数字、特殊符号三种；特殊字符包括：()`~!@#$%^&*_-+=|{}[]:;' <>,.?/
     AllowedPattern: '[a-zA-Z0-9-\(\)\`\~\!@\#\$%\^&\*-+=\|\{\}\[\]\:\;\‘\,\.\?\/]*'
     MinLength: '8'
@@ -165,7 +161,7 @@ Parameters:
       en: Hadoop Home
       zh-cn: Hadoop主目录
     Description:
-      en: HADOOP_HOME directory should be new.
+      en: The HADOOP_HOME directory should be new.
       zh-cn: Hadoop 主目录必须是新的
     Default: /usr/local/hadoop/hadoop-2.7.7
   HadoopUrl:
@@ -174,7 +170,7 @@ Parameters:
       en: Hadoop Url
       zh-cn: Hadoop网址
     Description:
-      en: The official download path of .tar.gz
+      en: The official download path for .tar.gz
       zh-cn: .tar.gz的官方下载路径
     Default: https://ros-template-resources.oss-cn-beijing.aliyuncs.com/Hadoop/hadoop-2.7.7.tar.gz
   ScalaHome:
@@ -183,7 +179,7 @@ Parameters:
       en: Scala Home
       zh-cn: Scala主目录
     Description:
-      en: SCALA_HOME directory should be new.
+      en: The SCALA_HOME directory should be new.
       zh-cn: SCALA_HOME 主目录必须是新的
     Default: /usr/local/scala/scala-2.12.1
   ScalaUrl:
@@ -192,7 +188,7 @@ Parameters:
       en: Scala Url
       zh-cn: Scala网址
     Description:
-      en: The official download path of .tar.gz
+      en: The official download path for .tar.gz
       zh-cn: .tar.gz的官方下载路径
     Default: https://ros-template-resources.oss-cn-beijing.aliyuncs.com/Hadoop/scala-2.12.1.tgz
   SparkHome:
@@ -201,7 +197,7 @@ Parameters:
       en: Spark Home
       zh-cn: Spark主目录
     Description:
-      en: SPARK_HOME directory should be new.
+      en: The SPARK_HOME directory should be new.
       zh-cn: SPARK_HOME 主目录必须是新的
     Default: /usr/local/hadoop/spark-2.1.0-bin-hadoop2.7
   SparkUrl:
@@ -210,7 +206,7 @@ Parameters:
       en: Spark Url
       zh-cn: Spark网址
     Description:
-      en: The official download path of -bin-hadoopx.x.tgz
+      en: The official download path for -bin-hadoopx.x.tgz
       zh-cn: -bin-hadoopx.x.tgz的官方下载路径
     Default: https://ros-template-resources.oss-cn-beijing.aliyuncs.com/Hadoop/spark-2.1.0-bin-hadoop2.7.tgz
 Resources:
@@ -851,7 +847,7 @@ Resources:
 Outputs:
   HadoopWebsiteURL:
     Description:
-      en: URL for newly created Hadoop environment.
+      en: URL for the newly created Hadoop environment.
       zh-cn: 新创建的Hadoop环境的URL。
     Value:
       Fn::Join:
@@ -863,7 +859,7 @@ Outputs:
         - :50070
   SparkWebsiteURL:
     Description:
-      en: URL for newly created Spark environment.
+      en: URL for the newly created Spark environment.
       zh-cn: 新创建的Spark环境的URL。
     Value:
       Fn::Join:
@@ -914,6 +910,7 @@ Metadata:
         default: Spark
     TemplateTags:
     - acs:example:大数据:创建基于ECSGroup部署Spark和Hadoop分布式环境
+    - acs:public_template:Example:spark-hadoop-ecs-instance-group
   ALIYUN::ROS::Composer:
     '23410428':
       Res:

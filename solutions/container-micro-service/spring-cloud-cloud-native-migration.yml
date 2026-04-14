@@ -64,7 +64,7 @@ Parameters:
       en: Service Port
       zh-cn: 服务端口
     Description:
-      en: Spring Cloud service port, Please use the port number in the range 1024-65535.
+      en: Spring Cloud service port. Please use a port number in the range 1024–65535.
       zh-cn: Spring Cloud服务端口，请使用1024-65535范围内端口号。
     Default: 8081
     MinValue: 1024
@@ -75,10 +75,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Image ID，See detail：<b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b><br><font
-        color=''blue''><b>Note: Use CentOS to install Aliyun-CLI, JDK and other dependencies
-        on the server by default; CentOS images are recommended.</font></b>'
+      en: "Image ID,See detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b><br><font color='blue'><b>Note: Use CentOS to install Aliyun-CLI, JDK and other dependencies on the server by default; CentOS images are recommended.</font></b>"
       zh-cn: 镜像ID, 详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b><br><font color='blue'><b>注：
         使用CentOS默认在服务器上安装Aliyun-CLI、JDK等相关依赖； 推荐使用CentOS镜像。</font></b>
@@ -145,12 +142,7 @@ Parameters:
       en: Instance Alternate Type
       zh-cn: 实例备用规格
     Description:
-      en: 'Server spare specifications;Multiple specifications are split using an
-        English comma (,).<br><font color=''blue''><b>Note: Server specifications
-        take precedence over the main specifications, and alternate specifications
-        are lowered in order of elements</b></font><br>The default default indicates
-        that there are no alternate specifications and a maximum of 9 are filled in.<br>Example：
-        ecs.c6.large,ecs.g6e.large,ecs.g6.large'
+      en: "Server spare specifications;Multiple specifications are split using an English comma (,).<br><font color='blue'><b>Note: Server specifications take precedence over the main specifications, and alternate specifications are lowered in order of elements</b></font><br>The default default indicates that there are no alternate specifications and a maximum of 9 are filled in.<br>Example: ecs.c6.large,ecs.g6e.large,ecs.g6.large"
       zh-cn: 服务器备用规格；多个规格使用英文逗号（,）分割。<br><font color='blue'><b>注：服务器规格优先使用主规格，备用规格优先级按元素的顺序依次降低</b></font><br>默认default表示没有备用规格，最大填写9个。<br>示例：
         ecs.c6.large,ecs.g6e.large,ecs.g6.large
     Default: default
@@ -160,11 +152,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -230,12 +218,7 @@ Parameters:
       en: Instance Alternate Type
       zh-cn: 实例备用规格
     Description:
-      en: 'Server spare specifications;Multiple specifications are split using an
-        English comma (,).<br><font color=''blue''><b>Note: Server specifications
-        take precedence over the main specifications, and alternate specifications
-        are lowered in order of elements</b></font><br>The default default indicates
-        that there are no alternate specifications and a maximum of 9 are filled in.<br>Example：
-        ecs.c6.large,ecs.g6e.large,ecs.g6.large'
+      en: "Server spare specifications;Multiple specifications are split using an English comma (,).<br><font color='blue'><b>Note: Server specifications take precedence over the main specifications, and alternate specifications are lowered in order of elements</b></font><br>The default default indicates that there are no alternate specifications and a maximum of 9 are filled in.<br>Example: ecs.c6.large,ecs.g6e.large,ecs.g6.large"
       zh-cn: 服务器备用规格；多个规格使用英文逗号（,）分割。<br><font color='blue'><b>注：服务器规格优先使用主规格，备用规格优先级按元素的顺序依次降低</b></font><br>默认default表示没有备用规格，最大填写9个。<br>示例：
         ecs.c6.large,ecs.g6e.large,ecs.g6.large
     Default: default
@@ -245,11 +228,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -287,14 +266,7 @@ Parameters:
       en: Pod CIDR network
       zh-cn: Pod网络CIDR
     Description:
-      en: 'Please fill in a valid private segment, i.e. the following segments and
-        their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16<br> cannot
-        be associated with the VPC network Segments used by Kubernetes clusters in
-        segment 10.0.0.0/8 and VPC are duplicated and cannot be modified after successful
-        creation<br>Cluster network planning See: <b><a href=''https://www.alibabacloud.com/help/doc-detail/86500.html''
-        target=''_blank''><font color=''blue''>Network address segment planning for
-        Kubernetes under VPC.</font></a></b><br>In the current configuration, up to
-        1024 hosts can be deployed within the cluster.'
+      en: "Please fill in a valid private segment, i.e., the following segments and their subnets: 10.0.0.0/8, 172.16-31.0.0/12-16, 192.168.0.0/16.<br>Cannot be associated with the VPC network segments used by Kubernetes clusters. Segments in 10.0.0.0/8 and VPC are duplicated and cannot be modified after successful creation.<br>Cluster network planning See: <b><a href='https://www.alibabacloud.com/help/doc-detail/86500.html' target='_blank'><font color='blue'>Network address segment planning for Kubernetes under VPC.</font></a></b><br>In the current configuration, up to 1024 hosts can be deployed within the cluster."
       zh-cn: 请填写有效的私有网段，即以下网段及其子网：10.0.0.0/8，172.16-31.0.0/12-16，192.168.0.0/16<br>不能与
         VPC 网段 10.0.0.0/8 及 VPC 内已有 Kubernetes 集群使用的网段重复，创建成功后不能修改。<br>集群网络规划请参见：<b><a
         href='https://help.aliyun.com/document_detail/86500.html' target='_blank'><font
@@ -307,9 +279,7 @@ Parameters:
       en: Service CIDR
       zh-cn: Service CIDR
     Description:
-      en: 'Optional scope: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24
-        <br>with VPC network segment 10.0.0.0/8 and VPC Kubernetes cluster using segment
-        repeat, already in the created cannot be modified after the success.'
+      en: "Optional scope: 10.0.0.0/16-24, 172.16-31.0.0/16-24, 192.168.0.0/16-24.<br>Using VPC network segment 10.0.0.0/8 and VPC Kubernetes cluster using segment repeat is not allowed. Already created clusters cannot be modified after success."
       zh-cn: 可选范围：10.0.0.0/16-24，172.16-31.0.0/16-24，192.168.0.0/16-24<br>不能与 VPC
         网段 10.0.0.0/8 及 VPC 内已有 Kubernetes 集群使用的网段重复，创建成功后不能修改。
     Default: 172.21.0.0/20
@@ -319,11 +289,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -341,7 +307,7 @@ Parameters:
       en: System Disk Space
       zh-cn: 系统盘空间
     Description:
-      en: System disk space of worker node
+      en: System disk space for worker nodes
       zh-cn: Worker 节点系统盘空间
     Default: 120
     MinValue: 40
@@ -987,7 +953,7 @@ Metadata:
       - InstancePassword
       Label:
         default:
-          en: Base Information Configuration
+          en: Basic Information Configuration
           zh-cn: 基础信息配置（必填）
     - Parameters:
       - EurekaSlbSpec
@@ -1021,6 +987,7 @@ Metadata:
           zh-cn: Kubernetes托管版集群配置（必填）
     TemplateTags:
     - acs:solution:容器&微服务:SpringCloud-云原生迁移
+    - acs:public_template:Solution:spring-cloud-cloud-native-migration
   ALIYUN::ROS::Composer:
     '33930236':
       Parent: 82b3b799

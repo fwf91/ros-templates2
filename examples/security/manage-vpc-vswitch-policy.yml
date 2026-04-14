@@ -67,6 +67,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:example:安全:对VPC中VSwitch的管理授权
+    - acs:public_template:Example:manage-vpc-vswitch-policy
   ALIYUN::ROS::Composer:
     fb091287:
       Rect:

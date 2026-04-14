@@ -52,7 +52,7 @@ Parameters:
     Required: true
     Label:
       zh-cn: 核心资源账号ID
-      en: Core account id
+      en: Core account ID
     AssociationProperty: ALIYUN::ResourceManager::Account
     AssociationPropertyMetadata:
       Visible:
@@ -355,6 +355,7 @@ Metadata:
             en: Configuration single sign-on
     TemplateTags:
       - acs:technical-solution:account:企业多账号身份权限集中管理
+      - acs:public_template:Solution:enterprise-multi-account-identity-authority-centralized-management
   ALIYUN::ROS::Composer:
     '92795924':
       Parent: 36f86c1e

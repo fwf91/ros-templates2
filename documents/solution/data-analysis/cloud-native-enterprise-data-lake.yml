@@ -271,6 +271,7 @@ Metadata:
           default: PAI
     TemplateTags:
       - 'acs:technical-solution:data-analysis:云原生企业级数据湖-tech_solu_55'
+      - acs:public_template:Solution:cloud-native-enterprise-data-lake
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

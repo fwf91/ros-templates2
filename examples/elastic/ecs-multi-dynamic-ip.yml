@@ -31,8 +31,7 @@ Parameters:
       en: Image ID
       zh-cn: 镜像ID
     Description:
-      en: 'Instance Image ID. see detail: <b><a href=''https://www.alibabacloud.com/help/doc-detail/112977.html''
-        target=''_blank''><font color=''blue''>Find the mirror</font></a></b>'
+      en: "Instance Image ID. see detail: <b><a href='https://www.alibabacloud.com/help/doc-detail/112977.html' target='_blank'><font color='blue'>Find the mirror</font></a></b>"
       zh-cn: 实例镜像，详见：<b><a href='https://help.aliyun.com/document_detail/112977.html'
         target='_blank'><font color='blue'>查找镜像</font></a></b>
     AssociationProperty: ALIYUN::ECS::Image::ImageId
@@ -71,11 +70,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -285,6 +280,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:网络:创建绑定了多个私网地址的ECS
+    - acs:public_template:Example:ecs-multi-dynamic-ip
   ALIYUN::ROS::Composer:
     05ba5d05:
       Rect:

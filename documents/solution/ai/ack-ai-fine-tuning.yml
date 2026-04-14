@@ -192,7 +192,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: ECS登录地址。
-      en: Ecs login address.
+      en: ECS login address.
     Value:
       Fn::Sub:
         - https://ecs-workbench.aliyun.com/?from=EcsConsole&instanceType=ecs&regionId=${Region}&instanceId=${InstanceId}
@@ -217,6 +217,7 @@ Metadata:
       - CommonName
     TemplateTags:
       - acs:technical-solution:ack:一键训练大模型及部署GPU共享推理服务-tech_solu_82
+      - acs:public_template:Solution:ack-ai-fine-tuning
   ALIYUN::ROS::Composer:
     a4565d06:
       Rect:

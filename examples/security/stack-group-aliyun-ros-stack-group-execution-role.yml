@@ -70,6 +70,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:example:安全:创建StackGroup目标账号权限
+    - acs:public_template:Example:stack-group-aliyun-ros-stack-group-execution-role
   ALIYUN::ROS::Composer:
     77e9e9ce:
       Rect:

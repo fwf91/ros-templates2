@@ -11,9 +11,7 @@ Parameters:
       en: VPC CIDR IPv4 Block
       zh-cn: 专有网络IPv4网段
     Description:
-      en: 'The ip address range of the VPC in the CidrBlock form; <br>You can use
-        the following ip address ranges and their subnets: <br><font color=''green''>[10.0.0.0/8]</font><br><font
-        color=''green''>[172.16.0.0/12]</font><br><font color=''green''>[192.168.0.0/16]</font>'
+      en: "The IP address range of the VPC in CIDR block format; <br>You can use the following IP address ranges and their subnets: <br><font color='green'>[10.0.0.0/8]</font><br><font color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>"
       zh-cn: VPC的ip地址段范围，<br>您可以使用以下的ip地址段或其子网:<br><font color='green'>[10.0.0.0/8]</font><br><font
         color='green'>[172.16.0.0/12]</font><br><font color='green'>[192.168.0.0/16]</font>
     Default: 192.168.0.0/16
@@ -64,7 +62,7 @@ Parameters:
       en: Address Type
       zh-cn: 地址类型
     Description:
-      en: The address type of the load balancer. "intranet" or "internet".
+      en: "The address type of the load balancer. Valid values: 'intranet' or 'internet'."
       zh-cn: '负载均衡器的地址类型。intranet: 内网， internet: 外网。'
     Default: intranet
   LoadBalancerSpec:
@@ -154,11 +152,7 @@ Parameters:
       en: System Disk Type
       zh-cn: 系统盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -173,9 +167,7 @@ Parameters:
       en: Instance Charge Type
       zh-cn: 实例的付费方式
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[PostPaid: <font
-        color=''green''>Pay as you go.</font>]<br> [PrePaid: <font color=''green''>Prepaid,
-        monthly subscription.</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[PostPaid: <font color='green'>Pay as you go.</font>]<br>[PrePaid: <font color='green'>Prepaid, monthly subscription.</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[PostPaid: <font color=''green''>按量付费。</font>]<br>[PrePaid:
         <font color=''green''>预付费，包年包月。</font>]'
     AssociationProperty: ChargeType
@@ -465,6 +457,7 @@ Metadata:
           zh-cn: 云服务器
     TemplateTags:
     - acs:example:弹性计算:创建AnycastEIP绑定新建的SLB挂载新建ECS(新建VPC)
+    - acs:public_template:Example:anycasteip-attach-slb-bind-ecs
   ALIYUN::ROS::Composer:
     3a5c0469:
       Rect:

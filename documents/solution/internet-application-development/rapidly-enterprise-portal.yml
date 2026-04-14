@@ -231,7 +231,7 @@ Outputs:
   WebUrl:
     Description:
       zh-cn: Web 访问地址(Ip)。
-      en: The Addresses of Web(Ip).
+      en: Web (IP) Address
     Value:
       'Fn::Sub':
         - 'http://${ServerAddress}'
@@ -245,7 +245,7 @@ Outputs:
     Condition: DnsRecord
     Description:
       zh-cn: Web 访问地址(域名)。
-      en: The Addresses of Web(Domain).
+      en: Web (Domain) Address
     Value:
       Fn::Sub:
         - 'http://${DomainName}'
@@ -266,7 +266,7 @@ Outputs:
   EcsLoginAddress:
     Description:
       zh-cn: ECS登录地址。
-      en: Ecs login address.
+      en: ECS Login Address
     Value:
       'Fn::Sub':
         - >-
@@ -288,6 +288,7 @@ Metadata:
           - DomainName
     TemplateTags:
       - acs:technical-solution:internet-application-development:快速搭建企业门户网站-tech_solu_102
+      - acs:public_template:Solution:rapidly-enterprise-portal
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

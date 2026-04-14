@@ -94,7 +94,7 @@ Parameters:
       en: VSwitch Availability Zone2
       zh-cn: 交换机可用区2
     Description:
-      en: Please make sure that <font color='red'><b>VSwitch Availability Zone2 is different from VSwitch Availability Zone1</b></font>.
+      en: Please make sure that <font color='red'><b>VSwitch Availability Zone 2 is different from VSwitch Availability Zone 1</b></font>.
       zh-cn: 请确保<font color='red'><b>交换机可用区2与交换机可用区1不相同</b></font>。
     AssociationProperty: ALIYUN::ECS::Instance::ZoneId
 Resources:
@@ -408,7 +408,7 @@ Outputs:
           Ref: Slb
   RdsInstance:
     Description: 
-      en: View the created RDS instacne.
+      en: View the created RDS instance.
       zh-cn: 查看创建的RDS实例
     Value:
       Fn::Sub:
@@ -420,12 +420,12 @@ Outputs:
           Ref: Rds
   RdsDatabaseName:
     Description:
-      en: Rds database name.
+      en: RDS database name
       zh-cn: RDS 数据库名称
     Value: appdb
   RdsUserName: 
     Description:
-      en: RDS user name.
+      en: RDS username
       zh-cn: RDS用户名称。
     Value: appdb_user
   AppEcsIP:
@@ -481,7 +481,7 @@ Metadata:
       - RDSUserPassword
       Label:
         default:
-          en: DB instance param.
+          en: DB instance parameter
           zh-cn: RDS实例配置
     - Parameters:
       - Zone1
@@ -492,6 +492,7 @@ Metadata:
           zh-cn: 可用区配置
     TemplateTags:
     - acs:technical-solution:ecs:云上网站经典架构
+    - acs:public_template:Solution:classic-architecture-of-cloud-website
   ALIYUN::ROS::Composer:
     c9764fb2:
       Rect:

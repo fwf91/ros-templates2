@@ -76,11 +76,7 @@ Parameters:
       en: Master Instance Type
       zh-cn: Master实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the master instance VSwitch
-        availability zone; master instances use common ECS specifications</b></font><br>general
-        specifications：<font color=''red''><b>ecs.c5.large</b></font><br>note: a few
-        zones do not support general specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the master instance VSwitch availability zone; master instances use common ECS specifications</b></font><br>general specifications: <font color='red'><b>ecs.c5.large</b></font><br>note: a few zones do not support general specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写Master实例交换机可用区下可使用的规格；Master实例使用通用型ECS规格<br>通用规格：<font color='red'><b>ecs.c5.large</b></font><br>注：可用区可能不支持通用规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
         color='blue'>实例规格族</font></a></b>
@@ -93,12 +89,7 @@ Parameters:
       en: Worker Instance Type
       zh-cn: Worker实例规格
     Description:
-      en: 'Fill in the specifications that can be used under the worker instance VSwitch
-        availability zone; worker instances use GPU compute ECS specifications for
-        the gn4, gn5, gn5i, gn6v and gn6i series</b></font><br>recommended specifications：<font
-        color=''red''><b>ecs.gn5i-c2g1.large</b></font><br>note: a few zones do not
-        support recommended specifications<br>see detail: <a href=''https://www.alibabacloud.com/help/en/doc-detail/25378.html''
-        target=''_blank''><b><font color=''blue''>Instance Specification Family</font></a></b>'
+      en: "Fill in the specifications that can be used under the worker instance VSwitch availability zone; worker instances use GPU compute ECS specifications for the gn4, gn5, gn5i, gn6v and gn6i series</b></font><br>recommended specifications: <font color='red'><b>ecs.gn5i-c2g1.large</b></font><br>note: a few zones do not support recommended specifications<br>see detail: <a href='https://www.alibabacloud.com/help/en/doc-detail/25378.html' target='_blank'><b><font color='blue'>Instance Specification Family</font></a></b>"
       zh-cn: 填写Worker实例交换机可用区下可使用的规格；Worker实例使用gn4、gn5、gn5i、gn6v及gn6i系列的GPU计算型ECS规格<br>推荐规格：<font
         color='red'><b>ecs.gn5i-c2g1.large</b></font><br>注：可用区可能不支持推荐规格<br>规格详见：<a
         href='https://help.aliyun.com/document_detail/25378.html' target='_blank'><b><font
@@ -124,11 +115,7 @@ Parameters:
       en: Disk Type
       zh-cn: 磁盘类型
     Description:
-      en: '<font color=''blue''><b>Optional values:</b></font><br>[cloud_efficiency:
-        <font color=''green''>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color=''green''>SSD
-        Cloud Disk</font>]<br>[cloud_essd: <font color=''green''>ESSD Cloud Disk</font>]<br>[cloud:
-        <font color=''green''>Cloud Disk</font>]<br>[ephemeral_ssd: <font color=''green''>Local
-        SSD Cloud Disk</font>]'
+      en: "<font color='blue'><b>Optional values:</b></font><br>[cloud_efficiency: <font color='green'>Efficient Cloud Disk</font>]<br>[cloud_ssd: <font color='green'>SSD Cloud Disk</font>]<br>[cloud_essd: <font color='green'>ESSD Cloud Disk</font>]<br>[cloud: <font color='green'>Cloud Disk</font>]<br>[ephemeral_ssd: <font color='green'>Local SSD Cloud Disk</font>]"
       zh-cn: '<font color=''blue''><b>可选值：</b></font><br>[cloud_efficiency: <font
         color=''green''>高效云盘</font>]<br>[cloud_ssd: <font color=''green''>SSD云盘</font>]<br>[cloud_essd:
         <font color=''green''>ESSD云盘</font>]<br>[cloud: <font color=''green''>普通云盘</font>]<br>[ephemeral_ssd:
@@ -181,7 +168,7 @@ Parameters:
       en: Resource Group Id
       zh-cn: 资源组ID
     Description:
-      en: Resource group ID, when default, ECS does not join the resource group.
+      en: Resource group ID. When default, ECS does not join the resource group.
       zh-cn: 资源组ID，默认default时，ECS不加入资源组。
     Default: default
 Resources:
@@ -1099,6 +1086,7 @@ Metadata:
         default: ECS
     TemplateTags:
     - acs:solution:机器学习&人工智能:混合云使用飞天AI加速工具
+    - acs:public_template:Solution:hybrid-cloud-uses-ali-ai-acceleration-tools
   ALIYUN::ROS::Composer:
     3411eb45:
       Rect:

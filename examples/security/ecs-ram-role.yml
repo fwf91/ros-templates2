@@ -7,7 +7,7 @@ Parameters:
   RoleName:
     Type: String
     Label:
-      en: RoleName
+      en: Role Name
       zh-cn: Ram角色名
     Description:
       en: Ram role name, 1 to 64 characters in length, beginning with English letters
@@ -77,6 +77,7 @@ Metadata:
         default: RAM
     TemplateTags:
     - acs:example:安全:ECS实例RAM角色
+    - acs:public_template:Example:ecs-ram-role
   ALIYUN::ROS::Composer:
     eb2ffa05:
       Rect:

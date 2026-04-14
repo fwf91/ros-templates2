@@ -408,6 +408,7 @@ Metadata:
             en: Other Configuration
     TemplateTags:
       - acs:technical-solution:internet-application-development:移动开发秘籍：云上高效构建APP-tech_solu_104
+      - acs:public_template:Solution:efficiently-build-app-on-the-cloud
     Hidden:
       - CommonName
   ALIYUN::ROS::Composer:

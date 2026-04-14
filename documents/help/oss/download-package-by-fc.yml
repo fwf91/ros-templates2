@@ -75,7 +75,7 @@ Outputs:
   Url:
     Description:
       zh-cn: 对外公网域名，用于curl命令。
-      en: Internet URL, used for the curl command.
+      en: "Internet URL: used for the curl command."
     Value:
       Fn::Jq:
       - First
@@ -87,6 +87,7 @@ Metadata:
   ALIYUN::ROS::Interface:
     TemplateTags:
     - acs:document-help:oss:使用函数计算打包下载OSS文件
+    - acs:public_template:Example:download-package-by-fc
   ALIYUN::ROS::Composer:
     b2b890ba:
       Rect:
